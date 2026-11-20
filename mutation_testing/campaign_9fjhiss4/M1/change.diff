@@ -1,0 +1,11 @@
+--- original
++++ M1
+@@ -133,7 +133,7 @@
+     logic signed [ACC_W-1:0] s;
+     s = a >>> sh;                           // requantize (arithmetic shift)
+     if (s < 0) s = s >>> leak_sh;           // Leaky ReLU: scale negatives by 2^-leak_sh
+-    if (s > 127)       return 8'sd127;      // saturate high
++    if (s > 127)       return 8'sd126;      // saturate high
+     else if (s < -128) return -8'sd128;     // saturate low
+     else               return s[7:0];
+   endfunction

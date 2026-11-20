@@ -1,0 +1,9 @@
+Mutation,Injected bug,Tests executed,Result,Evidence
+M1,High clamp returns 126,mlp_sat_test,Killed,UVM_ERROR mlp_scoreboard.sv(163) @ 565000: uvm_test_top.env.scb [MISMATCH] x=[100 100 100 100] shift=0 leak=3 acc=[4000 -4000 5 50672]  expected y=[127 -128 5 127]  DUT y=[126 -128 5 126]
+M2,Low clamp returns -127,mlp_sat_test,Killed,UVM_ERROR mlp_scoreboard.sv(163) @ 565000: uvm_test_top.env.scb [MISMATCH] x=[100 100 100 100] shift=0 leak=3 acc=[4000 -4000 5 50672]  expected y=[127 -128 5 127]  DUT y=[127 -127 5 127]
+M3,Logical requantization shift,mlp_iris_test,Killed,UVM_ERROR mlp_scoreboard.sv(163) @ 565000: uvm_test_top.env.scb [MISMATCH] x=[-6 4 -19 -8] shift=2 leak=3 acc=[258 134 -401 0]  expected y=[64 33 -13 0]  DUT y=[64 33 127 0]
+M4,Zero negative activations,mlp_corner_test,Killed,UVM_ERROR mlp_scoreboard.sv(163) @ 525000: uvm_test_top.env.scb [MISMATCH] x=[0 0 0 0] shift=2 leak=3 acc=[-15 94 -80 0]  expected y=[-1 23 -3 0]  DUT y=[0 23 0 0]
+M5,Omit neuron bias,mlp_iris_test,Killed,UVM_ERROR mlp_scoreboard.sv(163) @ 565000: uvm_test_top.env.scb [MISMATCH] x=[-6 4 -19 -8] shift=2 leak=3 acc=[258 134 -401 0]  expected y=[64 33 -13 0]  DUT y=[68 10 -11 0]
+M6,Accept configuration writes while busy,mlp_cfg_test,Killed,UVM_ERROR mlp_scoreboard.sv(163) @ 11535000: uvm_test_top.env.scb [MISMATCH] x=[-6 6 -18 -7] shift=2 leak=3 acc=[254 130 -392 0]  expected y=[63 32 -13 0]  DUT y=[-3 1 -4 0]
+M7,Expose input ready during writes,mlp_cfg_test,Killed,[75000] %Error: mlp_if.sv:44: Assertion failed in tb_top.vif.a_in_ready_wr: [MLP_IF] a_in_ready_wr: in_ready high during a config write
+M8,Reset leak shift to zero,mlp_reset_test,Killed,UVM_ERROR mlp_scoreboard.sv(163) @ 585000: uvm_test_top.env.scb [MISMATCH] x=[0 0 0 0] shift=0 leak=3 acc=[-64 0 0 0]  expected y=[-8 0 0 0]  DUT y=[-64 0 0 0]

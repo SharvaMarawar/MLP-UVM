@@ -1,0 +1,11 @@
+--- original
++++ M5
+@@ -104,7 +104,7 @@
+   always_comb begin
+     for (int n = 0; n < N; n++) begin
+       logic signed [ACC_W-1:0] sum;
+-      sum = ACC_W'(bias[n]);
++      sum = '0;
+       for (int i = 0; i < N; i++)
+         sum = sum + ACC_W'(weight[n][i]) * ACC_W'($signed(in_data[8*i +: 8]));
+       acc_comb[n] = sum;

@@ -1,0 +1,155 @@
+UVM_INFO /home/dell/uvm_workspace/verilator-uvm-example/1800.2-2020.3.1/src/base/uvm_root.svh(476) @ 0: reporter [UVM/RELNOTES] 
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  This implementation of the UVM Library deviates from the 1800.2-2020
+  standard.  See the DEVIATIONS.md file contained in the release
+  for more details.
+
+----------------------------------------------------------------
+Accellera:1800.2:UVM:2020.3.1
+
+All copyright owners for this kit are listed in NOTICE.txt
+All Rights Reserved Worldwide
+----------------------------------------------------------------
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_WARNING /home/dell/uvm_workspace/verilator-uvm-example/1800.2-2020.3.1/src/base/uvm_root.svh(549) @ 0: reporter [NO_DPI_USED] We are thinking of removing support for UVM_NO_DPI.  Please try this test without it and evaluate the impact
+UVM_INFO /home/dell/uvm_workspace/verilator-uvm-example/1800.2-2020.3.1/src/base/uvm_root.svh(552) @ 0: reporter [NO_DPI_TSTNAME] UVM_NO_DPI defined--getting UVM_TESTNAME directly, without DPI
+UVM_INFO @ 0: reporter [RNTST] Running test mlp_reset_test...
+UVM_INFO mlp_tests.sv(46) @ 0: uvm_test_top [TEST] data_dir=/mnt/c/mlp_uvm/data  iris vectors=1200 (test set 255)  sat vectors=10  NUM_ITEMS=40  IMG_IDX=0
+UVM_INFO /home/dell/uvm_workspace/verilator-uvm-example/1800.2-2020.3.1/src/base/uvm_traversal.svh(345) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled
+UVM_WARNING /home/dell/uvm_workspace/verilator-uvm-example/1800.2-2020.3.1/src/base/uvm_traversal.svh(314) @ 0: reporter [NO_VISIT_CHECK] Because UVM_REGEX_NO_DPI is defined, no uvm component name constraints will be checked
+UVM_INFO mlp_scoreboard.sv(127) @ 5000: uvm_test_top.env.scb [RST] reset seen in state IDLE                 : 0 sample(s) dropped, model back to reset values
+UVM_INFO mlp_scoreboard.sv(127) @ 515000: uvm_test_top.env.scb [RST] reset seen in state IDLE                 : 0 sample(s) dropped, model back to reset values
+UVM_ERROR mlp_scoreboard.sv(163) @ 585000: uvm_test_top.env.scb [MISMATCH] x=[0 0 0 0] shift=0 leak=3 acc=[-64 0 0 0]  expected y=[-8 0 0 0]  DUT y=[-64 0 0 0]
+UVM_INFO mlp_scoreboard.sv(172) @ 585000: uvm_test_top.env.scb [CHK] FAIL x=[0 0 0 0] exp=[-8 0 0 0] act=[-64 0 0 0] lat=2
+UVM_ERROR mlp_scoreboard.sv(163) @ 595000: uvm_test_top.env.scb [MISMATCH] x=[29 27 -59 10] shift=0 leak=3 acc=[-64 0 0 0]  expected y=[-8 0 0 0]  DUT y=[-64 0 0 0]
+UVM_INFO mlp_scoreboard.sv(172) @ 595000: uvm_test_top.env.scb [CHK] FAIL x=[29 27 -59 10] exp=[-8 0 0 0] act=[-64 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 1075000: uvm_test_top.env.scb [CHK] PASS x=[-6 4 -19 -8] exp=[64 33 -13 0] act=[64 33 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 1085000: uvm_test_top.env.scb [CHK] PASS x=[-6 2 -16 -6] exp=[50 30 -11 0] act=[50 30 -11 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 1095000: uvm_test_top.env.scb [CHK] PASS x=[-10 1 -19 -8] exp=[60 30 -12 0] act=[60 30 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 1105000: uvm_test_top.env.scb [CHK] PASS x=[0 -3 3 -2] exp=[-2 25 -2 0] act=[-2 25 -2 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 1115000: uvm_test_top.env.scb [CHK] PASS x=[-3 -3 5 0] exp=[-3 21 0 0] act=[-3 21 0 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(127) @ 1595000: uvm_test_top.env.scb [RST] reset seen in state STAGE1                 : 1 sample(s) dropped, model back to reset values
+UVM_ERROR mlp_scoreboard.sv(163) @ 1665000: uvm_test_top.env.scb [MISMATCH] x=[0 0 0 0] shift=0 leak=3 acc=[-64 0 0 0]  expected y=[-8 0 0 0]  DUT y=[-64 0 0 0]
+UVM_INFO mlp_scoreboard.sv(172) @ 1665000: uvm_test_top.env.scb [CHK] FAIL x=[0 0 0 0] exp=[-8 0 0 0] act=[-64 0 0 0] lat=2
+UVM_ERROR mlp_scoreboard.sv(163) @ 1675000: uvm_test_top.env.scb [MISMATCH] x=[-45 62 117 66] shift=0 leak=3 acc=[-64 0 0 0]  expected y=[-8 0 0 0]  DUT y=[-64 0 0 0]
+UVM_INFO mlp_scoreboard.sv(172) @ 1675000: uvm_test_top.env.scb [CHK] FAIL x=[-45 62 117 66] exp=[-8 0 0 0] act=[-64 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 2155000: uvm_test_top.env.scb [CHK] PASS x=[-6 4 -19 -8] exp=[64 33 -13 0] act=[64 33 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 2165000: uvm_test_top.env.scb [CHK] PASS x=[-6 2 -16 -6] exp=[50 30 -11 0] act=[50 30 -11 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 2175000: uvm_test_top.env.scb [CHK] PASS x=[-10 1 -19 -8] exp=[60 30 -12 0] act=[60 30 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 2185000: uvm_test_top.env.scb [CHK] PASS x=[0 -3 3 -2] exp=[-2 25 -2 0] act=[-2 25 -2 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 2195000: uvm_test_top.env.scb [CHK] PASS x=[-3 -3 5 0] exp=[-3 21 0 0] act=[-3 21 0 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 2675000: uvm_test_top.env.scb [CHK] PASS x=[-6 4 -19 -8] exp=[64 33 -13 0] act=[64 33 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(127) @ 2685000: uvm_test_top.env.scb [RST] reset seen in state OUTREG                 : 0 sample(s) dropped, model back to reset values
+UVM_ERROR mlp_scoreboard.sv(163) @ 2755000: uvm_test_top.env.scb [MISMATCH] x=[0 0 0 0] shift=0 leak=3 acc=[-64 0 0 0]  expected y=[-8 0 0 0]  DUT y=[-64 0 0 0]
+UVM_INFO mlp_scoreboard.sv(172) @ 2755000: uvm_test_top.env.scb [CHK] FAIL x=[0 0 0 0] exp=[-8 0 0 0] act=[-64 0 0 0] lat=2
+UVM_ERROR mlp_scoreboard.sv(163) @ 2765000: uvm_test_top.env.scb [MISMATCH] x=[-84 79 110 -31] shift=0 leak=3 acc=[-64 0 0 0]  expected y=[-8 0 0 0]  DUT y=[-64 0 0 0]
+UVM_INFO mlp_scoreboard.sv(172) @ 2765000: uvm_test_top.env.scb [CHK] FAIL x=[-84 79 110 -31] exp=[-8 0 0 0] act=[-64 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 3245000: uvm_test_top.env.scb [CHK] PASS x=[-6 4 -19 -8] exp=[64 33 -13 0] act=[64 33 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 3255000: uvm_test_top.env.scb [CHK] PASS x=[-6 2 -16 -6] exp=[50 30 -11 0] act=[50 30 -11 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 3265000: uvm_test_top.env.scb [CHK] PASS x=[-10 1 -19 -8] exp=[60 30 -12 0] act=[60 30 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 3275000: uvm_test_top.env.scb [CHK] PASS x=[0 -3 3 -2] exp=[-2 25 -2 0] act=[-2 25 -2 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 3285000: uvm_test_top.env.scb [CHK] PASS x=[-3 -3 5 0] exp=[-3 21 0 0] act=[-3 21 0 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(127) @ 3775000: uvm_test_top.env.scb [RST] reset seen in state OUTREG (output stalled): 1 sample(s) dropped, model back to reset values
+UVM_ERROR mlp_scoreboard.sv(163) @ 3845000: uvm_test_top.env.scb [MISMATCH] x=[0 0 0 0] shift=0 leak=3 acc=[-64 0 0 0]  expected y=[-8 0 0 0]  DUT y=[-64 0 0 0]
+UVM_INFO mlp_scoreboard.sv(172) @ 3845000: uvm_test_top.env.scb [CHK] FAIL x=[0 0 0 0] exp=[-8 0 0 0] act=[-64 0 0 0] lat=2
+UVM_ERROR mlp_scoreboard.sv(163) @ 3855000: uvm_test_top.env.scb [MISMATCH] x=[9 -77 -32 -72] shift=0 leak=3 acc=[-64 0 0 0]  expected y=[-8 0 0 0]  DUT y=[-64 0 0 0]
+UVM_INFO mlp_scoreboard.sv(172) @ 3855000: uvm_test_top.env.scb [CHK] FAIL x=[9 -77 -32 -72] exp=[-8 0 0 0] act=[-64 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 4335000: uvm_test_top.env.scb [CHK] PASS x=[-6 4 -19 -8] exp=[64 33 -13 0] act=[64 33 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 4345000: uvm_test_top.env.scb [CHK] PASS x=[-6 2 -16 -6] exp=[50 30 -11 0] act=[50 30 -11 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 4355000: uvm_test_top.env.scb [CHK] PASS x=[-10 1 -19 -8] exp=[60 30 -12 0] act=[60 30 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 4365000: uvm_test_top.env.scb [CHK] PASS x=[0 -3 3 -2] exp=[-2 25 -2 0] act=[-2 25 -2 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 4375000: uvm_test_top.env.scb [CHK] PASS x=[-3 -3 5 0] exp=[-3 21 0 0] act=[-3 21 0 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(127) @ 4865000: uvm_test_top.env.scb [RST] reset seen in state BOTH (output stalled): 2 sample(s) dropped, model back to reset values
+UVM_ERROR mlp_scoreboard.sv(163) @ 4935000: uvm_test_top.env.scb [MISMATCH] x=[0 0 0 0] shift=0 leak=3 acc=[-64 0 0 0]  expected y=[-8 0 0 0]  DUT y=[-64 0 0 0]
+UVM_INFO mlp_scoreboard.sv(172) @ 4935000: uvm_test_top.env.scb [CHK] FAIL x=[0 0 0 0] exp=[-8 0 0 0] act=[-64 0 0 0] lat=2
+UVM_ERROR mlp_scoreboard.sv(163) @ 4945000: uvm_test_top.env.scb [MISMATCH] x=[60 1 -7 33] shift=0 leak=3 acc=[-64 0 0 0]  expected y=[-8 0 0 0]  DUT y=[-64 0 0 0]
+UVM_INFO mlp_scoreboard.sv(172) @ 4945000: uvm_test_top.env.scb [CHK] FAIL x=[60 1 -7 33] exp=[-8 0 0 0] act=[-64 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 5425000: uvm_test_top.env.scb [CHK] PASS x=[-6 4 -19 -8] exp=[64 33 -13 0] act=[64 33 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 5435000: uvm_test_top.env.scb [CHK] PASS x=[-6 2 -16 -6] exp=[50 30 -11 0] act=[50 30 -11 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 5445000: uvm_test_top.env.scb [CHK] PASS x=[-10 1 -19 -8] exp=[60 30 -12 0] act=[60 30 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 5455000: uvm_test_top.env.scb [CHK] PASS x=[0 -3 3 -2] exp=[-2 25 -2 0] act=[-2 25 -2 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 5465000: uvm_test_top.env.scb [CHK] PASS x=[-3 -3 5 0] exp=[-3 21 0 0] act=[-3 21 0 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 5945000: uvm_test_top.env.scb [CHK] PASS x=[-6 4 -19 -8] exp=[64 33 -13 0] act=[64 33 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 5955000: uvm_test_top.env.scb [CHK] PASS x=[-10 1 -18 -8] exp=[57 30 -12 0] act=[57 30 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 5965000: uvm_test_top.env.scb [CHK] PASS x=[-10 3 -19 -7] exp=[61 29 -12 0] act=[61 29 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(127) @ 5975000: uvm_test_top.env.scb [RST] reset seen in state BOTH                 : 1 sample(s) dropped, model back to reset values
+UVM_ERROR mlp_scoreboard.sv(163) @ 6045000: uvm_test_top.env.scb [MISMATCH] x=[0 0 0 0] shift=0 leak=3 acc=[-64 0 0 0]  expected y=[-8 0 0 0]  DUT y=[-64 0 0 0]
+UVM_INFO mlp_scoreboard.sv(172) @ 6045000: uvm_test_top.env.scb [CHK] FAIL x=[0 0 0 0] exp=[-8 0 0 0] act=[-64 0 0 0] lat=2
+UVM_ERROR mlp_scoreboard.sv(163) @ 6055000: uvm_test_top.env.scb [MISMATCH] x=[119 70 71 -98] shift=0 leak=3 acc=[-64 0 0 0]  expected y=[-8 0 0 0]  DUT y=[-64 0 0 0]
+UVM_INFO mlp_scoreboard.sv(172) @ 6055000: uvm_test_top.env.scb [CHK] FAIL x=[119 70 71 -98] exp=[-8 0 0 0] act=[-64 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 6535000: uvm_test_top.env.scb [CHK] PASS x=[-6 4 -19 -8] exp=[64 33 -13 0] act=[64 33 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 6545000: uvm_test_top.env.scb [CHK] PASS x=[-6 2 -16 -6] exp=[50 30 -11 0] act=[50 30 -11 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 6555000: uvm_test_top.env.scb [CHK] PASS x=[-10 1 -19 -8] exp=[60 30 -12 0] act=[60 30 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 6565000: uvm_test_top.env.scb [CHK] PASS x=[0 -3 3 -2] exp=[-2 25 -2 0] act=[-2 25 -2 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 6575000: uvm_test_top.env.scb [CHK] PASS x=[-3 -3 5 0] exp=[-3 21 0 0] act=[-3 21 0 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 7055000: uvm_test_top.env.scb [CHK] PASS x=[-7 1 -18 -9] exp=[58 33 -12 0] act=[58 33 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 7095000: uvm_test_top.env.scb [CHK] PASS x=[-6 3 -18 -8] exp=[60 33 -12 0] act=[60 33 -12 0] lat=5 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 7105000: uvm_test_top.env.scb [CHK] PASS x=[-6 6 -15 -6] exp=[54 31 -11 0] act=[54 31 -11 0] lat=5 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 7115000: uvm_test_top.env.scb [CHK] PASS x=[-6 6 -17 -8] exp=[62 34 -13 0] act=[62 34 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(127) @ 7135000: uvm_test_top.env.scb [RST] reset seen in state BOTH (output stalled): 2 sample(s) dropped, model back to reset values
+UVM_ERROR mlp_scoreboard.sv(163) @ 7215000: uvm_test_top.env.scb [MISMATCH] x=[0 0 0 0] shift=0 leak=3 acc=[-64 0 0 0]  expected y=[-8 0 0 0]  DUT y=[-64 0 0 0]
+UVM_INFO mlp_scoreboard.sv(172) @ 7215000: uvm_test_top.env.scb [CHK] FAIL x=[0 0 0 0] exp=[-8 0 0 0] act=[-64 0 0 0] lat=2
+UVM_ERROR mlp_scoreboard.sv(163) @ 7225000: uvm_test_top.env.scb [MISMATCH] x=[16 -85 48 -94] shift=0 leak=3 acc=[-64 0 0 0]  expected y=[-8 0 0 0]  DUT y=[-64 0 0 0]
+UVM_INFO mlp_scoreboard.sv(172) @ 7225000: uvm_test_top.env.scb [CHK] FAIL x=[16 -85 48 -94] exp=[-8 0 0 0] act=[-64 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 7705000: uvm_test_top.env.scb [CHK] PASS x=[-6 4 -19 -8] exp=[64 33 -13 0] act=[64 33 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 7715000: uvm_test_top.env.scb [CHK] PASS x=[-6 2 -16 -6] exp=[50 30 -11 0] act=[50 30 -11 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 7725000: uvm_test_top.env.scb [CHK] PASS x=[-10 1 -19 -8] exp=[60 30 -12 0] act=[60 30 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 7735000: uvm_test_top.env.scb [CHK] PASS x=[0 -3 3 -2] exp=[-2 25 -2 0] act=[-2 25 -2 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 7745000: uvm_test_top.env.scb [CHK] PASS x=[-3 -3 5 0] exp=[-3 21 0 0] act=[-3 21 0 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(127) @ 7765000: uvm_test_top.env.scb [RST] reset seen in state IDLE                 : 0 sample(s) dropped, model back to reset values
+UVM_INFO mlp_scoreboard.sv(127) @ 7785000: uvm_test_top.env.scb [RST] reset seen in state IDLE                 : 0 sample(s) dropped, model back to reset values
+UVM_ERROR mlp_scoreboard.sv(163) @ 7845000: uvm_test_top.env.scb [MISMATCH] x=[0 0 0 0] shift=0 leak=3 acc=[-64 0 0 0]  expected y=[-8 0 0 0]  DUT y=[-64 0 0 0]
+UVM_INFO mlp_scoreboard.sv(172) @ 7845000: uvm_test_top.env.scb [CHK] FAIL x=[0 0 0 0] exp=[-8 0 0 0] act=[-64 0 0 0] lat=2
+UVM_ERROR mlp_scoreboard.sv(163) @ 7855000: uvm_test_top.env.scb [MISMATCH] x=[110 -39 111 -45] shift=0 leak=3 acc=[-64 0 0 0]  expected y=[-8 0 0 0]  DUT y=[-64 0 0 0]
+UVM_INFO mlp_scoreboard.sv(172) @ 7855000: uvm_test_top.env.scb [CHK] FAIL x=[110 -39 111 -45] exp=[-8 0 0 0] act=[-64 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 8335000: uvm_test_top.env.scb [CHK] PASS x=[-6 4 -19 -8] exp=[64 33 -13 0] act=[64 33 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 8345000: uvm_test_top.env.scb [CHK] PASS x=[-6 2 -16 -6] exp=[50 30 -11 0] act=[50 30 -11 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 8355000: uvm_test_top.env.scb [CHK] PASS x=[-10 1 -19 -8] exp=[60 30 -12 0] act=[60 30 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 8365000: uvm_test_top.env.scb [CHK] PASS x=[0 -3 3 -2] exp=[-2 25 -2 0] act=[-2 25 -2 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 8375000: uvm_test_top.env.scb [CHK] PASS x=[-3 -3 5 0] exp=[-3 21 0 0] act=[-3 21 0 0] lat=2 label=1 pred=1
+UVM_INFO mlp_driver.sv(138) @ 8395000: uvm_test_top.env.agt.drv [DRV] drove 71 inferences, 338 config writes, 9 resets (+ the initial one)
+UVM_INFO mlp_coverage.sv(434) @ 8395000: uvm_test_top.env.cov [COV] Detailed coverage CSV written to results/coverage_detail.csv
+UVM_INFO mlp_coverage.sv(442) @ 8395000: uvm_test_top.env.cov [COV] functional coverage: cg_infer 43.61 %   cg_cfg 60.94 %   cg_reset 100.00 %
+UVM_INFO mlp_scoreboard.sv(202) @ 8395000: uvm_test_top.env.scb [SCB] 
+-------------------- scoreboard summary --------------------
+  inputs accepted     : 71
+  outputs checked     : 64   match 48   mismatch 16
+  config writes       : 338   (0 ignored: busy or unused address)
+  resets seen         : 10   samples dropped by them: 7
+  expected clamps     : 0 x +127, 0 x -128
+  latency (cycles)    : min 2  max 5   (2 = no back-pressure)
+  Iris classification : 48 / 48 correct (100.0 %)
+  assertion failures  : 0
+------------------------------------------------------------
+UVM_INFO mlp_tests.sv(90) @ 8395000: uvm_test_top [RESULT] *** TEST FAILED ***  UVM_ERROR=16 UVM_FATAL=0
+UVM_INFO /home/dell/uvm_workspace/verilator-uvm-example/1800.2-2020.3.1/src/base/uvm_report_server.svh(1009) @ 8395000: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   84
+UVM_WARNING :    2
+UVM_ERROR :   16
+UVM_FATAL :    0
+** Report counts by id
+[CHK]    64
+[COV]     2
+[DRV]     1
+[MISMATCH]    16
+[NO_DPI_TSTNAME]     1
+[NO_DPI_USED]     1
+[NO_VISIT_CHECK]     1
+[RESULT]     1
+[RNTST]     1
+[RST]    10
+[SCB]     1
+[TEST]     1
+[UVM/COMP/NAMECHECK]     1
+[UVM/RELNOTES]     1
+
+- /home/dell/uvm_workspace/verilator-uvm-example/1800.2-2020.3.1/src/base/uvm_root.svh:633: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.053 devel
+- Verilator: $finish at 8us; walltime 0.114 s; speed 73.631 us/s
+- Verilator: cpu 0.063 s on 1 threads; allocated 16 MB

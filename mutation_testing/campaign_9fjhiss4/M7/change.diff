@@ -1,0 +1,11 @@
+--- original
++++ M7
+@@ -90,7 +90,7 @@
+   wire s2_ready = !out_valid || out_ready;   // stage 2 can take new data
+   wire s1_ready = !s1_valid  || s2_ready;    // stage 1 can take new data
+ 
+-  assign in_ready = s1_ready && !wr_en;
++  assign in_ready = s1_ready;
+   assign busy     = s1_valid || out_valid;
+ 
+   wire in_fire = in_valid && in_ready;

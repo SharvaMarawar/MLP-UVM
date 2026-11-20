@@ -1,0 +1,47 @@
+import csv
+from collections import defaultdict
+from pathlib import Path
+
+import matplotlib
+matplotlib.use("Agg")  # Save the plot even when WSL has no display.
+import matplotlib.pyplot as plt
+from matplotlib.ticker import MaxNLocator
+
+csv_path = Path(
+    "/mnt/c/mlp_uvm/mutation_testing/campaign_9fjhiss4/summary.csv"
+)
+
+with csv_path.open(newline="", encoding="utf-8-sig") as file:
+    rows = list(csv.DictReader(file))
+
+detected = defaultdict(list)
+for row in rows:
+    if row["Result"] == "Killed":
+        # The runner stops at the first test that detects the mutation.
+        test = row["Tests executed"].split(",")[-1].strip()
+        detected[test].append(row["Mutation"])
+
+tests = sorted(detected, key=lambda test: len(detected[test]), reverse=True)
+counts = [len(detected[test]) for test in tests]
+
+fig, ax = plt.subplots(figsize=(9, 4.5))
+bars = ax.barh(tests, counts, color="#3478A5")
+ax.invert_yaxis()
+
+for bar, test in zip(bars, tests):
+    ax.text(
+        bar.get_width() + 0.05,
+        bar.get_y() + bar.get_height() / 2,
+        f"{len(detected[test])}  ({', '.join(detected[test])})",
+        va="center",
+    )
+
+ax.set_title(f"MLP layer mutation testing | {sum(counts)}/{len(rows)} detected")
+ax.set_xlabel("Number of mutations detected")
+ax.set_xlim(0, max(counts, default=0) + 1)
+ax.xaxis.set_major_locator(MaxNLocator(integer=True))
+fig.tight_layout()
+
+output = csv_path.with_name("mutation_detection.png")
+fig.savefig(output, dpi=300)
+print(f"Plot saved to {output}")

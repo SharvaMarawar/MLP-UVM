@@ -1,0 +1,26 @@
+UVM_INFO /home/dell/uvm_workspace/verilator-uvm-example/1800.2-2020.3.1/src/base/uvm_root.svh(476) @ 0: reporter [UVM/RELNOTES] 
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  This implementation of the UVM Library deviates from the 1800.2-2020
+  standard.  See the DEVIATIONS.md file contained in the release
+  for more details.
+
+----------------------------------------------------------------
+Accellera:1800.2:UVM:2020.3.1
+
+All copyright owners for this kit are listed in NOTICE.txt
+All Rights Reserved Worldwide
+----------------------------------------------------------------
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_WARNING /home/dell/uvm_workspace/verilator-uvm-example/1800.2-2020.3.1/src/base/uvm_root.svh(549) @ 0: reporter [NO_DPI_USED] We are thinking of removing support for UVM_NO_DPI.  Please try this test without it and evaluate the impact
+UVM_INFO /home/dell/uvm_workspace/verilator-uvm-example/1800.2-2020.3.1/src/base/uvm_root.svh(552) @ 0: reporter [NO_DPI_TSTNAME] UVM_NO_DPI defined--getting UVM_TESTNAME directly, without DPI
+UVM_INFO @ 0: reporter [RNTST] Running test mlp_cfg_test...
+UVM_INFO mlp_tests.sv(46) @ 0: uvm_test_top [TEST] data_dir=/mnt/c/mlp_uvm/data  iris vectors=1200 (test set 255)  sat vectors=10  NUM_ITEMS=40  IMG_IDX=0
+UVM_INFO /home/dell/uvm_workspace/verilator-uvm-example/1800.2-2020.3.1/src/base/uvm_traversal.svh(345) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled
+UVM_WARNING /home/dell/uvm_workspace/verilator-uvm-example/1800.2-2020.3.1/src/base/uvm_traversal.svh(314) @ 0: reporter [NO_VISIT_CHECK] Because UVM_REGEX_NO_DPI is defined, no uvm component name constraints will be checked
+UVM_INFO mlp_scoreboard.sv(127) @ 5000: uvm_test_top.env.scb [RST] reset seen in state IDLE                 : 0 sample(s) dropped, model back to reset values
+[75000] %Error: mlp_if.sv:44: Assertion failed in tb_top.vif.a_in_ready_wr: [MLP_IF] a_in_ready_wr: in_ready high during a config write
+%Error: mlp_if.sv:44: Verilog $stop
+Aborting...

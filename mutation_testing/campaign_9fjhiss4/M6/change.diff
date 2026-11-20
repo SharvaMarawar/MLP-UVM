@@ -1,0 +1,11 @@
+--- original
++++ M6
+@@ -74,7 +74,7 @@
+       end
+       shift_r      <= '0;
+       leak_shift_r <= 3'd3;
+-    end else if (wr_en && !busy) begin
++    end else if (wr_en) begin
+       if (wr_addr < 5'd16)            weight[wr_addr[3:2]][wr_addr[1:0]] <= wr_data;
+       else if (wr_addr < 5'd20)       bias[wr_addr[1:0]]                 <= wr_data;
+       else if (wr_addr == 5'd20)      shift_r                            <= wr_data[3:0];

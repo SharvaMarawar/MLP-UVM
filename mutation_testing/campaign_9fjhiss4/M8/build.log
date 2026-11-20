@@ -1,0 +1,493 @@
+%Warning-TIMESCALEMOD: /home/dell/uvm_workspace/verilator-uvm-example/1800.2-2020.3.1/src/uvm_pkg.sv:54:9: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+   54 | package uvm_pkg;
+      |         ^~~~~~~
+                       mlp_pkg.sv:7:9: ... Location of module with timescale
+    7 | package mlp_pkg;
+      |         ^~~~~~~
+                       ... For warning description see https://verilator.org/warn/TIMESCALEMOD?v=5.053
+                       ... Use "/* verilator lint_off TIMESCALEMOD */" and lint_on around source to disable this message.
+%Warning-TIMESCALEMOD: /tmp/mlp_mutations_1k0vvpf6/mlp_layer.sv:35:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+   35 | module mlp_layer (
+      |        ^~~~~~~~~
+                       mlp_pkg.sv:7:9: ... Location of module with timescale
+    7 | package mlp_pkg;
+      |         ^~~~~~~
+%Warning-IMPLICITSTATIC: tb_top.sv:89:12: Variable's lifetime implicitly set to static (IEEE 1800-2023 6.21)
+                                        : ... The initializer value will only be set once
+                                        : ... Suggest use 'static' before variable declaration'
+   89 |     string tname = "mlp_iris_test";
+      |            ^~~~~
+                         ... For warning description see https://verilator.org/warn/IMPLICITSTATIC?v=5.053
+                         ... Use "/* verilator lint_off IMPLICITSTATIC */" and lint_on around source to disable this message.
+%Warning-MISINDENT: mlp_coverage.sv:249:17: Misleading indentation
+  249 |         cg_infer.sample();
+      |                 ^
+                    mlp_pkg.sv:34:1: ... note: In file included from 'mlp_pkg.sv'
+                    mlp_coverage.sv:246:1: ... Expected indentation matching this earlier statement's line:
+  246 | if (v_out_wait >= 0)
+      | ^~
+                    ... For warning description see https://verilator.org/warn/MISINDENT?v=5.053
+                    ... Use "/* verilator lint_off MISINDENT */" and lint_on around source to disable this message.
+%Warning-WIDTHTRUNC: mlp_sequences.sv:80:19: Operator ASSIGN expects 1 bits on the Assign RHS, but Assign RHS's URANDOMRANGE generates 32 bits.
+                                           : ... note: In instance 'tb_top.dut'
+   80 |     bit small_w = $urandom_range(1);
+      |                   ^~~~~~~~~~~~~~
+                     mlp_pkg.sv:29:1: ... note: In file included from 'mlp_pkg.sv'
+                     ... For warning description see https://verilator.org/warn/WIDTHTRUNC?v=5.053
+                     ... Use "/* verilator lint_off WIDTHTRUNC */" and lint_on around source to disable this message.
+%Warning-WIDTHTRUNC: mlp_sequences.sv:209:54: Logical operator COND expects 1 bit on the Conditional Test, but Conditional Test's MODDIVS generates 32 bits.
+                                            : ... note: In instance 'tb_top.dut'
+  209 |     for (int a = 0; a < 16; a++) send_cfg(a, (a % 2) ? -100 : 100);
+      |                                                      ^
+                     mlp_pkg.sv:29:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-WIDTHTRUNC: mlp_scoreboard.sv:172:124: Logical operator LOGAND expects 1 bit on the LHS, but LHS's COND generates 32 bits.
+                                              : ... note: In instance 'tb_top.dut'
+  172 |      if ((_local_report_object_.get_report_verbosity_level(uvm_pkg::UVM_INFO, "CHK") >= (n_in <= 20) ? UVM_LOW : UVM_HIGH) && 
+      |                                                                                                                            ^~
+                     mlp_pkg.sv:33:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-WIDTHEXPAND: mlp_coverage.sv:199:14: Operator ASSIGN expects 32 bits on the Assign RHS, but Assign RHS's ARRAYSEL generates 8 bits.
+                                            : ... note: In instance 'tb_top.dut'
+  199 |         v_x0 = t.x[0];  v_x1 = t.x[1];  v_x2 = t.x[2];  v_x3 = t.x[3];
+      |              ^
+                      mlp_pkg.sv:34:1: ... note: In file included from 'mlp_pkg.sv'
+                      ... For warning description see https://verilator.org/warn/WIDTHEXPAND?v=5.053
+                      ... Use "/* verilator lint_off WIDTHEXPAND */" and lint_on around source to disable this message.
+%Warning-WIDTHEXPAND: mlp_coverage.sv:199:30: Operator ASSIGN expects 32 bits on the Assign RHS, but Assign RHS's ARRAYSEL generates 8 bits.
+                                            : ... note: In instance 'tb_top.dut'
+  199 |         v_x0 = t.x[0];  v_x1 = t.x[1];  v_x2 = t.x[2];  v_x3 = t.x[3];
+      |                              ^
+                      mlp_pkg.sv:34:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-WIDTHEXPAND: mlp_coverage.sv:199:46: Operator ASSIGN expects 32 bits on the Assign RHS, but Assign RHS's ARRAYSEL generates 8 bits.
+                                            : ... note: In instance 'tb_top.dut'
+  199 |         v_x0 = t.x[0];  v_x1 = t.x[1];  v_x2 = t.x[2];  v_x3 = t.x[3];
+      |                                              ^
+                      mlp_pkg.sv:34:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-WIDTHEXPAND: mlp_coverage.sv:199:62: Operator ASSIGN expects 32 bits on the Assign RHS, but Assign RHS's ARRAYSEL generates 8 bits.
+                                            : ... note: In instance 'tb_top.dut'
+  199 |         v_x0 = t.x[0];  v_x1 = t.x[1];  v_x2 = t.x[2];  v_x3 = t.x[3];
+      |                                                              ^
+                      mlp_pkg.sv:34:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-WIDTHEXPAND: mlp_coverage.sv:252:19: Operator ASSIGN expects 32 bits on the Assign RHS, but Assign RHS's MEMBERSEL 'addr' generates 5 bits.
+                                            : ... note: In instance 'tb_top.dut'
+  252 |         v_addr    = t.addr;
+      |                   ^
+                      mlp_pkg.sv:34:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-WIDTHEXPAND: tb_top.sv:54:10: Operator ASSIGN expects 128 bits on the Assign RHS, but Assign RHS's REPLICATE generates 84 bits.
+                                     : ... note: In instance 'tb_top'
+   54 |     snap = {vif.rst_n, vif.wr_en, vif.wr_addr, vif.wr_data, vif.in_valid, vif.in_ready,
+      |          ^
+%Warning-BLKSEQ: tb_top.sv:53:8: Blocking assignment '=' in sequential logic process
+                               : ... note: In instance 'tb_top'
+                               : ... Suggest using delayed assignment '<='
+   53 |     cyc++;
+      |        ^~
+                 ... For warning description see https://verilator.org/warn/BLKSEQ?v=5.053
+                 ... Use "/* verilator lint_off BLKSEQ */" and lint_on around source to disable this message.
+%Warning-BLKSEQ: tb_top.sv:62:17: Blocking assignment '=' in sequential logic process
+                                : ... note: In instance 'tb_top'
+                                : ... Suggest using delayed assignment '<='
+   62 |       prev_snap = snap;
+      |                 ^
+%Warning-PROCASSINIT: tb_top.sv:13:15: Procedural assignment to declaration with initial value: 'clk'
+                                     : ... note: In instance 'tb_top'
+                                     : ... Location of variable initialization
+   13 |   logic clk = 1'b0;
+      |               ^~~~
+                      tb_top.sv:14:13: ... Location of variable process write
+                                     : ... Perhaps should initialize instead using a reset in this process
+   14 |   always #5 clk = ~clk;                          
+      |             ^~~
+                      ... For warning description see https://verilator.org/warn/PROCASSINIT?v=5.053
+                      ... Use "/* verilator lint_off PROCASSINIT */" and lint_on around source to disable this message.
+%Warning-UNUSEDSIGNAL: mlp_if.sv:29:22: Signal is not used: 'dbg_stage'
+                                      : ... note: In instance 'tb_top.dut'
+   29 |   logic [1:0]        dbg_stage;
+      |                      ^~~~~~~~~
+                       ... For warning description see https://verilator.org/warn/UNUSEDSIGNAL?v=5.053
+                       ... Use "/* verilator lint_off UNUSEDSIGNAL */" and lint_on around source to disable this message.
+%Warning-PROCASSINIT: tb_top.sv:41:26: Procedural assignment to declaration with initial value: 'cyc'
+                                     : ... note: In instance 'tb_top'
+                                     : ... Location of variable initialization
+   41 |   longint unsigned cyc = 0;
+      |                          ^
+                      tb_top.sv:53:5: ... Location of variable process write
+                                    : ... Perhaps should initialize instead using a reset in this process
+   53 |     cyc++;
+      |     ^~~
+%Warning-PROCASSINIT: tb_top.sv:42:29: Procedural assignment to declaration with initial value: 'prev_snap'
+                                     : ... note: In instance 'tb_top'
+                                     : ... Location of variable initialization
+   42 |   logic [127:0] prev_snap = '1;
+      |                             ^~
+                      tb_top.sv:62:7: ... Location of variable process write
+                                    : ... Perhaps should initialize instead using a reset in this process
+   62 |       prev_snap = snap;
+      |       ^~~~~~~~~
+%Warning-UNUSEDPARAM: mlp_pkg.sv:18:18: Parameter is not used: 'ACC_W'
+                                      : ... note: In instance 'tb_top.dut'
+   18 |   localparam int ACC_W              = 20;      
+      |                  ^~~~~
+                      ... For warning description see https://verilator.org/warn/UNUSEDPARAM?v=5.053
+                      ... Use "/* verilator lint_off UNUSEDPARAM */" and lint_on around source to disable this message.
+%Warning-UNUSEDPARAM: mlp_pkg.sv:19:18: Parameter is not used: 'ADDR_LAST'
+                                      : ... note: In instance 'tb_top.dut'
+   19 |   localparam int ADDR_LAST          = 21;      
+      |                  ^~~~~~~~~
+%Warning-UNUSEDSIGNAL: mlp_items.sv:39:42: Bits of function variable are not used: 'a0'[31:8]
+                                         : ... note: In instance 'tb_top.dut'
+   39 | function automatic bit [31:0] pack_x(int a0, int a1, int a2, int a3);
+      |                                          ^~
+                       mlp_pkg.sv:25:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNUSEDSIGNAL: mlp_items.sv:39:50: Bits of function variable are not used: 'a1'[31:8]
+                                         : ... note: In instance 'tb_top.dut'
+   39 | function automatic bit [31:0] pack_x(int a0, int a1, int a2, int a3);
+      |                                                  ^~
+                       mlp_pkg.sv:25:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNUSEDSIGNAL: mlp_items.sv:39:58: Bits of function variable are not used: 'a2'[31:8]
+                                         : ... note: In instance 'tb_top.dut'
+   39 | function automatic bit [31:0] pack_x(int a0, int a1, int a2, int a3);
+      |                                                          ^~
+                       mlp_pkg.sv:25:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNUSEDSIGNAL: mlp_items.sv:39:66: Bits of function variable are not used: 'a3'[31:8]
+                                         : ... note: In instance 'tb_top.dut'
+   39 | function automatic bit [31:0] pack_x(int a0, int a1, int a2, int a3);
+      |                                                                  ^~
+                       mlp_pkg.sv:25:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNDRIVEN: mlp_items.sv:53:1: Signal is not driven: '__Vrandarr___0'
+                                    : ... note: In instance 'tb_top.dut'
+   53 | class mlp_item extends uvm_sequence_item;
+      | ^~~~~
+                   mlp_pkg.sv:25:1: ... note: In file included from 'mlp_pkg.sv'
+                   ... For warning description see https://verilator.org/warn/UNDRIVEN?v=5.053
+                   ... Use "/* verilator lint_off UNDRIVEN */" and lint_on around source to disable this message.
+%Warning-UNDRIVEN: mlp_items.sv:110:22: Signal is not driven: 'kind'
+                                      : ... note: In instance 'tb_top.dut'
+  110 |   mlp_kind_e         kind;
+      |                      ^~~~
+                   mlp_pkg.sv:25:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNDRIVEN: mlp_items.sv:111:22: Signal is not driven: 'cycle'
+                                      : ... note: In instance 'tb_top.dut'
+  111 |   longint unsigned   cycle;                  
+      |                      ^~~~~
+                   mlp_pkg.sv:25:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNDRIVEN: mlp_items.sv:112:22: Signal is not driven: 'x'
+                                      : ... note: In instance 'tb_top.dut'
+  112 |   bit signed [7:0]   x[N_IN];                
+      |                      ^
+                   mlp_pkg.sv:25:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNDRIVEN: mlp_items.sv:113:22: Signal is not driven: 'y'
+                                      : ... note: In instance 'tb_top.dut'
+  113 |   bit signed [7:0]   y[N_OUT];               
+      |                      ^
+                   mlp_pkg.sv:25:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNDRIVEN: mlp_items.sv:114:22: Signal is not driven: 'addr'
+                                      : ... note: In instance 'tb_top.dut'
+  114 |   bit [4:0]          addr;                   
+      |                      ^~~~
+                   mlp_pkg.sv:25:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNDRIVEN: mlp_items.sv:115:22: Signal is not driven: 'data'
+                                      : ... note: In instance 'tb_top.dut'
+  115 |   bit signed [7:0]   data;
+      |                      ^~~~
+                   mlp_pkg.sv:25:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNDRIVEN: mlp_items.sv:116:22: Signal is not driven: 'busy'
+                                      : ... note: In instance 'tb_top.dut'
+  116 |   bit                busy;                   
+      |                      ^~~~
+                   mlp_pkg.sv:25:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNDRIVEN: mlp_items.sv:117:22: Signal is not driven: 'with_in'
+                                      : ... note: In instance 'tb_top.dut'
+  117 |   bit                with_in;                
+      |                      ^~~~~~~
+                   mlp_pkg.sv:25:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNDRIVEN: mlp_items.sv:118:22: Signal is not driven: 'waited'
+                                      : ... note: In instance 'tb_top.dut'
+  118 |   int unsigned       waited;                 
+      |                      ^~~~~~
+                   mlp_pkg.sv:25:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNDRIVEN: mlp_items.sv:119:22: Signal is not driven: 'stage'
+                                      : ... note: In instance 'tb_top.dut'
+  119 |   bit [1:0]          stage;                  
+      |                      ^~~~~
+                   mlp_pkg.sv:25:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNDRIVEN: mlp_items.sv:120:22: Signal is not driven: 'stalled'
+                                      : ... note: In instance 'tb_top.dut'
+  120 |   bit                stalled;                
+      |                      ^~~~~~~
+                   mlp_pkg.sv:25:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNDRIVEN: mlp_items.sv:148:22: Signal is not driven: 'kind'
+                                      : ... note: In instance 'tb_top.dut'
+  148 |   mlp_vkind_e        kind;
+      |                      ^~~~
+                   mlp_pkg.sv:25:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNDRIVEN: mlp_items.sv:152:22: Signal is not driven: 'x'
+                                      : ... note: In instance 'tb_top.dut'
+  152 |   bit signed [7:0]   x[N_IN];
+      |                      ^
+                   mlp_pkg.sv:25:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNDRIVEN: mlp_items.sv:153:22: Signal is not driven: 'y_exp'
+                                      : ... note: In instance 'tb_top.dut'
+  153 |   bit signed [7:0]   y_exp[N_OUT];
+      |                      ^~~~~
+                   mlp_pkg.sv:25:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNDRIVEN: mlp_items.sv:154:22: Signal is not driven: 'y_act'
+                                      : ... note: In instance 'tb_top.dut'
+  154 |   bit signed [7:0]   y_act[N_OUT];
+      |                      ^~~~~
+                   mlp_pkg.sv:25:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNUSEDSIGNAL: mlp_items.sv:155:22: Signal is not driven, nor used: 'acc'
+                                          : ... note: In instance 'tb_top.dut'
+  155 |   int                acc[N_OUT];             
+      |                      ^~~
+                       mlp_pkg.sv:25:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNUSEDSIGNAL: mlp_items.sv:156:22: Signal is not driven, nor used: 'sat_hi'
+                                          : ... note: In instance 'tb_top.dut'
+  156 |   bit                sat_hi[N_OUT];          
+      |                      ^~~~~~
+                       mlp_pkg.sv:25:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNUSEDSIGNAL: mlp_items.sv:157:22: Signal is not driven, nor used: 'sat_lo'
+                                          : ... note: In instance 'tb_top.dut'
+  157 |   bit                sat_lo[N_OUT];          
+      |                      ^~~~~~
+                       mlp_pkg.sv:25:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNUSEDSIGNAL: mlp_items.sv:158:22: Signal is not driven, nor used: 'leaky'
+                                          : ... note: In instance 'tb_top.dut'
+  158 |   bit                leaky[N_OUT];           
+      |                      ^~~~~
+                       mlp_pkg.sv:25:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNUSEDSIGNAL: mlp_items.sv:159:22: Signal is not driven, nor used: 'shift'
+                                          : ... note: In instance 'tb_top.dut'
+  159 |   int                shift, leak;            
+      |                      ^~~~~
+                       mlp_pkg.sv:25:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNUSEDSIGNAL: mlp_items.sv:159:29: Signal is not driven, nor used: 'leak'
+                                          : ... note: In instance 'tb_top.dut'
+  159 |   int                shift, leak;            
+      |                             ^~~~
+                       mlp_pkg.sv:25:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNDRIVEN: mlp_items.sv:160:22: Signal is not driven: 'is_iris'
+                                      : ... note: In instance 'tb_top.dut'
+  160 |   bit                is_iris;                
+      |                      ^~~~~~~
+                   mlp_pkg.sv:25:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNUSEDSIGNAL: mlp_items.sv:163:22: Signal is not driven, nor used: 'in_wait'
+                                          : ... note: In instance 'tb_top.dut'
+  163 |   int unsigned       in_wait, out_wait;      
+      |                      ^~~~~~~
+                       mlp_pkg.sv:25:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNUSEDSIGNAL: mlp_items.sv:163:31: Signal is not driven, nor used: 'out_wait'
+                                          : ... note: In instance 'tb_top.dut'
+  163 |   int unsigned       in_wait, out_wait;      
+      |                               ^~~~~~~~
+                       mlp_pkg.sv:25:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNDRIVEN: mlp_items.sv:164:22: Signal is not driven: 'latency'
+                                      : ... note: In instance 'tb_top.dut'
+  164 |   longint unsigned   latency;                
+      |                      ^~~~~~~
+                   mlp_pkg.sv:25:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNUSEDSIGNAL: mlp_items.sv:165:22: Signal is not driven, nor used: 'in_cycle'
+                                          : ... note: In instance 'tb_top.dut'
+  165 |   longint unsigned   in_cycle;
+      |                      ^~~~~~~~
+                       mlp_pkg.sv:25:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNDRIVEN: mlp_items.sv:168:22: Signal is not driven: 'addr'
+                                      : ... note: In instance 'tb_top.dut'
+  168 |   bit [4:0]          addr;
+      |                      ^~~~
+                   mlp_pkg.sv:25:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNDRIVEN: mlp_items.sv:169:22: Signal is not driven: 'data'
+                                      : ... note: In instance 'tb_top.dut'
+  169 |   bit signed [7:0]   data;
+      |                      ^~~~
+                   mlp_pkg.sv:25:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNDRIVEN: mlp_items.sv:170:22: Signal is not driven: 'busy'
+                                      : ... note: In instance 'tb_top.dut'
+  170 |   bit                busy;                   
+      |                      ^~~~
+                   mlp_pkg.sv:25:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNDRIVEN: mlp_items.sv:171:22: Signal is not driven: 'applied'
+                                      : ... note: In instance 'tb_top.dut'
+  171 |   bit                applied;                
+      |                      ^~~~~~~
+                   mlp_pkg.sv:25:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNUSEDSIGNAL: mlp_items.sv:172:22: Signal is not driven, nor used: 'with_in'
+                                          : ... note: In instance 'tb_top.dut'
+  172 |   bit                with_in;
+      |                      ^~~~~~~
+                       mlp_pkg.sv:25:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNDRIVEN: mlp_items.sv:175:22: Signal is not driven: 'stage'
+                                      : ... note: In instance 'tb_top.dut'
+  175 |   bit [1:0]          stage;
+      |                      ^~~~~
+                   mlp_pkg.sv:25:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNDRIVEN: mlp_items.sv:176:22: Signal is not driven: 'stalled'
+                                      : ... note: In instance 'tb_top.dut'
+  176 |   bit                stalled;
+      |                      ^~~~~~~
+                   mlp_pkg.sv:25:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNDRIVEN: mlp_items.sv:177:22: Signal is not driven: 'aborted'
+                                      : ... note: In instance 'tb_top.dut'
+  177 |   int unsigned       aborted;                
+      |                      ^~~~~~~
+                   mlp_pkg.sv:25:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNUSEDSIGNAL: mlp_ref_model.sv:23:20: Signal is not used: 'r_acc'
+                                             : ... note: In instance 'tb_top.dut'
+   23 |   int              r_acc[N_OUT];
+      |                    ^~~~~
+                       mlp_pkg.sv:26:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNUSEDSIGNAL: mlp_ref_model.sv:24:20: Signal is not used: 'r_y'
+                                             : ... note: In instance 'tb_top.dut'
+   24 |   bit signed [7:0] r_y[N_OUT];
+      |                    ^~~
+                       mlp_pkg.sv:26:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNUSEDSIGNAL: mlp_ref_model.sv:25:20: Signal is not used: 'r_sat_hi'
+                                             : ... note: In instance 'tb_top.dut'
+   25 |   bit              r_sat_hi[N_OUT];
+      |                    ^~~~~~~~
+                       mlp_pkg.sv:26:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNUSEDSIGNAL: mlp_ref_model.sv:26:20: Signal is not used: 'r_sat_lo'
+                                             : ... note: In instance 'tb_top.dut'
+   26 |   bit              r_sat_lo[N_OUT];
+      |                    ^~~~~~~~
+                       mlp_pkg.sv:26:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNUSEDSIGNAL: mlp_ref_model.sv:27:20: Signal is not used: 'r_leaky'
+                                             : ... note: In instance 'tb_top.dut'
+   27 |   bit              r_leaky[N_OUT];
+      |                    ^~~~~~~
+                       mlp_pkg.sv:26:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNUSEDSIGNAL: mlp_dataset.sv:20:20: Signal is not used: 'test_n'
+                                           : ... note: In instance 'tb_top.dut'
+   20 |   int              test_n = 0;             
+      |                    ^~~~~~
+                       mlp_pkg.sv:27:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNUSEDSIGNAL: mlp_env_cfg.sv:8:17: Signal is not used: 'data_dir'
+                                          : ... note: In instance 'tb_top.dut'
+    8 |   string        data_dir     = "data";    
+      |                 ^~~~~~~~
+                       mlp_pkg.sv:28:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNUSEDSIGNAL: mlp_env_cfg.sv:9:17: Signal is not used: 'num_items'
+                                          : ... note: In instance 'tb_top.dut'
+    9 |   int unsigned  num_items    = 40;               
+      |                 ^~~~~~~~~
+                       mlp_pkg.sv:28:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNUSEDSIGNAL: mlp_env_cfg.sv:10:17: Signal is not used: 'img_idx'
+                                           : ... note: In instance 'tb_top.dut'
+   10 |   int unsigned  img_idx      = 0;                
+      |                 ^~~~~~~
+                       mlp_pkg.sv:28:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNUSEDSIGNAL: mlp_env_cfg.sv:11:17: Signal is not used: 'min_acc_pct'
+                                           : ... note: In instance 'tb_top.dut'
+   11 |   int unsigned  min_acc_pct  = 80;               
+      |                 ^~~~~~~~~~~
+                       mlp_pkg.sv:28:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNUSEDSIGNAL: mlp_sequences.sv:27:21: Bits of function variable are not used: 'a'[31:5]
+                                             : ... note: In instance 'tb_top.dut'
+   27 |   task send_cfg(int a, int d, int g = 0, bit busy_ok = 0, bit coll = 0);
+      |                     ^
+                       mlp_pkg.sv:29:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNUSEDSIGNAL: mlp_sequences.sv:27:28: Bits of function variable are not used: 'd'[31:8]
+                                             : ... note: In instance 'tb_top.dut'
+   27 |   task send_cfg(int a, int d, int g = 0, bit busy_ok = 0, bit coll = 0);
+      |                            ^
+                       mlp_pkg.sv:29:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNUSEDSIGNAL: mlp_coverage.sv:62:7: Bits of signal are not used: 'v_o0'[31:3]
+                                           : ... note: In instance 'tb_top.dut'
+   62 |   int v_o0, v_o1, v_o2, v_o3;        
+      |       ^~~~
+                       mlp_pkg.sv:34:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNUSEDSIGNAL: mlp_coverage.sv:62:13: Bits of signal are not used: 'v_o1'[31:3]
+                                            : ... note: In instance 'tb_top.dut'
+   62 |   int v_o0, v_o1, v_o2, v_o3;        
+      |             ^~~~
+                       mlp_pkg.sv:34:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNUSEDSIGNAL: mlp_coverage.sv:62:19: Bits of signal are not used: 'v_o2'[31:3]
+                                            : ... note: In instance 'tb_top.dut'
+   62 |   int v_o0, v_o1, v_o2, v_o3;        
+      |                   ^~~~
+                       mlp_pkg.sv:34:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNUSEDSIGNAL: mlp_coverage.sv:62:25: Bits of signal are not used: 'v_o3'[31:3]
+                                            : ... note: In instance 'tb_top.dut'
+   62 |   int v_o0, v_o1, v_o2, v_o3;        
+      |                         ^~~~
+                       mlp_pkg.sv:34:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNUSEDSIGNAL: mlp_coverage.sv:293:28: Bits of function variable are not used: '__VtempIndex11'[31:2]
+                                             : ... note: In instance 'tb_top.dut'
+  293 |           stage_stall_hits[stage_bin(v_stage)][int'(v_stalled)]++;
+      |                            ^~~~~~~~~
+                       mlp_pkg.sv:34:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNUSEDSIGNAL: mlp_coverage.sv:278:20: Bits of function variable are not used: '__VtempIndex10'[31:2]
+                                             : ... note: In instance 'tb_top.dut'
+  278 |         stage_hits[stage_bin(v_stage)]++;
+      |                    ^~~~~~~~~
+                       mlp_pkg.sv:34:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNUSEDSIGNAL: mlp_coverage.sv:268:18: Bits of function variable are not used: '__VtempIndex9'[31:3]
+                                             : ... note: In instance 'tb_top.dut'
+  268 |   kind_busy_hits[config_kind(v_addr)][int'(v_busy)]++;
+      |                  ^~~~~~~~~~~
+                       mlp_pkg.sv:34:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNUSEDSIGNAL: mlp_coverage.sv:247:17: Bits of function variable are not used: '__VtempIndex8'[31:2]
+                                             : ... note: In instance 'tb_top.dut'
+  247 |   out_wait_hits[wait_bin(v_out_wait)]++;
+      |                 ^~~~~~~~
+                       mlp_pkg.sv:34:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNUSEDSIGNAL: mlp_coverage.sv:244:16: Bits of function variable are not used: '__VtempIndex7'[31:2]
+                                             : ... note: In instance 'tb_top.dut'
+  244 |   in_wait_hits[wait_bin(v_in_wait)]++;
+      |                ^~~~~~~~
+                       mlp_pkg.sv:34:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNUSEDSIGNAL: mlp_coverage.sv:230:21: Bits of function variable are not used: '__VtempIndex6'[31:3]
+                                             : ... note: In instance 'tb_top.dut'
+  230 |     shift_leak_hits[shift_bin(v_shift)][v_leak]++;
+      |                     ^~~~~~~~~
+                       mlp_pkg.sv:34:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNUSEDSIGNAL: mlp_coverage.sv:226:14: Bits of function variable are not used: '__VtempIndex5'[31:3]
+                                             : ... note: In instance 'tb_top.dut'
+  226 |   shift_hits[shift_bin(v_shift)]++;
+      |              ^~~~~~~~~
+                       mlp_pkg.sv:34:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNUSEDSIGNAL: mlp_coverage.sv:216:19: Bits of function variable are not used: '__VtempIndex4'[31:3]
+                                             : ... note: In instance 'tb_top.dut'
+  216 |         x_hits[3][signed_value_bin(v_x3)]++;
+      |                   ^~~~~~~~~~~~~~~~
+                       mlp_pkg.sv:34:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNUSEDSIGNAL: mlp_coverage.sv:215:19: Bits of function variable are not used: '__VtempIndex3'[31:3]
+                                             : ... note: In instance 'tb_top.dut'
+  215 |         x_hits[2][signed_value_bin(v_x2)]++;
+      |                   ^~~~~~~~~~~~~~~~
+                       mlp_pkg.sv:34:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNUSEDSIGNAL: mlp_coverage.sv:214:19: Bits of function variable are not used: '__VtempIndex2'[31:3]
+                                             : ... note: In instance 'tb_top.dut'
+  214 |         x_hits[1][signed_value_bin(v_x1)]++;
+      |                   ^~~~~~~~~~~~~~~~
+                       mlp_pkg.sv:34:1: ... note: In file included from 'mlp_pkg.sv'
+%Warning-UNUSEDSIGNAL: mlp_coverage.sv:213:19: Bits of function variable are not used: '__VtempIndex1'[31:3]
+                                             : ... note: In instance 'tb_top.dut'
+  213 |         x_hits[0][signed_value_bin(v_x0)]++;
+      |                   ^~~~~~~~~~~~~~~~
+                       mlp_pkg.sv:34:1: ... note: In file included from 'mlp_pkg.sv'
+make: Entering directory '/tmp/mlp_mutations_1k0vvpf6/obj'
+g++ -Os  -I.  -MMD -I/home/dell/uvm_workspace/verilator-uvm-example/verilator/include -I/home/dell/uvm_workspace/verilator-uvm-example/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable  -DVM_PREFIX_INCLUDE="<Vtb_top.h>" -DVM_PREFIX_INCLUDE_DPI="<Vtb_top__Dpi.h>"   -DVM_SOLVER_DEFAULT='"z3 --in"' -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated.o /home/dell/uvm_workspace/verilator-uvm-example/verilator/include/verilated.cpp
+g++ -Os  -I.  -MMD -I/home/dell/uvm_workspace/verilator-uvm-example/verilator/include -I/home/dell/uvm_workspace/verilator-uvm-example/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable  -DVM_PREFIX_INCLUDE="<Vtb_top.h>" -DVM_PREFIX_INCLUDE_DPI="<Vtb_top__Dpi.h>"   -DVM_SOLVER_DEFAULT='"z3 --in"' -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated_dpi.o /home/dell/uvm_workspace/verilator-uvm-example/verilator/include/verilated_dpi.cpp
+g++ -Os  -I.  -MMD -I/home/dell/uvm_workspace/verilator-uvm-example/verilator/include -I/home/dell/uvm_workspace/verilator-uvm-example/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable  -DVM_PREFIX_INCLUDE="<Vtb_top.h>" -DVM_PREFIX_INCLUDE_DPI="<Vtb_top__Dpi.h>"   -DVM_SOLVER_DEFAULT='"z3 --in"' -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated_covergroup.o /home/dell/uvm_workspace/verilator-uvm-example/verilator/include/verilated_covergroup.cpp
+g++ -Os  -I.  -MMD -I/home/dell/uvm_workspace/verilator-uvm-example/verilator/include -I/home/dell/uvm_workspace/verilator-uvm-example/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable  -DVM_PREFIX_INCLUDE="<Vtb_top.h>" -DVM_PREFIX_INCLUDE_DPI="<Vtb_top__Dpi.h>"   -DVM_SOLVER_DEFAULT='"z3 --in"' -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated_timing.o /home/dell/uvm_workspace/verilator-uvm-example/verilator/include/verilated_timing.cpp
+g++ -Os  -I.  -MMD -I/home/dell/uvm_workspace/verilator-uvm-example/verilator/include -I/home/dell/uvm_workspace/verilator-uvm-example/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable  -DVM_PREFIX_INCLUDE="<Vtb_top.h>" -DVM_PREFIX_INCLUDE_DPI="<Vtb_top__Dpi.h>"   -DVM_SOLVER_DEFAULT='"z3 --in"' -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated_random.o /home/dell/uvm_workspace/verilator-uvm-example/verilator/include/verilated_random.cpp
+g++ -Os  -I.  -MMD -I/home/dell/uvm_workspace/verilator-uvm-example/verilator/include -I/home/dell/uvm_workspace/verilator-uvm-example/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable  -DVM_PREFIX_INCLUDE="<Vtb_top.h>" -DVM_PREFIX_INCLUDE_DPI="<Vtb_top__Dpi.h>"   -DVM_SOLVER_DEFAULT='"z3 --in"' -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated_threads.o /home/dell/uvm_workspace/verilator-uvm-example/verilator/include/verilated_threads.cpp
+g++ -Os  -I.  -MMD -I/home/dell/uvm_workspace/verilator-uvm-example/verilator/include -I/home/dell/uvm_workspace/verilator-uvm-example/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable  -DVM_PREFIX_INCLUDE="<Vtb_top.h>" -DVM_PREFIX_INCLUDE_DPI="<Vtb_top__Dpi.h>"   -DVM_SOLVER_DEFAULT='"z3 --in"' -DVL_TIME_CONTEXT   -fcoroutines -c -x c++-header Vtb_top__pch.h -o Vtb_top__pch.h.fast.gch
+g++   -I.  -MMD -I/home/dell/uvm_workspace/verilator-uvm-example/verilator/include -I/home/dell/uvm_workspace/verilator-uvm-example/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable  -DVM_PREFIX_INCLUDE="<Vtb_top.h>" -DVM_PREFIX_INCLUDE_DPI="<Vtb_top__Dpi.h>"   -DVM_SOLVER_DEFAULT='"z3 --in"' -DVL_TIME_CONTEXT   -fcoroutines -c -x c++-header Vtb_top__pch.h -o Vtb_top__pch.h.slow.gch
+g++ -Os  -I.  -MMD -I/home/dell/uvm_workspace/verilator-uvm-example/verilator/include -I/home/dell/uvm_workspace/verilator-uvm-example/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable  -DVM_PREFIX_INCLUDE="<Vtb_top.h>" -DVM_PREFIX_INCLUDE_DPI="<Vtb_top__Dpi.h>"   -DVM_SOLVER_DEFAULT='"z3 --in"' -DVL_TIME_CONTEXT   -fcoroutines -include Vtb_top__pch.h.fast -c Vtb_top_vm_classes_0.cpp
+g++ -Os  -I.  -MMD -I/home/dell/uvm_workspace/verilator-uvm-example/verilator/include -I/home/dell/uvm_workspace/verilator-uvm-example/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable  -DVM_PREFIX_INCLUDE="<Vtb_top.h>" -DVM_PREFIX_INCLUDE_DPI="<Vtb_top__Dpi.h>"   -DVM_SOLVER_DEFAULT='"z3 --in"' -DVL_TIME_CONTEXT   -fcoroutines -include Vtb_top__pch.h.fast -c Vtb_top_vm_classes_1.cpp
+g++ -Os  -I.  -MMD -I/home/dell/uvm_workspace/verilator-uvm-example/verilator/include -I/home/dell/uvm_workspace/verilator-uvm-example/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable  -DVM_PREFIX_INCLUDE="<Vtb_top.h>" -DVM_PREFIX_INCLUDE_DPI="<Vtb_top__Dpi.h>"   -DVM_SOLVER_DEFAULT='"z3 --in"' -DVL_TIME_CONTEXT   -fcoroutines -include Vtb_top__pch.h.fast -c Vtb_top_vm_classes_2.cpp
+g++ -Os  -I.  -MMD -I/home/dell/uvm_workspace/verilator-uvm-example/verilator/include -I/home/dell/uvm_workspace/verilator-uvm-example/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable  -DVM_PREFIX_INCLUDE="<Vtb_top.h>" -DVM_PREFIX_INCLUDE_DPI="<Vtb_top__Dpi.h>"   -DVM_SOLVER_DEFAULT='"z3 --in"' -DVL_TIME_CONTEXT   -fcoroutines -include Vtb_top__pch.h.fast -c Vtb_top_vm_classes_3.cpp
+g++ -Os  -I.  -MMD -I/home/dell/uvm_workspace/verilator-uvm-example/verilator/include -I/home/dell/uvm_workspace/verilator-uvm-example/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable  -DVM_PREFIX_INCLUDE="<Vtb_top.h>" -DVM_PREFIX_INCLUDE_DPI="<Vtb_top__Dpi.h>"   -DVM_SOLVER_DEFAULT='"z3 --in"' -DVL_TIME_CONTEXT   -fcoroutines -include Vtb_top__pch.h.fast -c Vtb_top__Dpi.cpp
+g++   -I.  -MMD -I/home/dell/uvm_workspace/verilator-uvm-example/verilator/include -I/home/dell/uvm_workspace/verilator-uvm-example/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable  -DVM_PREFIX_INCLUDE="<Vtb_top.h>" -DVM_PREFIX_INCLUDE_DPI="<Vtb_top__Dpi.h>"   -DVM_SOLVER_DEFAULT='"z3 --in"' -DVL_TIME_CONTEXT   -fcoroutines -include Vtb_top__pch.h.slow -c Vtb_top__ConstPool__0__Slow.cpp
+g++   -I.  -MMD -I/home/dell/uvm_workspace/verilator-uvm-example/verilator/include -I/home/dell/uvm_workspace/verilator-uvm-example/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable  -DVM_PREFIX_INCLUDE="<Vtb_top.h>" -DVM_PREFIX_INCLUDE_DPI="<Vtb_top__Dpi.h>"   -DVM_SOLVER_DEFAULT='"z3 --in"' -DVL_TIME_CONTEXT   -fcoroutines -include Vtb_top__pch.h.slow -c Vtb_top_vm_classes_Slow_0.cpp
+g++   -I.  -MMD -I/home/dell/uvm_workspace/verilator-uvm-example/verilator/include -I/home/dell/uvm_workspace/verilator-uvm-example/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable  -DVM_PREFIX_INCLUDE="<Vtb_top.h>" -DVM_PREFIX_INCLUDE_DPI="<Vtb_top__Dpi.h>"   -DVM_SOLVER_DEFAULT='"z3 --in"' -DVL_TIME_CONTEXT   -fcoroutines -include Vtb_top__pch.h.slow -c Vtb_top_vm_classes_Slow_1.cpp
+g++   -I.  -MMD -I/home/dell/uvm_workspace/verilator-uvm-example/verilator/include -I/home/dell/uvm_workspace/verilator-uvm-example/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable  -DVM_PREFIX_INCLUDE="<Vtb_top.h>" -DVM_PREFIX_INCLUDE_DPI="<Vtb_top__Dpi.h>"   -DVM_SOLVER_DEFAULT='"z3 --in"' -DVL_TIME_CONTEXT   -fcoroutines -include Vtb_top__pch.h.slow -c Vtb_top_vm_classes_Slow_2.cpp
+g++   -I.  -MMD -I/home/dell/uvm_workspace/verilator-uvm-example/verilator/include -I/home/dell/uvm_workspace/verilator-uvm-example/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable  -DVM_PREFIX_INCLUDE="<Vtb_top.h>" -DVM_PREFIX_INCLUDE_DPI="<Vtb_top__Dpi.h>"   -DVM_SOLVER_DEFAULT='"z3 --in"' -DVL_TIME_CONTEXT   -fcoroutines -include Vtb_top__pch.h.slow -c Vtb_top_vm_classes_Slow_3.cpp
+g++   -I.  -MMD -I/home/dell/uvm_workspace/verilator-uvm-example/verilator/include -I/home/dell/uvm_workspace/verilator-uvm-example/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable  -DVM_PREFIX_INCLUDE="<Vtb_top.h>" -DVM_PREFIX_INCLUDE_DPI="<Vtb_top__Dpi.h>"   -DVM_SOLVER_DEFAULT='"z3 --in"' -DVL_TIME_CONTEXT   -fcoroutines -include Vtb_top__pch.h.slow -c Vtb_top__Syms__Slow.cpp
+g++    verilated.o verilated_dpi.o verilated_covergroup.o verilated_timing.o verilated_random.o verilated_threads.o Vtb_top__ALL.a    -pthread -lpthread -latomic   -o Vtb_top
+rm Vtb_top__ALL.verilator_deplist.tmp
+make: Leaving directory '/tmp/mlp_mutations_1k0vvpf6/obj'
+- V e r i l a t i o n   R e p o r t: Verilator 5.053 devel rev v5.052-565-gdc26ef039
+- Verilator: Built from 23.494 MB sources in 405 modules, into 18.254 MB in 2441 C++ files needing 0.016 MB
+- Verilator: Walltime 594.021 s (elab=2.478, cvt=16.805, bld=572.970); cpu 20.910 s on 4 threads; allocated 676.746 MB

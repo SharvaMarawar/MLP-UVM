@@ -1,0 +1,21 @@
+.venv/
+.git/
+
+# Python virtual environment
+.venv/
+__pycache__/
+*.pyc
+
+# Verilator generated build files
+build_verilator/
+build_verilator_closure/
+build_verilator_trace/
+obj_dir/
+*.gch
+
+# Other generated files
+*.o
+*.a
+*.so
+*.vcd
+*.fst

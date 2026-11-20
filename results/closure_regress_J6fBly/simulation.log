@@ -1,0 +1,982 @@
+UVM_INFO /home/dell/uvm_workspace/verilator-uvm-example/1800.2-2020.3.1/src/base/uvm_root.svh(476) @ 0: reporter [UVM/RELNOTES] 
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  This implementation of the UVM Library deviates from the 1800.2-2020
+  standard.  See the DEVIATIONS.md file contained in the release
+  for more details.
+
+----------------------------------------------------------------
+Accellera:1800.2:UVM:2020.3.1
+
+All copyright owners for this kit are listed in NOTICE.txt
+All Rights Reserved Worldwide
+----------------------------------------------------------------
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_WARNING /home/dell/uvm_workspace/verilator-uvm-example/1800.2-2020.3.1/src/base/uvm_root.svh(549) @ 0: reporter [NO_DPI_USED] We are thinking of removing support for UVM_NO_DPI.  Please try this test without it and evaluate the impact
+UVM_INFO /home/dell/uvm_workspace/verilator-uvm-example/1800.2-2020.3.1/src/base/uvm_root.svh(552) @ 0: reporter [NO_DPI_TSTNAME] UVM_NO_DPI defined--getting UVM_TESTNAME directly, without DPI
+UVM_INFO @ 0: reporter [RNTST] Running test mlp_regress_test...
+UVM_INFO mlp_tests.sv(46) @ 0: uvm_test_top [TEST] data_dir=/mnt/c/mlp_uvm/data  iris vectors=1200 (test set 255)  sat vectors=10  NUM_ITEMS=40  IMG_IDX=0
+UVM_INFO /home/dell/uvm_workspace/verilator-uvm-example/1800.2-2020.3.1/src/base/uvm_traversal.svh(345) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled
+UVM_WARNING /home/dell/uvm_workspace/verilator-uvm-example/1800.2-2020.3.1/src/base/uvm_traversal.svh(314) @ 0: reporter [NO_VISIT_CHECK] Because UVM_REGEX_NO_DPI is defined, no uvm component name constraints will be checked
+UVM_INFO mlp_scoreboard.sv(127) @ 5000: uvm_test_top.env.scb [RST] reset seen in state IDLE                 : 0 sample(s) dropped, model back to reset values
+UVM_INFO mlp_scoreboard.sv(172) @ 525000: uvm_test_top.env.scb [CHK] PASS x=[-6 4 -19 -8] exp=[64 33 -13 0] act=[64 33 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 575000: uvm_test_top.env.scb [CHK] PASS x=[-10 1 -18 -8] exp=[57 30 -12 0] act=[57 30 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 585000: uvm_test_top.env.scb [CHK] PASS x=[-10 3 -19 -7] exp=[61 29 -12 0] act=[61 29 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 595000: uvm_test_top.env.scb [CHK] PASS x=[-7 1 -18 -9] exp=[58 33 -12 0] act=[58 33 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 605000: uvm_test_top.env.scb [CHK] PASS x=[-8 0 -19 -9] exp=[59 33 -12 0] act=[59 33 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 615000: uvm_test_top.env.scb [CHK] PASS x=[-6 6 -18 -7] exp=[63 32 -13 0] act=[63 32 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 625000: uvm_test_top.env.scb [CHK] PASS x=[-6 5 -18 -6] exp=[60 30 -12 0] act=[60 30 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 645000: uvm_test_top.env.scb [CHK] PASS x=[-6 2 -16 -6] exp=[50 30 -11 0] act=[50 30 -11 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 655000: uvm_test_top.env.scb [CHK] PASS x=[-8 3 -15 -8] exp=[52 32 -11 0] act=[52 32 -11 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 665000: uvm_test_top.env.scb [CHK] PASS x=[-3 4 -19 -8] exp=[64 35 -13 0] act=[64 35 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 695000: uvm_test_top.env.scb [CHK] PASS x=[-7 1 -18 -9] exp=[58 33 -12 0] act=[58 33 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 705000: uvm_test_top.env.scb [CHK] PASS x=[-6 3 -18 -8] exp=[60 33 -12 0] act=[60 33 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 745000: uvm_test_top.env.scb [CHK] PASS x=[-6 6 -15 -6] exp=[54 31 -11 0] act=[54 31 -11 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 755000: uvm_test_top.env.scb [CHK] PASS x=[-6 6 -17 -8] exp=[62 34 -13 0] act=[62 34 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 805000: uvm_test_top.env.scb [CHK] PASS x=[-10 1 -19 -8] exp=[60 30 -12 0] act=[60 30 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 815000: uvm_test_top.env.scb [CHK] PASS x=[9 1 8 2] exp=[-4 25 1 0] act=[-4 25 1 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 825000: uvm_test_top.env.scb [CHK] PASS x=[5 1 6 2] exp=[-3 23 -1 0] act=[-3 23 -1 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 875000: uvm_test_top.env.scb [CHK] PASS x=[5 -2 7 2] exp=[-4 22 6 0] act=[-4 22 6 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 885000: uvm_test_top.env.scb [CHK] PASS x=[-1 -2 6 1] exp=[-4 21 3 0] act=[-4 21 3 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 915000: uvm_test_top.env.scb [CHK] PASS x=[1 0 4 2] exp=[-3 21 -1 0] act=[-3 21 -1 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 925000: uvm_test_top.env.scb [CHK] PASS x=[7 1 5 2] exp=[-3 24 -1 0] act=[-3 24 -1 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 955000: uvm_test_top.env.scb [CHK] PASS x=[0 -3 3 -2] exp=[-2 25 -2 0] act=[-2 25 -2 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 995000: uvm_test_top.env.scb [CHK] PASS x=[3 -7 6 2] exp=[-5 20 13 0] act=[-5 20 13 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 1025000: uvm_test_top.env.scb [CHK] PASS x=[-3 -5 0 -2] exp=[-2 23 -2 0] act=[-2 23 -2 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 1045000: uvm_test_top.env.scb [CHK] PASS x=[1 3 6 3] exp=[-3 20 -1 0] act=[-3 20 -1 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 1055000: uvm_test_top.env.scb [CHK] PASS x=[7 1 8 2] exp=[-4 24 2 0] act=[-4 24 2 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 1075000: uvm_test_top.env.scb [CHK] PASS x=[-2 0 3 1] exp=[-2 21 -1 0] act=[-2 21 -1 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 1085000: uvm_test_top.env.scb [CHK] PASS x=[-3 -4 2 1] exp=[-3 19 -1 0] act=[-3 19 -1 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 1095000: uvm_test_top.env.scb [CHK] PASS x=[-3 -3 5 0] exp=[-3 21 0 0] act=[-3 21 0 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 1115000: uvm_test_top.env.scb [CHK] PASS x=[-1 -2 3 1] exp=[-3 21 -1 0] act=[-3 21 -1 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 1125000: uvm_test_top.env.scb [CHK] PASS x=[4 2 18 10] exp=[-8 11 54 0] act=[-8 11 54 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 1155000: uvm_test_top.env.scb [CHK] PASS x=[10 0 17 7] exp=[-8 18 42 0] act=[-8 18 42 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 1165000: uvm_test_top.env.scb [CHK] PASS x=[4 -1 15 5] exp=[-7 17 36 0] act=[-7 17 36 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 1175000: uvm_test_top.env.scb [CHK] PASS x=[11 5 19 10] exp=[-8 15 48 0] act=[-8 15 48 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 1185000: uvm_test_top.env.scb [CHK] PASS x=[5 1 11 6] exp=[-5 17 24 0] act=[-5 17 24 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 1195000: uvm_test_top.env.scb [CHK] PASS x=[-1 -4 10 6] exp=[-6 13 33 0] act=[-6 13 33 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 1205000: uvm_test_top.env.scb [CHK] PASS x=[-2 -2 9 6] exp=[-5 13 27 0] act=[-5 13 27 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 1215000: uvm_test_top.env.scb [CHK] PASS x=[4 -3 9 5] exp=[-5 17 23 0] act=[-5 17 23 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 1225000: uvm_test_top.env.scb [CHK] PASS x=[11 0 17 3] exp=[-7 24 30 0] act=[-7 24 30 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 1235000: uvm_test_top.env.scb [CHK] PASS x=[2 -3 15 2] exp=[-7 20 31 0] act=[-7 20 31 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 1245000: uvm_test_top.env.scb [CHK] PASS x=[4 3 15 10] exp=[-7 11 44 0] act=[-7 11 44 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 1255000: uvm_test_top.env.scb [CHK] PASS x=[9 1 13 7] exp=[-6 17 30 0] act=[-6 17 30 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 1305000: uvm_test_top.env.scb [CHK] PASS x=[0 -3 11 6] exp=[-6 13 33 0] act=[-6 13 33 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 1315000: uvm_test_top.env.scb [CHK] PASS x=[5 0 12 6] exp=[-6 17 28 0] act=[-6 17 28 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 1325000: uvm_test_top.env.scb [CHK] PASS x=[1 0 11 5] exp=[-6 16 24 0] act=[-6 16 24 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 1335000: uvm_test_top.env.scb [CHK] PASS x=[-8 3 -20 -7] exp=[64 30 -13 0] act=[64 30 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 1375000: uvm_test_top.env.scb [CHK] PASS x=[-2 11 -19 -8] exp=[75 37 -15 0] act=[75 37 -15 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 1385000: uvm_test_top.env.scb [CHK] PASS x=[-7 4 -20 -7] exp=[66 31 -13 0] act=[66 31 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 1395000: uvm_test_top.env.scb [CHK] PASS x=[-5 1 -18 -8] exp=[57 33 -12 0] act=[57 33 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 1435000: uvm_test_top.env.scb [CHK] PASS x=[-8 3 -20 -8] exp=[65 32 -13 0] act=[65 32 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 1475000: uvm_test_top.env.scb [CHK] PASS x=[-6 4 -20 -8] exp=[67 33 -13 0] act=[67 33 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 1485000: uvm_test_top.env.scb [CHK] PASS x=[-5 5 -19 -7] exp=[64 32 -13 0] act=[64 32 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 1495000: uvm_test_top.env.scb [CHK] PASS x=[-6 1 -20 -8] exp=[62 32 -13 0] act=[62 32 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 1505000: uvm_test_top.env.scb [CHK] PASS x=[-6 5 -19 -7] exp=[64 32 -13 0] act=[64 32 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 1515000: uvm_test_top.env.scb [CHK] PASS x=[-7 5 -19 -7] exp=[64 31 -13 0] act=[64 31 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 1525000: uvm_test_top.env.scb [CHK] PASS x=[-8 1 -18 -7] exp=[56 30 -12 0] act=[56 30 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 1535000: uvm_test_top.env.scb [CHK] PASS x=[-6 2 -19 -8] exp=[61 33 -13 0] act=[61 33 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 1545000: uvm_test_top.env.scb [CHK] PASS x=[-8 1 -19 -7] exp=[58 30 -12 0] act=[58 30 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 1575000: uvm_test_top.env.scb [CHK] PASS x=[-3 9 -18 -8] exp=[69 36 -14 0] act=[69 36 -14 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 1625000: uvm_test_top.env.scb [CHK] PASS x=[-5 3 -16 -6] exp=[52 30 -11 0] act=[52 30 -11 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 1655000: uvm_test_top.env.scb [CHK] PASS x=[-2 9 -18 -7] exp=[68 35 -14 0] act=[68 35 -14 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 1705000: uvm_test_top.env.scb [CHK] PASS x=[-8 1 -18 -8] exp=[57 31 -12 0] act=[57 31 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 1715000: uvm_test_top.env.scb [CHK] PASS x=[-10 1 -18 -9] exp=[58 32 -12 0] act=[58 32 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 1725000: uvm_test_top.env.scb [CHK] PASS x=[-3 5 -18 -7] exp=[62 33 -13 0] act=[62 33 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 1775000: uvm_test_top.env.scb [CHK] PASS x=[-5 4 -19 -8] exp=[64 34 -13 0] act=[64 34 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 1785000: uvm_test_top.env.scb [CHK] PASS x=[-8 2 -19 -8] exp=[61 32 -12 0] act=[61 32 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 1795000: uvm_test_top.env.scb [CHK] PASS x=[-3 7 -17 -7] exp=[62 34 -13 0] act=[62 34 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 1805000: uvm_test_top.env.scb [CHK] PASS x=[-7 1 -19 -8] exp=[60 32 -12 0] act=[60 32 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 1815000: uvm_test_top.env.scb [CHK] PASS x=[-6 5 -16 -8] exp=[57 33 -12 0] act=[57 33 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 1825000: uvm_test_top.env.scb [CHK] PASS x=[-3 9 -19 -8] exp=[72 36 -14 0] act=[72 36 -14 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 1835000: uvm_test_top.env.scb [CHK] PASS x=[-4 3 -17 -6] exp=[55 31 -11 0] act=[55 31 -11 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 1845000: uvm_test_top.env.scb [CHK] PASS x=[-4 7 -17 -7] exp=[62 33 -13 0] act=[62 33 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 1855000: uvm_test_top.env.scb [CHK] PASS x=[-11 2 -21 -8] exp=[67 30 -13 0] act=[67 30 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 1865000: uvm_test_top.env.scb [CHK] PASS x=[-6 6 -19 -8] exp=[67 34 -13 0] act=[67 34 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 1875000: uvm_test_top.env.scb [CHK] PASS x=[-7 2 -19 -8] exp=[61 32 -13 0] act=[61 32 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 1915000: uvm_test_top.env.scb [CHK] PASS x=[-3 6 -18 -6] exp=[62 32 -13 0] act=[62 32 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 1925000: uvm_test_top.env.scb [CHK] PASS x=[-7 0 -19 -9] exp=[59 33 -12 0] act=[59 33 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 1945000: uvm_test_top.env.scb [CHK] PASS x=[-6 6 -19 -9] exp=[68 35 -14 0] act=[68 35 -14 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 1955000: uvm_test_top.env.scb [CHK] PASS x=[-9 2 -17 -8] exp=[56 31 -12 0] act=[56 31 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 1965000: uvm_test_top.env.scb [CHK] PASS x=[-6 1 -20 -6] exp=[60 29 -12 0] act=[60 29 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 1975000: uvm_test_top.env.scb [CHK] PASS x=[-10 4 -18 -7] exp=[60 30 -12 0] act=[60 30 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 1985000: uvm_test_top.env.scb [CHK] PASS x=[-5 6 -18 -7] exp=[63 33 -13 0] act=[63 33 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 2035000: uvm_test_top.env.scb [CHK] PASS x=[-10 0 -19 -9] exp=[59 32 -12 0] act=[59 32 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 2045000: uvm_test_top.env.scb [CHK] PASS x=[-2 9 -19 -6] exp=[69 33 -14 0] act=[69 33 -14 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 2055000: uvm_test_top.env.scb [CHK] PASS x=[-6 2 -17 -8] exp=[56 33 -12 0] act=[56 33 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 2105000: uvm_test_top.env.scb [CHK] PASS x=[-3 6 -20 -9] exp=[71 37 -14 0] act=[71 37 -14 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 2115000: uvm_test_top.env.scb [CHK] PASS x=[-9 1 -20 -8] exp=[62 31 -13 0] act=[62 31 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 2125000: uvm_test_top.env.scb [CHK] PASS x=[-7 4 -18 -7] exp=[60 31 -12 0] act=[60 31 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 2145000: uvm_test_top.env.scb [CHK] PASS x=[-7 6 -18 -7] exp=[63 32 -13 0] act=[63 32 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 2155000: uvm_test_top.env.scb [CHK] PASS x=[-11 -2 -19 -8] exp=[55 29 -11 0] act=[55 29 -11 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 2175000: uvm_test_top.env.scb [CHK] PASS x=[-11 -1 -19 -7] exp=[55 28 -11 0] act=[55 28 -11 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 2195000: uvm_test_top.env.scb [CHK] PASS x=[-6 1 -17 -8] exp=[54 32 -12 0] act=[54 32 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 2205000: uvm_test_top.env.scb [CHK] PASS x=[0 5 -18 -7] exp=[62 35 -13 0] act=[62 35 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 2245000: uvm_test_top.env.scb [CHK] PASS x=[-4 3 -15 -8] exp=[52 34 -12 0] act=[52 34 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 2295000: uvm_test_top.env.scb [CHK] PASS x=[-9 1 -19 -8] exp=[60 31 -12 0] act=[60 31 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 2305000: uvm_test_top.env.scb [CHK] PASS x=[-6 1 -18 -7] exp=[56 31 -12 0] act=[56 31 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 2355000: uvm_test_top.env.scb [CHK] PASS x=[-1 10 -16 -8] exp=[65 37 -14 0] act=[65 37 -14 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 2365000: uvm_test_top.env.scb [CHK] PASS x=[-3 6 -19 -9] exp=[68 37 -14 0] act=[68 37 -14 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 2405000: uvm_test_top.env.scb [CHK] PASS x=[-7 4 -19 -7] exp=[63 31 -13 0] act=[63 31 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 2415000: uvm_test_top.env.scb [CHK] PASS x=[-5 2 -21 -6] exp=[64 30 -13 0] act=[64 30 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 2425000: uvm_test_top.env.scb [CHK] PASS x=[-5 7 -17 -8] exp=[63 34 -13 0] act=[63 34 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 2465000: uvm_test_top.env.scb [CHK] PASS x=[-7 1 -17 -8] exp=[54 32 -12 0] act=[54 32 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 2475000: uvm_test_top.env.scb [CHK] PASS x=[-1 10 -16 -7] exp=[64 36 -13 0] act=[64 36 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 2485000: uvm_test_top.env.scb [CHK] PASS x=[-5 7 -16 -8] exp=[60 34 -13 0] act=[60 34 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 2495000: uvm_test_top.env.scb [CHK] PASS x=[-15 -2 -19 -7] exp=[54 26 -11 0] act=[54 26 -11 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 2535000: uvm_test_top.env.scb [CHK] PASS x=[-16 -5 -20 -8] exp=[53 26 -11 0] act=[53 26 -11 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 2575000: uvm_test_top.env.scb [CHK] PASS x=[-12 -1 -20 -8] exp=[59 29 -12 0] act=[59 29 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 2585000: uvm_test_top.env.scb [CHK] PASS x=[-8 2 -19 -9] exp=[62 33 -13 0] act=[62 33 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 2595000: uvm_test_top.env.scb [CHK] PASS x=[-7 1 -18 -7] exp=[56 30 -12 0] act=[56 30 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 2615000: uvm_test_top.env.scb [CHK] PASS x=[-7 3 -18 -7] exp=[59 31 -12 0] act=[59 31 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 2625000: uvm_test_top.env.scb [CHK] PASS x=[-3 1 -18 -7] exp=[56 32 -12 0] act=[56 32 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 2635000: uvm_test_top.env.scb [CHK] PASS x=[-5 6 -20 -8] exp=[70 34 -14 0] act=[70 34 -14 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 2645000: uvm_test_top.env.scb [CHK] PASS x=[-9 3 -21 -8] exp=[68 31 -13 0] act=[68 31 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 2655000: uvm_test_top.env.scb [CHK] PASS x=[-3 7 -19 -7] exp=[67 34 -13 0] act=[67 34 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 2665000: uvm_test_top.env.scb [CHK] PASS x=[-6 5 -18 -7] exp=[62 32 -13 0] act=[62 32 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 2675000: uvm_test_top.env.scb [CHK] PASS x=[3 -2 4 0] exp=[-3 24 -1 0] act=[-3 24 -1 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 2685000: uvm_test_top.env.scb [CHK] PASS x=[5 1 6 1] exp=[-3 24 -1 0] act=[-3 24 -1 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 2695000: uvm_test_top.env.scb [CHK] PASS x=[-3 -2 5 2] exp=[-3 18 4 0] act=[-3 18 4 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 2735000: uvm_test_top.env.scb [CHK] PASS x=[1 -1 6 2] exp=[-4 20 3 0] act=[-4 20 3 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 2745000: uvm_test_top.env.scb [CHK] PASS x=[8 0 9 2] exp=[-4 24 6 0] act=[-4 24 6 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 2755000: uvm_test_top.env.scb [CHK] PASS x=[7 1 9 2] exp=[-4 24 5 0] act=[-4 24 5 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 2785000: uvm_test_top.env.scb [CHK] PASS x=[1 0 2 2] exp=[-2 21 -2 0] act=[-2 21 -2 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 2825000: uvm_test_top.env.scb [CHK] PASS x=[10 -3 9 2] exp=[-5 24 11 0] act=[-5 24 11 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 2875000: uvm_test_top.env.scb [CHK] PASS x=[-5 -2 1 1] exp=[-2 19 -2 0] act=[-2 19 -2 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 2885000: uvm_test_top.env.scb [CHK] PASS x=[-1 -2 1 0] exp=[-2 22 -2 0] act=[-2 22 -2 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 2895000: uvm_test_top.env.scb [CHK] PASS x=[3 -3 3 1] exp=[-3 22 -1 0] act=[-3 22 -1 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 2905000: uvm_test_top.env.scb [CHK] PASS x=[1 -1 9 2] exp=[-5 20 12 0] act=[-5 20 12 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 2915000: uvm_test_top.env.scb [CHK] PASS x=[-1 -5 0 0] exp=[-2 21 -2 0] act=[-2 21 -2 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 2935000: uvm_test_top.env.scb [CHK] PASS x=[-4 -7 -1 0] exp=[-2 19 -2 0] act=[-2 19 -2 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 2945000: uvm_test_top.env.scb [CHK] PASS x=[1 -3 5 0] exp=[-3 23 -1 0] act=[-3 23 -1 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 2955000: uvm_test_top.env.scb [CHK] PASS x=[7 -3 9 4] exp=[-5 20 18 0] act=[-5 20 18 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 2965000: uvm_test_top.env.scb [CHK] PASS x=[3 1 9 4] exp=[-4 19 13 0] act=[-4 19 13 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 2975000: uvm_test_top.env.scb [CHK] PASS x=[1 -6 5 0] exp=[-4 22 3 0] act=[-4 22 3 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 3025000: uvm_test_top.env.scb [CHK] PASS x=[1 2 10 2] exp=[-4 21 9 0] act=[-4 21 9 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 3035000: uvm_test_top.env.scb [CHK] PASS x=[5 -1 10 3] exp=[-5 21 15 0] act=[-5 21 15 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 3045000: uvm_test_top.env.scb [CHK] PASS x=[1 -3 1 1] exp=[-2 21 -2 0] act=[-2 21 -2 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 3075000: uvm_test_top.env.scb [CHK] PASS x=[1 -2 3 1] exp=[-3 22 -1 0] act=[-3 22 -1 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 3085000: uvm_test_top.env.scb [CHK] PASS x=[1 -3 7 2] exp=[-4 20 10 0] act=[-4 20 10 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 3125000: uvm_test_top.env.scb [CHK] PASS x=[0 -2 6 1] exp=[-4 21 3 0] act=[-4 21 3 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 3155000: uvm_test_top.env.scb [CHK] PASS x=[-3 -6 1 0] exp=[-2 20 -1 0] act=[-2 20 -1 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 3185000: uvm_test_top.env.scb [CHK] PASS x=[1 1 6 2] exp=[-3 21 0 0] act=[-3 21 0 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 3215000: uvm_test_top.env.scb [CHK] PASS x=[3 0 5 2] exp=[-3 22 -1 0] act=[-3 22 -1 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 3225000: uvm_test_top.env.scb [CHK] PASS x=[6 -2 9 3] exp=[-5 21 14 0] act=[-5 21 14 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 3235000: uvm_test_top.env.scb [CHK] PASS x=[-3 0 5 4] exp=[-3 16 7 0] act=[-3 16 7 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 3245000: uvm_test_top.env.scb [CHK] PASS x=[-3 -8 -3 -2] exp=[-1 23 -3 0] act=[-1 23 -3 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 3255000: uvm_test_top.env.scb [CHK] PASS x=[3 -3 8 2] exp=[-5 21 11 0] act=[-5 21 11 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 3265000: uvm_test_top.env.scb [CHK] PASS x=[5 -1 5 2] exp=[-3 22 -1 0] act=[-3 22 -1 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 3275000: uvm_test_top.env.scb [CHK] PASS x=[-3 -6 0 -3] exp=[-2 25 -3 0] act=[-2 25 -3 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 3285000: uvm_test_top.env.scb [CHK] PASS x=[9 -1 10 2] exp=[-5 24 10 0] act=[-5 24 10 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 3295000: uvm_test_top.env.scb [CHK] PASS x=[-3 -7 -3 -2] exp=[-1 23 -3 0] act=[-1 23 -3 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 3305000: uvm_test_top.env.scb [CHK] PASS x=[2 0 3 1] exp=[-2 23 -2 0] act=[-2 23 -2 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 3355000: uvm_test_top.env.scb [CHK] PASS x=[-1 -7 1 -1] exp=[-2 22 -1 0] act=[-2 22 -1 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 3395000: uvm_test_top.env.scb [CHK] PASS x=[-3 -2 9 2] exp=[-5 18 15 0] act=[-5 18 15 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 3405000: uvm_test_top.env.scb [CHK] PASS x=[-1 -3 1 2] exp=[-2 19 -1 0] act=[-2 19 -1 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 3415000: uvm_test_top.env.scb [CHK] PASS x=[5 1 9 2] exp=[-4 23 6 0] act=[-4 23 6 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 3425000: uvm_test_top.env.scb [CHK] PASS x=[-2 1 4 2] exp=[-2 19 -1 0] act=[-2 19 -1 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 3435000: uvm_test_top.env.scb [CHK] PASS x=[-7 -4 -5 -2] exp=[6 22 -4 0] act=[6 22 -4 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 3445000: uvm_test_top.env.scb [CHK] PASS x=[0 -2 5 2] exp=[-3 20 3 0] act=[-3 20 3 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 3455000: uvm_test_top.env.scb [CHK] PASS x=[3 -2 8 3] exp=[-5 20 13 0] act=[-5 20 13 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 3465000: uvm_test_top.env.scb [CHK] PASS x=[3 -4 3 0] exp=[-3 24 -1 0] act=[-3 24 -1 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 3515000: uvm_test_top.env.scb [CHK] PASS x=[5 1 9 4] exp=[-4 20 12 0] act=[-4 20 12 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 3525000: uvm_test_top.env.scb [CHK] PASS x=[2 -3 1 1] exp=[-2 22 -2 0] act=[-2 22 -2 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 3535000: uvm_test_top.env.scb [CHK] PASS x=[5 -5 3 -2] exp=[-3 27 -2 0] act=[-3 27 -2 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 3585000: uvm_test_top.env.scb [CHK] PASS x=[9 -2 6 0] exp=[-3 27 -1 0] act=[-3 27 -1 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 3615000: uvm_test_top.env.scb [CHK] PASS x=[-3 -2 -3 -2] exp=[4 24 -4 0] act=[4 24 -4 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 3665000: uvm_test_top.env.scb [CHK] PASS x=[0 -4 7 2] exp=[-4 19 12 0] act=[-4 19 12 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 3675000: uvm_test_top.env.scb [CHK] PASS x=[4 1 2 1] exp=[-2 24 -2 0] act=[-2 24 -2 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 3705000: uvm_test_top.env.scb [CHK] PASS x=[3 0 5 1] exp=[-3 23 -1 0] act=[-3 23 -1 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 3715000: uvm_test_top.env.scb [CHK] PASS x=[5 -2 5 -1] exp=[-3 27 -2 0] act=[-3 27 -2 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 3745000: uvm_test_top.env.scb [CHK] PASS x=[8 -1 8 1] exp=[-4 25 2 0] act=[-4 25 2 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 3755000: uvm_test_top.env.scb [CHK] PASS x=[1 -1 5 0] exp=[-3 23 -1 0] act=[-3 23 -1 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 3765000: uvm_test_top.env.scb [CHK] PASS x=[4 -2 7 2] exp=[-4 22 6 0] act=[-4 22 6 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 3775000: uvm_test_top.env.scb [CHK] PASS x=[6 1 8 2] exp=[-4 23 3 0] act=[-4 23 3 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 3785000: uvm_test_top.env.scb [CHK] PASS x=[0 -3 5 1] exp=[-3 21 2 0] act=[-3 21 2 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 3795000: uvm_test_top.env.scb [CHK] PASS x=[-5 -6 0 -1] exp=[-2 21 -2 0] act=[-2 21 -2 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 3845000: uvm_test_top.env.scb [CHK] PASS x=[-1 -2 3 2] exp=[-3 19 -1 0] act=[-3 19 -1 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 3855000: uvm_test_top.env.scb [CHK] PASS x=[0 -3 -2 -2] exp=[-1 25 -4 0] act=[-1 25 -4 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 3865000: uvm_test_top.env.scb [CHK] PASS x=[4 -1 9 2] exp=[-5 22 10 0] act=[-5 22 10 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 3875000: uvm_test_top.env.scb [CHK] PASS x=[1 -2 7 2] exp=[-4 20 8 0] act=[-4 20 8 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 3925000: uvm_test_top.env.scb [CHK] PASS x=[-3 -1 -3 -1] exp=[4 23 -4 0] act=[4 23 -4 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 3935000: uvm_test_top.env.scb [CHK] PASS x=[1 -2 5 2] exp=[-3 20 2 0] act=[-3 20 2 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 3945000: uvm_test_top.env.scb [CHK] PASS x=[-8 -3 -4 -1] exp=[4 20 -4 0] act=[4 20 -4 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 3955000: uvm_test_top.env.scb [CHK] PASS x=[9 1 9 2] exp=[-4 25 4 0] act=[-4 25 4 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 4005000: uvm_test_top.env.scb [CHK] PASS x=[-3 -3 6 3] exp=[-4 16 12 0] act=[-4 16 12 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 4015000: uvm_test_top.env.scb [CHK] PASS x=[1 0 7 2] exp=[-4 21 4 0] act=[-4 21 4 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 4045000: uvm_test_top.env.scb [CHK] PASS x=[-3 -6 9 4] exp=[-6 14 28 0] act=[-6 14 28 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 4055000: uvm_test_top.env.scb [CHK] PASS x=[7 3 15 8] exp=[-7 15 36 0] act=[-7 15 36 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 4065000: uvm_test_top.env.scb [CHK] PASS x=[5 -3 14 7] exp=[-7 14 42 0] act=[-7 14 42 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 4075000: uvm_test_top.env.scb [CHK] PASS x=[10 -3 19 6] exp=[-9 18 50 0] act=[-9 18 50 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 4095000: uvm_test_top.env.scb [CHK] PASS x=[7 0 16 6] exp=[-7 18 38 0] act=[-7 18 38 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 4135000: uvm_test_top.env.scb [CHK] PASS x=[-5 -6 2 6] exp=[-4 10 16 0] act=[-4 10 16 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 4145000: uvm_test_top.env.scb [CHK] PASS x=[13 -5 14 9] exp=[-8 15 47 0] act=[-8 15 47 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 4185000: uvm_test_top.env.scb [CHK] PASS x=[4 -3 13 0] exp=[-6 24 19 0] act=[-6 24 19 0] lat=2 label=2 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 4195000: uvm_test_top.env.scb [CHK] PASS x=[23 0 26 9] exp=[-11 21 67 0] act=[-11 21 67 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 4235000: uvm_test_top.env.scb [CHK] PASS x=[4 -3 14 5] exp=[-7 17 36 0] act=[-7 17 36 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 4245000: uvm_test_top.env.scb [CHK] PASS x=[7 5 18 10] exp=[-8 13 47 0] act=[-8 13 47 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 4255000: uvm_test_top.env.scb [CHK] PASS x=[2 3 7 7] exp=[-4 14 14 0] act=[-4 14 14 0] lat=2 label=2 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 4265000: uvm_test_top.env.scb [CHK] PASS x=[16 1 21 10] exp=[-10 16 58 0] act=[-10 16 58 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 4315000: uvm_test_top.env.scb [CHK] PASS x=[3 -3 11 5] exp=[-6 16 29 0] act=[-6 16 29 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 4325000: uvm_test_top.env.scb [CHK] PASS x=[17 3 24 9] exp=[-10 19 59 0] act=[-10 19 59 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 4355000: uvm_test_top.env.scb [CHK] PASS x=[5 -1 13 6] exp=[-7 16 33 0] act=[-7 16 33 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 4365000: uvm_test_top.env.scb [CHK] PASS x=[1 -2 10 6] exp=[-6 14 28 0] act=[-6 14 28 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 4375000: uvm_test_top.env.scb [CHK] PASS x=[10 0 18 6] exp=[-8 19 42 0] act=[-8 19 42 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 4385000: uvm_test_top.env.scb [CHK] PASS x=[7 0 14 7] exp=[-7 16 36 0] act=[-7 16 36 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 4415000: uvm_test_top.env.scb [CHK] PASS x=[14 1 24 7] exp=[-10 20 58 0] act=[-10 20 58 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 4465000: uvm_test_top.env.scb [CHK] PASS x=[11 -4 17 5] exp=[-8 20 43 0] act=[-8 20 43 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 4485000: uvm_test_top.env.scb [CHK] PASS x=[9 5 21 11] exp=[-9 12 57 0] act=[-9 12 57 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 4495000: uvm_test_top.env.scb [CHK] PASS x=[3 -1 13 10] exp=[-7 9 46 0] act=[-7 9 46 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 4505000: uvm_test_top.env.scb [CHK] PASS x=[6 -3 20 5] exp=[-9 18 52 0] act=[-9 18 52 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 4525000: uvm_test_top.env.scb [CHK] PASS x=[7 0 12 7] exp=[-6 16 30 0] act=[-6 16 30 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 4555000: uvm_test_top.env.scb [CHK] PASS x=[8 -3 17 6] exp=[-8 17 46 0] act=[-8 17 46 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 4565000: uvm_test_top.env.scb [CHK] PASS x=[11 0 21 8] exp=[-9 17 56 0] act=[-9 17 56 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 4575000: uvm_test_top.env.scb [CHK] PASS x=[8 -1 12 10] exp=[-7 12 40 0] act=[-7 12 40 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 4605000: uvm_test_top.env.scb [CHK] PASS x=[6 -6 13 2] exp=[-7 22 29 0] act=[-7 22 29 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 4655000: uvm_test_top.env.scb [CHK] PASS x=[5 0 16 9] exp=[-8 12 48 0] act=[-8 12 48 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 4665000: uvm_test_top.env.scb [CHK] PASS x=[4 -1 17 4] exp=[-8 19 38 0] act=[-8 19 38 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 4685000: uvm_test_top.env.scb [CHK] PASS x=[8 0 13 4] exp=[-6 21 23 0] act=[-6 21 23 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 4695000: uvm_test_top.env.scb [CHK] PASS x=[2 2 8 5] exp=[-4 17 12 0] act=[-4 17 12 0] lat=2 label=2 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 4725000: uvm_test_top.env.scb [CHK] PASS x=[1 -3 7 6] exp=[-5 14 22 0] act=[-5 14 22 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 4755000: uvm_test_top.env.scb [CHK] PASS x=[5 -1 13 2] exp=[-6 22 21 0] act=[-6 22 21 0] lat=2 label=2 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 4765000: uvm_test_top.env.scb [CHK] PASS x=[2 -4 13 5] exp=[-7 16 36 0] act=[-7 16 36 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 4805000: uvm_test_top.env.scb [CHK] PASS x=[7 -3 10 4] exp=[-6 20 21 0] act=[-6 20 21 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 4815000: uvm_test_top.env.scb [CHK] PASS x=[10 1 19 8] exp=[-9 16 49 0] act=[-9 16 49 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 4825000: uvm_test_top.env.scb [CHK] PASS x=[1 -3 10 3] exp=[-5 18 21 0] act=[-5 18 21 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 4835000: uvm_test_top.env.scb [CHK] PASS x=[14 -1 16 10] exp=[-8 15 48 0] act=[-8 15 48 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 4845000: uvm_test_top.env.scb [CHK] PASS x=[-7 -3 5 2] exp=[-4 16 8 0] act=[-4 16 8 0] lat=2 label=2 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 4855000: uvm_test_top.env.scb [CHK] PASS x=[8 1 18 5] exp=[-8 20 38 0] act=[-8 20 38 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 4865000: uvm_test_top.env.scb [CHK] PASS x=[6 -1 17 8] exp=[-8 14 49 0] act=[-8 14 49 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 4885000: uvm_test_top.env.scb [CHK] PASS x=[5 -4 18 9] exp=[-9 11 61 0] act=[-9 11 61 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 4895000: uvm_test_top.env.scb [CHK] PASS x=[6 -2 15 9] exp=[-8 12 48 0] act=[-8 12 48 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 4945000: uvm_test_top.env.scb [CHK] PASS x=[9 4 14 8] exp=[-6 17 31 0] act=[-6 17 31 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 4965000: uvm_test_top.env.scb [CHK] PASS x=[8 -5 16 6] exp=[-8 17 46 0] act=[-8 17 46 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 4975000: uvm_test_top.env.scb [CHK] PASS x=[10 -3 20 7] exp=[-9 17 56 0] act=[-9 17 56 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 4985000: uvm_test_top.env.scb [CHK] PASS x=[9 -2 17 4] exp=[-8 21 37 0] act=[-8 21 37 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 4995000: uvm_test_top.env.scb [CHK] PASS x=[8 3 18 9] exp=[-8 14 47 0] act=[-8 14 47 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 5005000: uvm_test_top.env.scb [CHK] PASS x=[9 1 16 6] exp=[-7 19 35 0] act=[-7 19 35 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 5015000: uvm_test_top.env.scb [CHK] PASS x=[8 1 19 10] exp=[-9 12 56 0] act=[-9 12 56 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 5065000: uvm_test_top.env.scb [CHK] PASS x=[4 -4 13 6] exp=[-7 15 38 0] act=[-7 15 38 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 5105000: uvm_test_top.env.scb [CHK] PASS x=[5 0 14 7] exp=[-7 15 37 0] act=[-7 15 37 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 5145000: uvm_test_top.env.scb [CHK] PASS x=[9 3 16 9] exp=[-7 15 41 0] act=[-7 15 41 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 5175000: uvm_test_top.env.scb [CHK] PASS x=[14 1 27 7] exp=[-11 20 66 0] act=[-11 20 66 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 5215000: uvm_test_top.env.scb [CHK] PASS x=[9 2 16 6] exp=[-7 19 34 0] act=[-7 19 34 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 5265000: uvm_test_top.env.scb [CHK] PASS x=[3 -1 9 8] exp=[-5 12 29 0] act=[-5 12 29 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 5275000: uvm_test_top.env.scb [CHK] PASS x=[9 1 18 7] exp=[-8 17 44 0] act=[-8 17 44 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 5325000: uvm_test_top.env.scb [CHK] PASS x=[-3 -3 11 5] exp=[-6 13 32 0] act=[-6 13 32 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 5335000: uvm_test_top.env.scb [CHK] PASS x=[2 -1 14 7] exp=[-7 13 40 0] act=[-7 13 40 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 5385000: uvm_test_top.env.scb [CHK] PASS x=[4 2 10 7] exp=[-5 15 23 0] act=[-5 15 23 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 5395000: uvm_test_top.env.scb [CHK] PASS x=[1 -2 13 7] exp=[-7 13 39 0] act=[-7 13 39 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 5405000: uvm_test_top.env.scb [CHK] PASS x=[1 -3 10 2] exp=[-5 20 18 0] act=[-5 20 18 0] lat=2 label=2 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 5415000: uvm_test_top.env.scb [CHK] PASS x=[9 5 18 8] exp=[-7 17 40 0] act=[-7 17 40 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 5425000: uvm_test_top.env.scb [CHK] PASS x=[3 -4 17 2] exp=[-8 21 38 0] act=[-8 21 38 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 5435000: uvm_test_top.env.scb [CHK] PASS x=[5 1 14 4] exp=[-6 20 26 0] act=[-6 20 26 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 5445000: uvm_test_top.env.scb [CHK] PASS x=[8 1 19 9] exp=[-9 14 53 0] act=[-9 14 53 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 5455000: uvm_test_top.env.scb [CHK] PASS x=[1 -1 9 6] exp=[-5 14 24 0] act=[-5 14 24 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 5495000: uvm_test_top.env.scb [CHK] PASS x=[1 -4 14 3] exp=[-7 18 34 0] act=[-7 18 34 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 5975000: uvm_test_top.env.scb [CHK] PASS x=[-6 4 -19 -8] exp=[64 33 -13 0] act=[64 33 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 6455000: uvm_test_top.env.scb [CHK] PASS x=[-27 -96 85 118] exp=[10 5 7 -8] act=[10 5 7 -8] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 6485000: uvm_test_top.env.scb [CHK] PASS x=[-1 16 101 -15] exp=[8 -3 -8 -2] act=[8 -3 -8 -2] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 6495000: uvm_test_top.env.scb [CHK] PASS x=[30 -12 -28 85] exp=[5 -3 10 1] act=[5 -3 10 1] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 6505000: uvm_test_top.env.scb [CHK] PASS x=[-100 110 -47 79] exp=[1 -4 -1 10] act=[1 -4 -1 10] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 6515000: uvm_test_top.env.scb [CHK] PASS x=[80 58 -112 107] exp=[6 -9 15 15] act=[6 -9 15 15] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 6525000: uvm_test_top.env.scb [CHK] PASS x=[110 113 70 -108] exp=[9 -11 -13 13] act=[9 -11 -13 13] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 6535000: uvm_test_top.env.scb [CHK] PASS x=[81 -80 -83 -3] exp=[-4 4 18 -2] act=[-4 4 18 -2] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 6545000: uvm_test_top.env.scb [CHK] PASS x=[102 -59 111 34] exp=[15 -4 -2 -4] act=[15 -4 -2 -4] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 6575000: uvm_test_top.env.scb [CHK] PASS x=[-118 -25 -6 -110] exp=[-9 20 -3 -4] act=[-9 20 -3 -4] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 6585000: uvm_test_top.env.scb [CHK] PASS x=[-126 -108 -32 -97] exp=[-12 31 6 -9] act=[-12 31 6 -9] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 6595000: uvm_test_top.env.scb [CHK] PASS x=[-82 120 -55 -3] exp=[-3 -3 -4 12] act=[-3 -3 -4 12] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 6605000: uvm_test_top.env.scb [CHK] PASS x=[-109 -72 28 -82] exp=[-8 22 -2 -8] act=[-8 22 -2 -8] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 6615000: uvm_test_top.env.scb [CHK] PASS x=[107 -7 45 -63] exp=[4 -4 -4 1] act=[4 -4 -4 1] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 6625000: uvm_test_top.env.scb [CHK] PASS x=[-111 114 -128 45] exp=[-5 -2 5 14] act=[-5 -2 5 14] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 7095000: uvm_test_top.env.scb [CHK] PASS x=[-34 28 48 -106] exp=[-66 -109 127 127] act=[-66 -109 127 127] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 7135000: uvm_test_top.env.scb [CHK] PASS x=[120 -50 -14 -128] exp=[-67 -69 -33 -33] act=[-67 -69 -33 -33] lat=5
+UVM_INFO mlp_scoreboard.sv(172) @ 7145000: uvm_test_top.env.scb [CHK] PASS x=[8 32 73 111] exp=[127 46 -99 -31] act=[127 46 -99 -31] lat=3
+UVM_INFO mlp_scoreboard.sv(172) @ 7155000: uvm_test_top.env.scb [CHK] PASS x=[120 45 104 -90] exp=[111 -128 -21 38] act=[111 -128 -21 38] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 7175000: uvm_test_top.env.scb [CHK] PASS x=[44 80 13 -21] exp=[89 -61 111 61] act=[89 -61 111 61] lat=3
+UVM_INFO mlp_scoreboard.sv(172) @ 7185000: uvm_test_top.env.scb [CHK] PASS x=[10 -31 40 91] exp=[127 107 -128 -63] act=[127 107 -128 -63] lat=3
+UVM_INFO mlp_scoreboard.sv(172) @ 7195000: uvm_test_top.env.scb [CHK] PASS x=[5 12 -29 2] exp=[-6 16 33 -6] act=[-6 16 33 -6] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 7205000: uvm_test_top.env.scb [CHK] PASS x=[-126 12 3 115] exp=[55 127 18 11] act=[55 127 18 11] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 7215000: uvm_test_top.env.scb [CHK] PASS x=[33 42 73 79] exp=[127 -5 -82 -23] act=[127 -5 -82 -23] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 7225000: uvm_test_top.env.scb [CHK] PASS x=[-76 5 61 127] exp=[127 114 -71 -18] act=[127 114 -71 -18] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 7245000: uvm_test_top.env.scb [CHK] PASS x=[51 127 19 114] exp=[127 16 -15 -5] act=[127 16 -15 -5] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 7275000: uvm_test_top.env.scb [CHK] PASS x=[-44 109 125 31] exp=[127 -89 118 127] act=[127 -89 118 127] lat=3
+UVM_INFO mlp_scoreboard.sv(172) @ 7295000: uvm_test_top.env.scb [CHK] PASS x=[35 62 -40 111] exp=[127 127 -40 -41] act=[127 127 -40 -41] lat=4
+UVM_INFO mlp_scoreboard.sv(172) @ 7305000: uvm_test_top.env.scb [CHK] PASS x=[-38 11 -4 7] exp=[-13 4 65 26] act=[-13 4 65 26] lat=3
+UVM_INFO mlp_scoreboard.sv(172) @ 7795000: uvm_test_top.env.scb [CHK] PASS x=[31 -37 -65 2] exp=[3 -1 -1 4] act=[3 -1 -1 4] lat=4
+UVM_INFO mlp_scoreboard.sv(172) @ 7945000: uvm_test_top.env.scb [CHK] PASS x=[-73 -96 34 -29] exp=[-1 6 4 -1] act=[-1 6 4 -1] lat=18
+UVM_INFO mlp_scoreboard.sv(172) @ 7985000: uvm_test_top.env.scb [CHK] PASS x=[-74 -70 -39 -108] exp=[-1 -1 3 3] act=[-1 -1 3 3] lat=19
+UVM_INFO mlp_scoreboard.sv(172) @ 8005000: uvm_test_top.env.scb [CHK] PASS x=[24 63 65 50] exp=[0 3 -1 -1] act=[0 3 -1 -1] lat=6
+UVM_INFO mlp_scoreboard.sv(172) @ 8025000: uvm_test_top.env.scb [CHK] PASS x=[-10 -120 -92 123] exp=[6 1 -1 -1] act=[6 1 -1 -1] lat=4
+UVM_INFO mlp_scoreboard.sv(172) @ 8065000: uvm_test_top.env.scb [CHK] PASS x=[49 54 55 83] exp=[2 2 -1 -1] act=[2 2 -1 -1] lat=6
+UVM_INFO mlp_scoreboard.sv(172) @ 8125000: uvm_test_top.env.scb [CHK] PASS x=[-63 -116 71 113] exp=[-1 13 3 -2] act=[-1 13 3 -2] lat=10
+UVM_INFO mlp_scoreboard.sv(172) @ 8215000: uvm_test_top.env.scb [CHK] PASS x=[-85 30 35 -22] exp=[-1 4 2 -1] act=[-1 4 2 -1] lat=15
+UVM_INFO mlp_scoreboard.sv(172) @ 8245000: uvm_test_top.env.scb [CHK] PASS x=[-80 -57 -34 61] exp=[1 5 0 -1] act=[1 5 0 -1] lat=12
+UVM_INFO mlp_scoreboard.sv(172) @ 8285000: uvm_test_top.env.scb [CHK] PASS x=[-9 -27 -90 117] exp=[9 -1 -1 -1] act=[9 -1 -1 -1] lat=7
+UVM_INFO mlp_scoreboard.sv(172) @ 8355000: uvm_test_top.env.scb [CHK] PASS x=[60 12 -82 12] exp=[6 -1 -1 6] act=[6 -1 -1 6] lat=11
+UVM_INFO mlp_scoreboard.sv(172) @ 8365000: uvm_test_top.env.scb [CHK] PASS x=[-68 -32 3 -108] exp=[-1 0 3 1] act=[-1 0 3 1] lat=8
+UVM_INFO mlp_scoreboard.sv(172) @ 8385000: uvm_test_top.env.scb [CHK] PASS x=[-94 37 127 -67] exp=[-2 9 6 -1] act=[-2 9 6 -1] lat=3
+UVM_INFO mlp_scoreboard.sv(172) @ 8395000: uvm_test_top.env.scb [CHK] PASS x=[78 -35 -79 -104] exp=[1 -2 -1 11] act=[1 -2 -1 11] lat=3
+UVM_INFO mlp_scoreboard.sv(172) @ 8905000: uvm_test_top.env.scb [CHK] PASS x=[66 0 0 0] exp=[-1 56 -7 0] act=[-1 56 -7 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 8915000: uvm_test_top.env.scb [CHK] PASS x=[45 0 96 0] exp=[-34 46 127 0] act=[-34 46 127 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 8945000: uvm_test_top.env.scb [CHK] PASS x=[-82 0 0 57] exp=[-10 -13 127 0] act=[-10 -13 127 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 8955000: uvm_test_top.env.scb [CHK] PASS x=[0 -123 0 0] exp=[-24 -1 127 0] act=[-24 -1 127 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 8965000: uvm_test_top.env.scb [CHK] PASS x=[0 73 0 0] exp=[105 41 -19 0] act=[105 41 -19 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 9005000: uvm_test_top.env.scb [CHK] PASS x=[0 0 -35 0] exp=[92 23 -15 0] act=[92 23 -15 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 9025000: uvm_test_top.env.scb [CHK] PASS x=[-28 0 77 0] exp=[-27 9 127 0] act=[-27 9 127 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 9035000: uvm_test_top.env.scb [CHK] PASS x=[0 0 27 0] exp=[-10 23 54 0] act=[-10 23 54 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 9085000: uvm_test_top.env.scb [CHK] PASS x=[0 98 0 0] exp=[127 48 -24 0] act=[127 48 -24 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 9095000: uvm_test_top.env.scb [CHK] PASS x=[0 0 0 77] exp=[-13 -12 127 0] act=[-13 -12 127 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 9115000: uvm_test_top.env.scb [CHK] PASS x=[0 0 0 0] exp=[-1 23 -3 0] act=[-1 23 -3 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 9145000: uvm_test_top.env.scb [CHK] PASS x=[0 0 0 0] exp=[-1 23 -3 0] act=[-1 23 -3 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 9155000: uvm_test_top.env.scb [CHK] PASS x=[0 0 0 0] exp=[-1 23 -3 0] act=[-1 23 -3 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 9165000: uvm_test_top.env.scb [CHK] PASS x=[0 0 0 0] exp=[-1 23 -3 0] act=[-1 23 -3 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 9195000: uvm_test_top.env.scb [CHK] PASS x=[0 0 0 23] exp=[-5 -2 49 0] act=[-5 -2 49 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 9205000: uvm_test_top.env.scb [CHK] PASS x=[-17 0 0 0] exp=[-1 15 -2 0] act=[-1 15 -2 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 9215000: uvm_test_top.env.scb [CHK] PASS x=[0 0 0 0] exp=[-1 23 -3 0] act=[-1 23 -3 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 9255000: uvm_test_top.env.scb [CHK] PASS x=[26 25 0 0] exp=[33 42 -10 0] act=[33 42 -10 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 9265000: uvm_test_top.env.scb [CHK] PASS x=[0 0 0 -74] exp=[88 127 -31 0] act=[88 127 -31 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 9275000: uvm_test_top.env.scb [CHK] PASS x=[0 0 0 0] exp=[-1 23 -3 0] act=[-1 23 -3 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 9285000: uvm_test_top.env.scb [CHK] PASS x=[-36 0 126 0] exp=[-44 5 127 0] act=[-44 5 127 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 9295000: uvm_test_top.env.scb [CHK] PASS x=[0 0 0 0] exp=[-1 23 -3 0] act=[-1 23 -3 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 9315000: uvm_test_top.env.scb [CHK] PASS x=[0 0 0 51] exp=[-9 -7 127 0] act=[-9 -7 127 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 9325000: uvm_test_top.env.scb [CHK] PASS x=[0 0 33 0] exp=[-12 23 70 0] act=[-12 23 70 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 9335000: uvm_test_top.env.scb [CHK] PASS x=[0 37 0 0] exp=[51 32 -11 0] act=[51 32 -11 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 9345000: uvm_test_top.env.scb [CHK] PASS x=[-96 0 0 0] exp=[-1 -4 28 0] act=[-1 -4 28 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 9385000: uvm_test_top.env.scb [CHK] PASS x=[-8 0 0 0] exp=[-1 19 -2 0] act=[-1 19 -2 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 9395000: uvm_test_top.env.scb [CHK] PASS x=[0 0 0 0] exp=[-1 23 -3 0] act=[-1 23 -3 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 9445000: uvm_test_top.env.scb [CHK] PASS x=[0 0 0 0] exp=[-1 23 -3 0] act=[-1 23 -3 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 9455000: uvm_test_top.env.scb [CHK] PASS x=[0 0 0 99] exp=[-16 -16 127 0] act=[-16 -16 127 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 9495000: uvm_test_top.env.scb [CHK] PASS x=[-40 0 0 0] exp=[-1 3 0 0] act=[-1 3 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 9515000: uvm_test_top.env.scb [CHK] PASS x=[0 0 0 0] exp=[-1 23 -3 0] act=[-1 23 -3 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 9545000: uvm_test_top.env.scb [CHK] PASS x=[0 0 0 64] exp=[-11 -10 127 0] act=[-11 -10 127 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 9565000: uvm_test_top.env.scb [CHK] PASS x=[0 0 0 24] exp=[-5 -2 52 0] act=[-5 -2 52 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 9575000: uvm_test_top.env.scb [CHK] PASS x=[0 0 0 0] exp=[-1 23 -3 0] act=[-1 23 -3 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 9585000: uvm_test_top.env.scb [CHK] PASS x=[58 -31 0 0] exp=[-7 44 5 0] act=[-7 44 5 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 9595000: uvm_test_top.env.scb [CHK] PASS x=[56 0 0 -48] exp=[56 123 -24 0] act=[56 123 -24 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 9605000: uvm_test_top.env.scb [CHK] PASS x=[0 96 0 0] exp=[127 47 -24 0] act=[127 47 -24 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 9615000: uvm_test_top.env.scb [CHK] PASS x=[0 0 120 51] exp=[-50 -7 127 0] act=[-50 -7 127 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 9625000: uvm_test_top.env.scb [CHK] PASS x=[0 0 0 -30] exp=[33 68 -14 0] act=[33 68 -14 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 10105000: uvm_test_top.env.scb [CHK] PASS x=[0 0 0 0] exp=[-1 23 -3 0] act=[-1 23 -3 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 10115000: uvm_test_top.env.scb [CHK] PASS x=[127 127 127 127] exp=[-41 -9 127 0] act=[-41 -9 127 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 10125000: uvm_test_top.env.scb [CHK] PASS x=[-128 -128 -128 -128] exp=[127 119 -59 0] act=[127 119 -59 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 10135000: uvm_test_top.env.scb [CHK] PASS x=[127 -128 127 -128] exp=[-49 127 105 0] act=[-49 127 105 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 10145000: uvm_test_top.env.scb [CHK] PASS x=[-128 127 -128 127] exp=[127 -25 -19 0] act=[127 -25 -19 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 10155000: uvm_test_top.env.scb [CHK] PASS x=[127 0 0 0] exp=[-1 87 -11 0] act=[-1 87 -11 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 10165000: uvm_test_top.env.scb [CHK] PASS x=[-128 0 0 0] exp=[-1 -6 44 0] act=[-1 -6 44 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 10175000: uvm_test_top.env.scb [CHK] PASS x=[0 127 0 0] exp=[127 55 -31 0] act=[127 55 -31 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 10185000: uvm_test_top.env.scb [CHK] PASS x=[0 -128 0 0] exp=[-25 -2 127 0] act=[-25 -2 127 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 10195000: uvm_test_top.env.scb [CHK] PASS x=[0 0 127 0] exp=[-45 23 127 0] act=[-45 23 127 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 10205000: uvm_test_top.env.scb [CHK] PASS x=[0 0 -128 0] exp=[127 23 -47 0] act=[127 23 -47 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 10215000: uvm_test_top.env.scb [CHK] PASS x=[0 0 0 127] exp=[-21 -21 127 0] act=[-21 -21 127 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 10225000: uvm_test_top.env.scb [CHK] PASS x=[0 0 0 -128] exp=[127 127 -51 0] act=[127 127 -51 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 10235000: uvm_test_top.env.scb [CHK] PASS x=[1 -1 1 -1] exp=[-1 25 -3 0] act=[-1 25 -3 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 10245000: uvm_test_top.env.scb [CHK] PASS x=[-1 -1 -1 -1] exp=[-1 24 -3 0] act=[-1 24 -3 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 10715000: uvm_test_top.env.scb [CHK] PASS x=[0 0 0 0] exp=[-128 -128 -128 -128] act=[-128 -128 -128 -128] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 10725000: uvm_test_top.env.scb [CHK] PASS x=[127 127 127 127] exp=[-128 -128 -128 -128] act=[-128 -128 -128 -128] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 10735000: uvm_test_top.env.scb [CHK] PASS x=[-128 -128 -128 -128] exp=[127 127 127 127] act=[127 127 127 127] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 10745000: uvm_test_top.env.scb [CHK] PASS x=[127 -128 127 -128] exp=[127 127 127 127] act=[127 127 127 127] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 10755000: uvm_test_top.env.scb [CHK] PASS x=[-128 127 -128 127] exp=[127 127 127 127] act=[127 127 127 127] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 10765000: uvm_test_top.env.scb [CHK] PASS x=[127 0 0 0] exp=[-128 -128 -128 -128] act=[-128 -128 -128 -128] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 10775000: uvm_test_top.env.scb [CHK] PASS x=[-128 0 0 0] exp=[127 127 127 127] act=[127 127 127 127] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 10785000: uvm_test_top.env.scb [CHK] PASS x=[0 127 0 0] exp=[-128 -128 -128 -128] act=[-128 -128 -128 -128] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 10795000: uvm_test_top.env.scb [CHK] PASS x=[0 -128 0 0] exp=[127 127 127 127] act=[127 127 127 127] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 10805000: uvm_test_top.env.scb [CHK] PASS x=[0 0 127 0] exp=[-128 -128 -128 -128] act=[-128 -128 -128 -128] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 10815000: uvm_test_top.env.scb [CHK] PASS x=[0 0 -128 0] exp=[127 127 127 127] act=[127 127 127 127] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 10825000: uvm_test_top.env.scb [CHK] PASS x=[0 0 0 127] exp=[-128 -128 -128 -128] act=[-128 -128 -128 -128] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 10835000: uvm_test_top.env.scb [CHK] PASS x=[0 0 0 -128] exp=[127 127 127 127] act=[127 127 127 127] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 10845000: uvm_test_top.env.scb [CHK] PASS x=[1 -1 1 -1] exp=[-128 -128 -128 -128] act=[-128 -128 -128 -128] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 10855000: uvm_test_top.env.scb [CHK] PASS x=[-1 -1 -1 -1] exp=[127 127 127 127] act=[127 127 127 127] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 11325000: uvm_test_top.env.scb [CHK] PASS x=[0 0 0 0] exp=[127 127 127 127] act=[127 127 127 127] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 11335000: uvm_test_top.env.scb [CHK] PASS x=[127 127 127 127] exp=[127 127 127 127] act=[127 127 127 127] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 11345000: uvm_test_top.env.scb [CHK] PASS x=[-128 -128 -128 -128] exp=[-128 -128 -128 -128] act=[-128 -128 -128 -128] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 11355000: uvm_test_top.env.scb [CHK] PASS x=[127 -128 127 -128] exp=[-127 -127 -127 -127] act=[-127 -127 -127 -127] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 11365000: uvm_test_top.env.scb [CHK] PASS x=[-128 127 -128 127] exp=[-127 -127 -127 -127] act=[-127 -127 -127 -127] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 11375000: uvm_test_top.env.scb [CHK] PASS x=[127 0 0 0] exp=[127 127 127 127] act=[127 127 127 127] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 11385000: uvm_test_top.env.scb [CHK] PASS x=[-128 0 0 0] exp=[-128 -128 -128 -128] act=[-128 -128 -128 -128] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 11395000: uvm_test_top.env.scb [CHK] PASS x=[0 127 0 0] exp=[127 127 127 127] act=[127 127 127 127] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 11405000: uvm_test_top.env.scb [CHK] PASS x=[0 -128 0 0] exp=[-128 -128 -128 -128] act=[-128 -128 -128 -128] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 11415000: uvm_test_top.env.scb [CHK] PASS x=[0 0 127 0] exp=[127 127 127 127] act=[127 127 127 127] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 11425000: uvm_test_top.env.scb [CHK] PASS x=[0 0 -128 0] exp=[-128 -128 -128 -128] act=[-128 -128 -128 -128] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 11435000: uvm_test_top.env.scb [CHK] PASS x=[0 0 0 127] exp=[127 127 127 127] act=[127 127 127 127] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 11445000: uvm_test_top.env.scb [CHK] PASS x=[0 0 0 -128] exp=[-128 -128 -128 -128] act=[-128 -128 -128 -128] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 11455000: uvm_test_top.env.scb [CHK] PASS x=[1 -1 1 -1] exp=[127 127 127 127] act=[127 127 127 127] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 11465000: uvm_test_top.env.scb [CHK] PASS x=[-1 -1 -1 -1] exp=[-128 -128 -128 -128] act=[-128 -128 -128 -128] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 11935000: uvm_test_top.env.scb [CHK] PASS x=[0 0 0 0] exp=[-1 -1 -1 -1] act=[-1 -1 -1 -1] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 11945000: uvm_test_top.env.scb [CHK] PASS x=[127 127 127 127] exp=[1 1 1 1] act=[1 1 1 1] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 11955000: uvm_test_top.env.scb [CHK] PASS x=[-128 -128 -128 -128] exp=[-1 -1 -1 -1] act=[-1 -1 -1 -1] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 11965000: uvm_test_top.env.scb [CHK] PASS x=[127 -128 127 -128] exp=[-1 -1 -1 -1] act=[-1 -1 -1 -1] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 11975000: uvm_test_top.env.scb [CHK] PASS x=[-128 127 -128 127] exp=[-1 -1 -1 -1] act=[-1 -1 -1 -1] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 11985000: uvm_test_top.env.scb [CHK] PASS x=[127 0 0 0] exp=[0 0 0 0] act=[0 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 11995000: uvm_test_top.env.scb [CHK] PASS x=[-128 0 0 0] exp=[-1 -1 -1 -1] act=[-1 -1 -1 -1] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 12005000: uvm_test_top.env.scb [CHK] PASS x=[0 127 0 0] exp=[0 0 0 0] act=[0 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 12015000: uvm_test_top.env.scb [CHK] PASS x=[0 -128 0 0] exp=[-1 -1 -1 -1] act=[-1 -1 -1 -1] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 12025000: uvm_test_top.env.scb [CHK] PASS x=[0 0 127 0] exp=[0 0 0 0] act=[0 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 12035000: uvm_test_top.env.scb [CHK] PASS x=[0 0 -128 0] exp=[-1 -1 -1 -1] act=[-1 -1 -1 -1] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 12045000: uvm_test_top.env.scb [CHK] PASS x=[0 0 0 127] exp=[0 0 0 0] act=[0 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 12055000: uvm_test_top.env.scb [CHK] PASS x=[0 0 0 -128] exp=[-1 -1 -1 -1] act=[-1 -1 -1 -1] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 12065000: uvm_test_top.env.scb [CHK] PASS x=[1 -1 1 -1] exp=[-1 -1 -1 -1] act=[-1 -1 -1 -1] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 12075000: uvm_test_top.env.scb [CHK] PASS x=[-1 -1 -1 -1] exp=[-1 -1 -1 -1] act=[-1 -1 -1 -1] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 12545000: uvm_test_top.env.scb [CHK] PASS x=[0 0 0 0] exp=[0 0 0 0] act=[0 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 12555000: uvm_test_top.env.scb [CHK] PASS x=[127 127 127 127] exp=[-2 -2 -2 -2] act=[-2 -2 -2 -2] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 12565000: uvm_test_top.env.scb [CHK] PASS x=[-128 -128 -128 -128] exp=[2 2 2 2] act=[2 2 2 2] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 12575000: uvm_test_top.env.scb [CHK] PASS x=[127 -128 127 -128] exp=[0 0 0 0] act=[0 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 12585000: uvm_test_top.env.scb [CHK] PASS x=[-128 127 -128 127] exp=[0 0 0 0] act=[0 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 12595000: uvm_test_top.env.scb [CHK] PASS x=[127 0 0 0] exp=[-1 -1 -1 -1] act=[-1 -1 -1 -1] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 12605000: uvm_test_top.env.scb [CHK] PASS x=[-128 0 0 0] exp=[0 0 0 0] act=[0 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 12615000: uvm_test_top.env.scb [CHK] PASS x=[0 127 0 0] exp=[-1 -1 -1 -1] act=[-1 -1 -1 -1] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 12625000: uvm_test_top.env.scb [CHK] PASS x=[0 -128 0 0] exp=[0 0 0 0] act=[0 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 12635000: uvm_test_top.env.scb [CHK] PASS x=[0 0 127 0] exp=[-1 -1 -1 -1] act=[-1 -1 -1 -1] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 12645000: uvm_test_top.env.scb [CHK] PASS x=[0 0 -128 0] exp=[0 0 0 0] act=[0 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 12655000: uvm_test_top.env.scb [CHK] PASS x=[0 0 0 127] exp=[-1 -1 -1 -1] act=[-1 -1 -1 -1] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 12665000: uvm_test_top.env.scb [CHK] PASS x=[0 0 0 -128] exp=[0 0 0 0] act=[0 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 12675000: uvm_test_top.env.scb [CHK] PASS x=[1 -1 1 -1] exp=[0 0 0 0] act=[0 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 12685000: uvm_test_top.env.scb [CHK] PASS x=[-1 -1 -1 -1] exp=[0 0 0 0] act=[0 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 13155000: uvm_test_top.env.scb [CHK] PASS x=[0 0 0 0] exp=[0 0 0 0] act=[0 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 13165000: uvm_test_top.env.scb [CHK] PASS x=[127 127 127 127] exp=[0 0 0 0] act=[0 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 13175000: uvm_test_top.env.scb [CHK] PASS x=[-128 -128 -128 -128] exp=[0 0 0 0] act=[0 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 13185000: uvm_test_top.env.scb [CHK] PASS x=[127 -128 127 -128] exp=[127 127 127 127] act=[127 127 127 127] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 13195000: uvm_test_top.env.scb [CHK] PASS x=[-128 127 -128 127] exp=[-128 -128 -128 -128] act=[-128 -128 -128 -128] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 13205000: uvm_test_top.env.scb [CHK] PASS x=[127 0 0 0] exp=[127 127 127 127] act=[127 127 127 127] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 13215000: uvm_test_top.env.scb [CHK] PASS x=[-128 0 0 0] exp=[-128 -128 -128 -128] act=[-128 -128 -128 -128] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 13225000: uvm_test_top.env.scb [CHK] PASS x=[0 127 0 0] exp=[-128 -128 -128 -128] act=[-128 -128 -128 -128] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 13235000: uvm_test_top.env.scb [CHK] PASS x=[0 -128 0 0] exp=[127 127 127 127] act=[127 127 127 127] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 13245000: uvm_test_top.env.scb [CHK] PASS x=[0 0 127 0] exp=[127 127 127 127] act=[127 127 127 127] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 13255000: uvm_test_top.env.scb [CHK] PASS x=[0 0 -128 0] exp=[-128 -128 -128 -128] act=[-128 -128 -128 -128] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 13265000: uvm_test_top.env.scb [CHK] PASS x=[0 0 0 127] exp=[-128 -128 -128 -128] act=[-128 -128 -128 -128] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 13275000: uvm_test_top.env.scb [CHK] PASS x=[0 0 0 -128] exp=[127 127 127 127] act=[127 127 127 127] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 13285000: uvm_test_top.env.scb [CHK] PASS x=[1 -1 1 -1] exp=[127 127 127 127] act=[127 127 127 127] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 13295000: uvm_test_top.env.scb [CHK] PASS x=[-1 -1 -1 -1] exp=[0 0 0 0] act=[0 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 13775000: uvm_test_top.env.scb [CHK] PASS x=[100 100 100 100] exp=[127 -128 5 127] act=[127 -128 5 127] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 13785000: uvm_test_top.env.scb [CHK] PASS x=[-100 -100 -100 -100] exp=[-128 127 5 -128] act=[-128 127 5 -128] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 13795000: uvm_test_top.env.scb [CHK] PASS x=[127 127 127 127] exp=[127 -128 5 127] act=[127 -128 5 127] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 13805000: uvm_test_top.env.scb [CHK] PASS x=[-128 -128 -128 -128] exp=[-128 127 5 -128] act=[-128 127 5 -128] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 13815000: uvm_test_top.env.scb [CHK] PASS x=[127 -128 127 -128] exp=[-3 20 127 -48] act=[-3 20 127 -48] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 13835000: uvm_test_top.env.scb [CHK] PASS x=[-128 127 -128 127] exp=[-3 20 -64 -48] act=[-3 20 -64 -48] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 13845000: uvm_test_top.env.scb [CHK] PASS x=[50 50 50 50] exp=[127 -128 5 127] act=[127 -128 5 127] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 13885000: uvm_test_top.env.scb [CHK] PASS x=[0 0 0 0] exp=[0 0 5 -16] act=[0 0 5 -16] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 13905000: uvm_test_top.env.scb [CHK] PASS x=[-10 -10 -10 -10] exp=[-50 127 5 -128] act=[-50 127 5 -128] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 13915000: uvm_test_top.env.scb [CHK] PASS x=[20 20 20 20] exp=[127 -100 5 127] act=[127 -100 5 127] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 13985000: uvm_test_top.env.scb [CHK] PASS x=[100 100 100 100] exp=[127 -128 5 127] act=[127 -128 5 127] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 13995000: uvm_test_top.env.scb [CHK] PASS x=[-100 -100 -100 -100] exp=[-128 127 5 -128] act=[-128 127 5 -128] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 14005000: uvm_test_top.env.scb [CHK] PASS x=[127 127 127 127] exp=[127 -128 5 127] act=[127 -128 5 127] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 14015000: uvm_test_top.env.scb [CHK] PASS x=[-128 -128 -128 -128] exp=[-128 127 5 -128] act=[-128 127 5 -128] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 14025000: uvm_test_top.env.scb [CHK] PASS x=[127 -128 127 -128] exp=[-20 20 127 -128] act=[-20 20 127 -128] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 14035000: uvm_test_top.env.scb [CHK] PASS x=[-128 127 -128 127] exp=[-20 20 -128 -128] act=[-20 20 -128 -128] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 14045000: uvm_test_top.env.scb [CHK] PASS x=[50 50 50 50] exp=[127 -128 5 127] act=[127 -128 5 127] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 14055000: uvm_test_top.env.scb [CHK] PASS x=[0 0 0 0] exp=[0 0 5 -128] act=[0 0 5 -128] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 14065000: uvm_test_top.env.scb [CHK] PASS x=[-10 -10 -10 -10] exp=[-128 127 5 -128] act=[-128 127 5 -128] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 14075000: uvm_test_top.env.scb [CHK] PASS x=[20 20 20 20] exp=[127 -128 5 127] act=[127 -128 5 127] lat=2
+UVM_INFO mlp_scoreboard.sv(127) @ 14545000: uvm_test_top.env.scb [RST] reset seen in state IDLE                 : 0 sample(s) dropped, model back to reset values
+UVM_INFO mlp_scoreboard.sv(172) @ 14615000: uvm_test_top.env.scb [CHK] PASS x=[0 0 0 0] exp=[-8 0 0 0] act=[-8 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 14625000: uvm_test_top.env.scb [CHK] PASS x=[-44 -117 7 74] exp=[-8 0 0 0] act=[-8 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 15105000: uvm_test_top.env.scb [CHK] PASS x=[-6 4 -19 -8] exp=[64 33 -13 0] act=[64 33 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 15115000: uvm_test_top.env.scb [CHK] PASS x=[-6 2 -16 -6] exp=[50 30 -11 0] act=[50 30 -11 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 15125000: uvm_test_top.env.scb [CHK] PASS x=[-10 1 -19 -8] exp=[60 30 -12 0] act=[60 30 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 15135000: uvm_test_top.env.scb [CHK] PASS x=[0 -3 3 -2] exp=[-2 25 -2 0] act=[-2 25 -2 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 15145000: uvm_test_top.env.scb [CHK] PASS x=[-3 -3 5 0] exp=[-3 21 0 0] act=[-3 21 0 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(127) @ 15625000: uvm_test_top.env.scb [RST] reset seen in state STAGE1                 : 1 sample(s) dropped, model back to reset values
+UVM_INFO mlp_scoreboard.sv(172) @ 15695000: uvm_test_top.env.scb [CHK] PASS x=[0 0 0 0] exp=[-8 0 0 0] act=[-8 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 15705000: uvm_test_top.env.scb [CHK] PASS x=[-83 -90 115 -65] exp=[-8 0 0 0] act=[-8 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 16185000: uvm_test_top.env.scb [CHK] PASS x=[-6 4 -19 -8] exp=[64 33 -13 0] act=[64 33 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 16195000: uvm_test_top.env.scb [CHK] PASS x=[-6 2 -16 -6] exp=[50 30 -11 0] act=[50 30 -11 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 16205000: uvm_test_top.env.scb [CHK] PASS x=[-10 1 -19 -8] exp=[60 30 -12 0] act=[60 30 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 16215000: uvm_test_top.env.scb [CHK] PASS x=[0 -3 3 -2] exp=[-2 25 -2 0] act=[-2 25 -2 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 16225000: uvm_test_top.env.scb [CHK] PASS x=[-3 -3 5 0] exp=[-3 21 0 0] act=[-3 21 0 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 16705000: uvm_test_top.env.scb [CHK] PASS x=[-6 4 -19 -8] exp=[64 33 -13 0] act=[64 33 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(127) @ 16715000: uvm_test_top.env.scb [RST] reset seen in state OUTREG                 : 0 sample(s) dropped, model back to reset values
+UVM_INFO mlp_scoreboard.sv(172) @ 16785000: uvm_test_top.env.scb [CHK] PASS x=[0 0 0 0] exp=[-8 0 0 0] act=[-8 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 16795000: uvm_test_top.env.scb [CHK] PASS x=[89 -78 75 -78] exp=[-8 0 0 0] act=[-8 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 17275000: uvm_test_top.env.scb [CHK] PASS x=[-6 4 -19 -8] exp=[64 33 -13 0] act=[64 33 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 17285000: uvm_test_top.env.scb [CHK] PASS x=[-6 2 -16 -6] exp=[50 30 -11 0] act=[50 30 -11 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 17295000: uvm_test_top.env.scb [CHK] PASS x=[-10 1 -19 -8] exp=[60 30 -12 0] act=[60 30 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 17305000: uvm_test_top.env.scb [CHK] PASS x=[0 -3 3 -2] exp=[-2 25 -2 0] act=[-2 25 -2 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 17315000: uvm_test_top.env.scb [CHK] PASS x=[-3 -3 5 0] exp=[-3 21 0 0] act=[-3 21 0 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(127) @ 17805000: uvm_test_top.env.scb [RST] reset seen in state OUTREG (output stalled): 1 sample(s) dropped, model back to reset values
+UVM_INFO mlp_scoreboard.sv(172) @ 17875000: uvm_test_top.env.scb [CHK] PASS x=[0 0 0 0] exp=[-8 0 0 0] act=[-8 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 17885000: uvm_test_top.env.scb [CHK] PASS x=[-74 101 15 -64] exp=[-8 0 0 0] act=[-8 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 18365000: uvm_test_top.env.scb [CHK] PASS x=[-6 4 -19 -8] exp=[64 33 -13 0] act=[64 33 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 18375000: uvm_test_top.env.scb [CHK] PASS x=[-6 2 -16 -6] exp=[50 30 -11 0] act=[50 30 -11 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 18385000: uvm_test_top.env.scb [CHK] PASS x=[-10 1 -19 -8] exp=[60 30 -12 0] act=[60 30 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 18395000: uvm_test_top.env.scb [CHK] PASS x=[0 -3 3 -2] exp=[-2 25 -2 0] act=[-2 25 -2 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 18405000: uvm_test_top.env.scb [CHK] PASS x=[-3 -3 5 0] exp=[-3 21 0 0] act=[-3 21 0 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(127) @ 18895000: uvm_test_top.env.scb [RST] reset seen in state BOTH (output stalled): 2 sample(s) dropped, model back to reset values
+UVM_INFO mlp_scoreboard.sv(172) @ 18965000: uvm_test_top.env.scb [CHK] PASS x=[0 0 0 0] exp=[-8 0 0 0] act=[-8 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 18975000: uvm_test_top.env.scb [CHK] PASS x=[43 77 -55 66] exp=[-8 0 0 0] act=[-8 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 19455000: uvm_test_top.env.scb [CHK] PASS x=[-6 4 -19 -8] exp=[64 33 -13 0] act=[64 33 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 19465000: uvm_test_top.env.scb [CHK] PASS x=[-6 2 -16 -6] exp=[50 30 -11 0] act=[50 30 -11 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 19475000: uvm_test_top.env.scb [CHK] PASS x=[-10 1 -19 -8] exp=[60 30 -12 0] act=[60 30 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 19485000: uvm_test_top.env.scb [CHK] PASS x=[0 -3 3 -2] exp=[-2 25 -2 0] act=[-2 25 -2 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 19495000: uvm_test_top.env.scb [CHK] PASS x=[-3 -3 5 0] exp=[-3 21 0 0] act=[-3 21 0 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 19975000: uvm_test_top.env.scb [CHK] PASS x=[-6 4 -19 -8] exp=[64 33 -13 0] act=[64 33 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 19985000: uvm_test_top.env.scb [CHK] PASS x=[-10 1 -18 -8] exp=[57 30 -12 0] act=[57 30 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 19995000: uvm_test_top.env.scb [CHK] PASS x=[-10 3 -19 -7] exp=[61 29 -12 0] act=[61 29 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(127) @ 20005000: uvm_test_top.env.scb [RST] reset seen in state BOTH                 : 1 sample(s) dropped, model back to reset values
+UVM_INFO mlp_scoreboard.sv(172) @ 20075000: uvm_test_top.env.scb [CHK] PASS x=[0 0 0 0] exp=[-8 0 0 0] act=[-8 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 20085000: uvm_test_top.env.scb [CHK] PASS x=[105 51 14 -77] exp=[-8 0 0 0] act=[-8 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 20565000: uvm_test_top.env.scb [CHK] PASS x=[-6 4 -19 -8] exp=[64 33 -13 0] act=[64 33 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 20575000: uvm_test_top.env.scb [CHK] PASS x=[-6 2 -16 -6] exp=[50 30 -11 0] act=[50 30 -11 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 20585000: uvm_test_top.env.scb [CHK] PASS x=[-10 1 -19 -8] exp=[60 30 -12 0] act=[60 30 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 20595000: uvm_test_top.env.scb [CHK] PASS x=[0 -3 3 -2] exp=[-2 25 -2 0] act=[-2 25 -2 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 20605000: uvm_test_top.env.scb [CHK] PASS x=[-3 -3 5 0] exp=[-3 21 0 0] act=[-3 21 0 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 21145000: uvm_test_top.env.scb [CHK] PASS x=[-7 1 -18 -9] exp=[58 33 -12 0] act=[58 33 -12 0] lat=8 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 21165000: uvm_test_top.env.scb [CHK] PASS x=[-6 3 -18 -8] exp=[60 33 -12 0] act=[60 33 -12 0] lat=9 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 21175000: uvm_test_top.env.scb [CHK] PASS x=[-6 6 -15 -6] exp=[54 31 -11 0] act=[54 31 -11 0] lat=3 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 21195000: uvm_test_top.env.scb [CHK] PASS x=[-6 6 -17 -8] exp=[62 34 -13 0] act=[62 34 -13 0] lat=3 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(127) @ 21215000: uvm_test_top.env.scb [RST] reset seen in state BOTH (output stalled): 2 sample(s) dropped, model back to reset values
+UVM_INFO mlp_scoreboard.sv(172) @ 21295000: uvm_test_top.env.scb [CHK] PASS x=[0 0 0 0] exp=[-8 0 0 0] act=[-8 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 21305000: uvm_test_top.env.scb [CHK] PASS x=[-91 2 -38 -13] exp=[-8 0 0 0] act=[-8 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 21785000: uvm_test_top.env.scb [CHK] PASS x=[-6 4 -19 -8] exp=[64 33 -13 0] act=[64 33 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 21795000: uvm_test_top.env.scb [CHK] PASS x=[-6 2 -16 -6] exp=[50 30 -11 0] act=[50 30 -11 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 21805000: uvm_test_top.env.scb [CHK] PASS x=[-10 1 -19 -8] exp=[60 30 -12 0] act=[60 30 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 21815000: uvm_test_top.env.scb [CHK] PASS x=[0 -3 3 -2] exp=[-2 25 -2 0] act=[-2 25 -2 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 21825000: uvm_test_top.env.scb [CHK] PASS x=[-3 -3 5 0] exp=[-3 21 0 0] act=[-3 21 0 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(127) @ 21845000: uvm_test_top.env.scb [RST] reset seen in state IDLE                 : 0 sample(s) dropped, model back to reset values
+UVM_INFO mlp_scoreboard.sv(127) @ 21865000: uvm_test_top.env.scb [RST] reset seen in state IDLE                 : 0 sample(s) dropped, model back to reset values
+UVM_INFO mlp_scoreboard.sv(172) @ 21925000: uvm_test_top.env.scb [CHK] PASS x=[0 0 0 0] exp=[-8 0 0 0] act=[-8 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 21935000: uvm_test_top.env.scb [CHK] PASS x=[62 8 86 12] exp=[-8 0 0 0] act=[-8 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 22415000: uvm_test_top.env.scb [CHK] PASS x=[-6 4 -19 -8] exp=[64 33 -13 0] act=[64 33 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 22425000: uvm_test_top.env.scb [CHK] PASS x=[-6 2 -16 -6] exp=[50 30 -11 0] act=[50 30 -11 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 22435000: uvm_test_top.env.scb [CHK] PASS x=[-10 1 -19 -8] exp=[60 30 -12 0] act=[60 30 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 22445000: uvm_test_top.env.scb [CHK] PASS x=[0 -3 3 -2] exp=[-2 25 -2 0] act=[-2 25 -2 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 22455000: uvm_test_top.env.scb [CHK] PASS x=[-3 -3 5 0] exp=[-3 21 0 0] act=[-3 21 0 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 22985000: uvm_test_top.env.scb [CHK] PASS x=[-6 4 -19 -8] exp=[127 127 -128 0] act=[127 127 -128 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 22995000: uvm_test_top.env.scb [CHK] PASS x=[64 -113 -16 -79] exp=[-122 127 -128 0] act=[-122 127 -128 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 23065000: uvm_test_top.env.scb [CHK] PASS x=[-10 1 -18 -8] exp=[127 123 -128 0] act=[127 123 -128 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 23075000: uvm_test_top.env.scb [CHK] PASS x=[-59 24 -104 19] exp=[127 -57 -128 0] act=[127 -57 -128 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 23145000: uvm_test_top.env.scb [CHK] PASS x=[-10 3 -19 -7] exp=[127 119 -94 0] act=[127 119 -94 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 23155000: uvm_test_top.env.scb [CHK] PASS x=[-27 -22 91 -109] exp=[-128 127 -45 0] act=[-128 127 -45 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 23225000: uvm_test_top.env.scb [CHK] PASS x=[-7 1 -18 -9] exp=[127 127 -48 0] act=[127 127 -48 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 23235000: uvm_test_top.env.scb [CHK] PASS x=[93 -30 -4 83] exp=[-71 -31 127 0] act=[-71 -31 127 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 23305000: uvm_test_top.env.scb [CHK] PASS x=[-8 0 -19 -9] exp=[127 127 -24 0] act=[127 127 -24 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 23315000: uvm_test_top.env.scb [CHK] PASS x=[87 1 -51 34] exp=[127 65 -26 0] act=[127 65 -26 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 23385000: uvm_test_top.env.scb [CHK] PASS x=[-6 6 -18 -7] exp=[127 127 -13 0] act=[127 127 -13 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 23395000: uvm_test_top.env.scb [CHK] PASS x=[38 -63 96 -45] exp=[-39 127 127 0] act=[-39 127 127 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 23465000: uvm_test_top.env.scb [CHK] PASS x=[-6 5 -18 -6] exp=[127 123 -6 0] act=[127 123 -6 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 23475000: uvm_test_top.env.scb [CHK] PASS x=[-104 -104 -17 -102] exp=[58 127 -9 0] act=[58 127 -9 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 23545000: uvm_test_top.env.scb [CHK] PASS x=[-6 2 -16 -6] exp=[127 120 -3 0] act=[127 120 -3 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 23555000: uvm_test_top.env.scb [CHK] PASS x=[-116 -10 94 -114] exp=[-5 127 -1 0] act=[-5 127 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 23625000: uvm_test_top.env.scb [CHK] PASS x=[-8 3 -15 -8] exp=[104 64 -128 0] act=[104 64 -128 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 23635000: uvm_test_top.env.scb [CHK] PASS x=[56 -92 121 -77] exp=[-128 127 127 0] act=[-128 127 127 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 23705000: uvm_test_top.env.scb [CHK] PASS x=[-3 4 -19 -8] exp=[127 70 -102 0] act=[127 70 -102 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 23715000: uvm_test_top.env.scb [CHK] PASS x=[-19 -8 97 122] exp=[-128 -128 127 0] act=[-128 -128 127 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 23785000: uvm_test_top.env.scb [CHK] PASS x=[-7 1 -18 -9] exp=[117 67 -48 0] act=[117 67 -48 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 23795000: uvm_test_top.env.scb [CHK] PASS x=[-96 -51 125 -127] exp=[-128 127 127 0] act=[-128 127 127 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 23865000: uvm_test_top.env.scb [CHK] PASS x=[-6 3 -18 -8] exp=[120 66 -24 0] act=[120 66 -24 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 23875000: uvm_test_top.env.scb [CHK] PASS x=[-44 -11 -2 25] exp=[-12 -10 127 0] act=[-12 -10 127 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 23945000: uvm_test_top.env.scb [CHK] PASS x=[-6 6 -15 -6] exp=[108 62 -11 0] act=[108 62 -11 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 23955000: uvm_test_top.env.scb [CHK] PASS x=[-48 -37 -79 -7] exp=[127 1 -22 0] act=[127 1 -22 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 24025000: uvm_test_top.env.scb [CHK] PASS x=[-6 6 -17 -8] exp=[124 68 -7 0] act=[124 68 -7 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 24035000: uvm_test_top.env.scb [CHK] PASS x=[-31 -128 2 123] exp=[-23 -14 127 0] act=[-23 -14 127 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 24105000: uvm_test_top.env.scb [CHK] PASS x=[-10 1 -19 -8] exp=[120 61 -3 0] act=[120 61 -3 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 24115000: uvm_test_top.env.scb [CHK] PASS x=[-111 -71 -44 91] exp=[-4 -6 127 0] act=[-4 -6 127 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 24185000: uvm_test_top.env.scb [CHK] PASS x=[9 1 8 2] exp=[-1 50 3 0] act=[-1 50 3 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 24195000: uvm_test_top.env.scb [CHK] PASS x=[-9 -117 -81 -15] exp=[124 24 -2 0] act=[124 24 -2 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 24265000: uvm_test_top.env.scb [CHK] PASS x=[5 1 6 2] exp=[-22 23 -2 0] act=[-22 23 -2 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 24275000: uvm_test_top.env.scb [CHK] PASS x=[-16 35 -20 68] exp=[18 -78 75 0] act=[18 -78 75 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 24345000: uvm_test_top.env.scb [CHK] PASS x=[5 -2 7 2] exp=[-15 22 6 0] act=[-15 22 6 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 24355000: uvm_test_top.env.scb [CHK] PASS x=[58 38 -2 -37] exp=[105 117 -116 0] act=[105 117 -116 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 24425000: uvm_test_top.env.scb [CHK] PASS x=[-1 -2 6 1] exp=[-7 21 3 0] act=[-7 21 3 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 24435000: uvm_test_top.env.scb [CHK] PASS x=[-79 -127 -95 34] exp=[24 -25 82 0] act=[24 -25 82 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 24505000: uvm_test_top.env.scb [CHK] PASS x=[1 0 4 2] exp=[-3 21 -1 0] act=[-3 21 -1 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 24515000: uvm_test_top.env.scb [CHK] PASS x=[-81 40 -128 48] exp=[127 -10 -33 0] act=[127 -10 -33 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 24585000: uvm_test_top.env.scb [CHK] PASS x=[7 1 5 2] exp=[-2 24 -1 0] act=[-2 24 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 24595000: uvm_test_top.env.scb [CHK] PASS x=[26 -64 -5 12] exp=[-7 2 101 0] act=[-7 2 101 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 24665000: uvm_test_top.env.scb [CHK] PASS x=[0 -3 3 -2] exp=[-1 25 -1 0] act=[-1 25 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 24675000: uvm_test_top.env.scb [CHK] PASS x=[-115 -65 44 -86] exp=[-4 78 14 0] act=[-4 78 14 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 24745000: uvm_test_top.env.scb [CHK] PASS x=[3 -7 6 2] exp=[-1 20 13 0] act=[-1 20 13 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 24755000: uvm_test_top.env.scb [CHK] PASS x=[-67 75 22 -48] exp=[108 80 -4 0] act=[108 80 -4 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 24825000: uvm_test_top.env.scb [CHK] PASS x=[-3 -5 0 -2] exp=[-1 23 -1 0] act=[-1 23 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 24835000: uvm_test_top.env.scb [CHK] PASS x=[82 -61 -124 39] exp=[127 -1 -2 0] act=[127 -1 -2 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 24905000: uvm_test_top.env.scb [CHK] PASS x=[1 3 6 3] exp=[-10 10 -1 0] act=[-10 10 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 24915000: uvm_test_top.env.scb [CHK] PASS x=[31 21 -24 91] exp=[-10 -47 67 0] act=[-10 -47 67 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 24985000: uvm_test_top.env.scb [CHK] PASS x=[7 1 8 2] exp=[-7 12 1 0] act=[-7 12 1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 24995000: uvm_test_top.env.scb [CHK] PASS x=[-8 32 34 -115] exp=[47 100 -81 0] act=[47 100 -81 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 25065000: uvm_test_top.env.scb [CHK] PASS x=[-2 0 3 1] exp=[-2 10 -1 0] act=[-2 10 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 25075000: uvm_test_top.env.scb [CHK] PASS x=[30 90 96 15] exp=[-19 19 58 0] act=[-19 19 58 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 25145000: uvm_test_top.env.scb [CHK] PASS x=[-3 -4 2 1] exp=[-2 9 -1 0] act=[-2 9 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 25155000: uvm_test_top.env.scb [CHK] PASS x=[58 -15 55 96] exp=[-19 -6 127 0] act=[-19 -6 127 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 25225000: uvm_test_top.env.scb [CHK] PASS x=[-3 -3 5 0] exp=[-1 10 0 0] act=[-1 10 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 25235000: uvm_test_top.env.scb [CHK] PASS x=[-127 9 -43 43] exp=[37 -4 19 0] act=[37 -4 19 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 25305000: uvm_test_top.env.scb [CHK] PASS x=[-1 -2 3 1] exp=[-1 10 -1 0] act=[-1 10 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 25315000: uvm_test_top.env.scb [CHK] PASS x=[83 -28 -105 6] exp=[117 24 -5 0] act=[117 24 -5 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 25385000: uvm_test_top.env.scb [CHK] PASS x=[4 2 18 10] exp=[-1 5 27 0] act=[-1 5 27 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 25395000: uvm_test_top.env.scb [CHK] PASS x=[78 65 -77 -51] exp=[127 77 -5 0] act=[127 77 -5 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 25465000: uvm_test_top.env.scb [CHK] PASS x=[10 0 17 7] exp=[-1 9 21 0] act=[-1 9 21 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 25475000: uvm_test_top.env.scb [CHK] PASS x=[-74 -126 7 71] exp=[-2 -1 127 0] act=[-2 -1 127 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 25545000: uvm_test_top.env.scb [CHK] PASS x=[4 -1 15 5] exp=[-14 4 9 0] act=[-14 4 9 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 25555000: uvm_test_top.env.scb [CHK] PASS x=[65 -12 -32 42] exp=[3 -3 1 0] act=[3 -3 1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 25625000: uvm_test_top.env.scb [CHK] PASS x=[11 5 19 10] exp=[-8 3 12 0] act=[-8 3 12 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 25635000: uvm_test_top.env.scb [CHK] PASS x=[106 123 4 122] exp=[4 -10 22 0] act=[4 -10 22 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 25705000: uvm_test_top.env.scb [CHK] PASS x=[5 1 11 6] exp=[-3 4 6 0] act=[-3 4 6 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 25715000: uvm_test_top.env.scb [CHK] PASS x=[53 -73 99 -9] exp=[-24 11 81 0] act=[-24 11 81 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 25785000: uvm_test_top.env.scb [CHK] PASS x=[-1 -4 10 6] exp=[-2 3 8 0] act=[-2 3 8 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 25795000: uvm_test_top.env.scb [CHK] PASS x=[0 61 63 60] exp=[-6 -2 56 0] act=[-6 -2 56 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 25865000: uvm_test_top.env.scb [CHK] PASS x=[-2 -2 9 6] exp=[-1 3 6 0] act=[-1 3 6 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 25875000: uvm_test_top.env.scb [CHK] PASS x=[1 63 25 99] exp=[-2 -2 58 0] act=[-2 -2 58 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 25945000: uvm_test_top.env.scb [CHK] PASS x=[4 -3 9 5] exp=[-1 4 5 0] act=[-1 4 5 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 25955000: uvm_test_top.env.scb [CHK] PASS x=[121 -67 125 -20] exp=[-4 24 80 0] act=[-4 24 80 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 26025000: uvm_test_top.env.scb [CHK] PASS x=[11 0 17 3] exp=[-1 6 7 0] act=[-1 6 7 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 26035000: uvm_test_top.env.scb [CHK] PASS x=[-86 -108 21 -73] exp=[-1 15 12 0] act=[-1 15 12 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 26105000: uvm_test_top.env.scb [CHK] PASS x=[2 -3 15 2] exp=[-1 5 7 0] act=[-1 5 7 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 26115000: uvm_test_top.env.scb [CHK] PASS x=[-46 121 -25 126] exp=[22 -1 25 0] act=[22 -1 25 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 26185000: uvm_test_top.env.scb [CHK] PASS x=[4 3 15 10] exp=[-7 1 5 0] act=[-7 1 5 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 26195000: uvm_test_top.env.scb [CHK] PASS x=[119 -55 -59 -24] exp=[13 13 -28 0] act=[13 13 -28 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 26265000: uvm_test_top.env.scb [CHK] PASS x=[9 1 13 7] exp=[-3 2 3 0] act=[-3 2 3 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 26275000: uvm_test_top.env.scb [CHK] PASS x=[-11 100 -37 -114] exp=[48 26 -40 0] act=[48 26 -40 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 26345000: uvm_test_top.env.scb [CHK] PASS x=[0 -3 11 6] exp=[-2 1 4 0] act=[-2 1 4 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 26355000: uvm_test_top.env.scb [CHK] PASS x=[-74 -18 -102 -44] exp=[38 6 -12 0] act=[38 6 -12 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 26425000: uvm_test_top.env.scb [CHK] PASS x=[5 0 12 6] exp=[-1 2 3 0] act=[-1 2 3 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 26435000: uvm_test_top.env.scb [CHK] PASS x=[-13 -107 42 99] exp=[-7 -3 73 0] act=[-7 -3 73 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 26505000: uvm_test_top.env.scb [CHK] PASS x=[1 0 11 5] exp=[-1 2 3 0] act=[-1 2 3 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 26515000: uvm_test_top.env.scb [CHK] PASS x=[-125 15 27 -110] exp=[10 16 -2 0] act=[10 16 -2 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 26585000: uvm_test_top.env.scb [CHK] PASS x=[-8 3 -20 -7] exp=[8 3 -1 0] act=[8 3 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 26595000: uvm_test_top.env.scb [CHK] PASS x=[57 96 82 -27] exp=[-1 14 -1 0] act=[-1 14 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 26665000: uvm_test_top.env.scb [CHK] PASS x=[-2 11 -19 -8] exp=[9 4 -1 0] act=[9 4 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 26675000: uvm_test_top.env.scb [CHK] PASS x=[-87 57 20 40] exp=[-1 -1 12 0] act=[-1 -1 12 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 26745000: uvm_test_top.env.scb [CHK] PASS x=[-7 4 -20 -7] exp=[8 3 -1 0] act=[8 3 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 26755000: uvm_test_top.env.scb [CHK] PASS x=[120 -37 31 122] exp=[-1 -1 54 0] act=[-1 -1 54 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 26825000: uvm_test_top.env.scb [CHK] PASS x=[-5 1 -18 -8] exp=[3 2 -6 0] act=[3 2 -6 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 26835000: uvm_test_top.env.scb [CHK] PASS x=[72 -66 -36 33] exp=[-3 -1 3 0] act=[-3 -1 3 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 26905000: uvm_test_top.env.scb [CHK] PASS x=[-8 3 -20 -8] exp=[4 2 -4 0] act=[4 2 -4 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 26915000: uvm_test_top.env.scb [CHK] PASS x=[-100 -47 78 -42] exp=[-8 1 12 0] act=[-8 1 12 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 26985000: uvm_test_top.env.scb [CHK] PASS x=[-6 4 -20 -8] exp=[4 2 -2 0] act=[4 2 -2 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 26995000: uvm_test_top.env.scb [CHK] PASS x=[-56 125 107 -24] exp=[-2 3 0 0] act=[-2 3 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 27065000: uvm_test_top.env.scb [CHK] PASS x=[-5 5 -19 -7] exp=[4 2 -1 0] act=[4 2 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 27075000: uvm_test_top.env.scb [CHK] PASS x=[-55 113 -49 13] exp=[17 0 -3 0] act=[17 0 -3 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 27145000: uvm_test_top.env.scb [CHK] PASS x=[-6 1 -20 -8] exp=[3 2 -1 0] act=[3 2 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 27155000: uvm_test_top.env.scb [CHK] PASS x=[114 -54 44 71] exp=[-2 -1 21 0] act=[-2 -1 21 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 27225000: uvm_test_top.env.scb [CHK] PASS x=[-6 5 -19 -7] exp=[4 2 -1 0] act=[4 2 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 27235000: uvm_test_top.env.scb [CHK] PASS x=[-74 125 124 127] exp=[-1 -1 32 0] act=[-1 -1 32 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 27305000: uvm_test_top.env.scb [CHK] PASS x=[-7 5 -19 -7] exp=[4 1 -1 0] act=[4 1 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 27315000: uvm_test_top.env.scb [CHK] PASS x=[124 6 1 -23] exp=[1 7 -1 0] act=[1 7 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 27385000: uvm_test_top.env.scb [CHK] PASS x=[-8 1 -18 -7] exp=[3 1 -1 0] act=[3 1 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 27395000: uvm_test_top.env.scb [CHK] PASS x=[-113 -69 -89 -84] exp=[15 4 -1 0] act=[15 4 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 27465000: uvm_test_top.env.scb [CHK] PASS x=[-6 2 -19 -8] exp=[1 1 -4 0] act=[1 1 -4 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 27475000: uvm_test_top.env.scb [CHK] PASS x=[114 -35 25 -35] exp=[-3 3 -2 0] act=[-3 3 -2 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 27545000: uvm_test_top.env.scb [CHK] PASS x=[-8 1 -19 -7] exp=[1 0 -2 0] act=[1 0 -2 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 27555000: uvm_test_top.env.scb [CHK] PASS x=[-80 4 30 -71] exp=[0 2 -2 0] act=[0 2 -2 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 27625000: uvm_test_top.env.scb [CHK] PASS x=[-3 9 -18 -8] exp=[2 1 -1 0] act=[2 1 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 27635000: uvm_test_top.env.scb [CHK] PASS x=[13 18 111 107] exp=[-4 -1 17 0] act=[-4 -1 17 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 27705000: uvm_test_top.env.scb [CHK] PASS x=[-5 3 -16 -6] exp=[1 0 -1 0] act=[1 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 27715000: uvm_test_top.env.scb [CHK] PASS x=[-50 1 -97 119] exp=[3 -1 2 0] act=[3 -1 2 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 27785000: uvm_test_top.env.scb [CHK] PASS x=[-2 9 -18 -7] exp=[2 1 -1 0] act=[2 1 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 27795000: uvm_test_top.env.scb [CHK] PASS x=[17 -61 -78 -87] exp=[7 4 -1 0] act=[7 4 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 27865000: uvm_test_top.env.scb [CHK] PASS x=[-8 1 -18 -8] exp=[1 0 -1 0] act=[1 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 27875000: uvm_test_top.env.scb [CHK] PASS x=[-100 21 35 -123] exp=[2 5 -1 0] act=[2 5 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 27945000: uvm_test_top.env.scb [CHK] PASS x=[-10 1 -18 -9] exp=[1 1 -1 0] act=[1 1 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 27955000: uvm_test_top.env.scb [CHK] PASS x=[-23 -37 91 123] exp=[-1 -1 21 0] act=[-1 -1 21 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 28025000: uvm_test_top.env.scb [CHK] PASS x=[-3 5 -18 -7] exp=[1 1 -1 0] act=[1 1 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 28035000: uvm_test_top.env.scb [CHK] PASS x=[-33 90 36 -51] exp=[3 3 -1 0] act=[3 3 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 28105000: uvm_test_top.env.scb [CHK] PASS x=[-5 4 -19 -8] exp=[1 0 -2 0] act=[1 0 -2 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 28115000: uvm_test_top.env.scb [CHK] PASS x=[120 95 32 126] exp=[-2 -2 3 0] act=[-2 -2 3 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 28185000: uvm_test_top.env.scb [CHK] PASS x=[-8 2 -19 -8] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 28195000: uvm_test_top.env.scb [CHK] PASS x=[-30 31 -38 -63] exp=[3 1 -3 0] act=[3 1 -3 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 28265000: uvm_test_top.env.scb [CHK] PASS x=[-3 7 -17 -7] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 28275000: uvm_test_top.env.scb [CHK] PASS x=[-119 89 26 -46] exp=[1 0 -1 0] act=[1 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 28345000: uvm_test_top.env.scb [CHK] PASS x=[-7 1 -19 -8] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 28355000: uvm_test_top.env.scb [CHK] PASS x=[-24 98 -30 -113] exp=[5 3 -2 0] act=[5 3 -2 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 28425000: uvm_test_top.env.scb [CHK] PASS x=[-6 5 -16 -8] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 28435000: uvm_test_top.env.scb [CHK] PASS x=[-54 -57 64 95] exp=[-1 -1 8 0] act=[-1 -1 8 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 28505000: uvm_test_top.env.scb [CHK] PASS x=[-3 9 -19 -8] exp=[1 0 -1 0] act=[1 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 28515000: uvm_test_top.env.scb [CHK] PASS x=[-106 31 121 34] exp=[-1 -1 6 0] act=[-1 -1 6 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 28585000: uvm_test_top.env.scb [CHK] PASS x=[-4 3 -17 -6] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 28595000: uvm_test_top.env.scb [CHK] PASS x=[-71 65 -110 -42] exp=[7 1 -1 0] act=[7 1 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 28665000: uvm_test_top.env.scb [CHK] PASS x=[-4 7 -17 -7] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 28675000: uvm_test_top.env.scb [CHK] PASS x=[-105 -98 -3 89] exp=[-1 -1 7 0] act=[-1 -1 7 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 28745000: uvm_test_top.env.scb [CHK] PASS x=[-11 2 -21 -8] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 28755000: uvm_test_top.env.scb [CHK] PASS x=[-29 -56 99 -89] exp=[-2 1 0 0] act=[-2 1 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 28825000: uvm_test_top.env.scb [CHK] PASS x=[-6 6 -19 -8] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 28835000: uvm_test_top.env.scb [CHK] PASS x=[69 100 -85 -40] exp=[3 1 -3 0] act=[3 1 -3 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 28905000: uvm_test_top.env.scb [CHK] PASS x=[-7 2 -19 -8] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 28915000: uvm_test_top.env.scb [CHK] PASS x=[-58 30 63 4] exp=[-1 -1 1 0] act=[-1 -1 1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 28985000: uvm_test_top.env.scb [CHK] PASS x=[-3 6 -18 -6] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 28995000: uvm_test_top.env.scb [CHK] PASS x=[56 -66 22 -71] exp=[-1 1 -1 0] act=[-1 1 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 29065000: uvm_test_top.env.scb [CHK] PASS x=[-7 0 -19 -9] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 29075000: uvm_test_top.env.scb [CHK] PASS x=[7 -61 -106 -104] exp=[2 1 -1 0] act=[2 1 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 29145000: uvm_test_top.env.scb [CHK] PASS x=[-6 6 -19 -9] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 29155000: uvm_test_top.env.scb [CHK] PASS x=[-47 -18 -75 -10] exp=[1 0 -1 0] act=[1 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 29225000: uvm_test_top.env.scb [CHK] PASS x=[-9 2 -17 -8] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 29235000: uvm_test_top.env.scb [CHK] PASS x=[3 118 106 -113] exp=[0 1 -1 0] act=[0 1 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 29305000: uvm_test_top.env.scb [CHK] PASS x=[-6 1 -20 -6] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 29315000: uvm_test_top.env.scb [CHK] PASS x=[-50 -72 75 -102] exp=[-1 1 0 0] act=[-1 1 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 29385000: uvm_test_top.env.scb [CHK] PASS x=[-10 4 -18 -7] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 29395000: uvm_test_top.env.scb [CHK] PASS x=[45 -37 -10 104] exp=[-1 -1 1 0] act=[-1 -1 1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 29465000: uvm_test_top.env.scb [CHK] PASS x=[-5 6 -18 -7] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 29475000: uvm_test_top.env.scb [CHK] PASS x=[-32 -125 86 -22] exp=[-1 0 1 0] act=[-1 0 1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 29545000: uvm_test_top.env.scb [CHK] PASS x=[-10 0 -19 -9] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 29555000: uvm_test_top.env.scb [CHK] PASS x=[81 49 50 -42] exp=[-1 0 -1 0] act=[-1 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 29625000: uvm_test_top.env.scb [CHK] PASS x=[-2 9 -19 -6] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 29635000: uvm_test_top.env.scb [CHK] PASS x=[126 -57 81 20] exp=[-1 0 1 0] act=[-1 0 1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 29705000: uvm_test_top.env.scb [CHK] PASS x=[-6 2 -17 -8] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 29715000: uvm_test_top.env.scb [CHK] PASS x=[57 -49 -105 95] exp=[0 -1 0 0] act=[0 -1 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 29785000: uvm_test_top.env.scb [CHK] PASS x=[-3 6 -20 -9] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 29795000: uvm_test_top.env.scb [CHK] PASS x=[-90 -55 62 31] exp=[-1 -1 1 0] act=[-1 -1 1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 29865000: uvm_test_top.env.scb [CHK] PASS x=[-9 1 -20 -8] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 29875000: uvm_test_top.env.scb [CHK] PASS x=[-78 -23 119 -7] exp=[-1 -1 1 0] act=[-1 -1 1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 29945000: uvm_test_top.env.scb [CHK] PASS x=[-7 4 -18 -7] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 29955000: uvm_test_top.env.scb [CHK] PASS x=[-127 -10 111 122] exp=[-1 -1 2 0] act=[-1 -1 2 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 30025000: uvm_test_top.env.scb [CHK] PASS x=[-7 6 -18 -7] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 30035000: uvm_test_top.env.scb [CHK] PASS x=[9 -49 71 14] exp=[-1 -1 0 0] act=[-1 -1 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 30105000: uvm_test_top.env.scb [CHK] PASS x=[-11 -2 -19 -8] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 30115000: uvm_test_top.env.scb [CHK] PASS x=[-42 49 90 75] exp=[-1 -1 0 0] act=[-1 -1 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 30185000: uvm_test_top.env.scb [CHK] PASS x=[-11 -1 -19 -7] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 30195000: uvm_test_top.env.scb [CHK] PASS x=[85 -27 24 -102] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 30265000: uvm_test_top.env.scb [CHK] PASS x=[-6 1 -17 -8] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 30275000: uvm_test_top.env.scb [CHK] PASS x=[115 -113 39 -97] exp=[-1 0 -1 0] act=[-1 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 30345000: uvm_test_top.env.scb [CHK] PASS x=[0 5 -18 -7] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 30355000: uvm_test_top.env.scb [CHK] PASS x=[-3 -122 -46 55] exp=[-1 -1 0 0] act=[-1 -1 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 30425000: uvm_test_top.env.scb [CHK] PASS x=[-4 3 -15 -8] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 30435000: uvm_test_top.env.scb [CHK] PASS x=[-92 -97 -68 -124] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 30505000: uvm_test_top.env.scb [CHK] PASS x=[-9 1 -19 -8] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 30515000: uvm_test_top.env.scb [CHK] PASS x=[100 120 27 75] exp=[0 -1 0 0] act=[0 -1 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 30585000: uvm_test_top.env.scb [CHK] PASS x=[-6 1 -18 -7] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 30595000: uvm_test_top.env.scb [CHK] PASS x=[42 -47 -110 -104] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 30665000: uvm_test_top.env.scb [CHK] PASS x=[-1 10 -16 -8] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 30675000: uvm_test_top.env.scb [CHK] PASS x=[-17 -99 -117 -93] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 30745000: uvm_test_top.env.scb [CHK] PASS x=[-3 6 -19 -9] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 30755000: uvm_test_top.env.scb [CHK] PASS x=[111 23 80 5] exp=[-1 0 0 0] act=[-1 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 30825000: uvm_test_top.env.scb [CHK] PASS x=[-7 4 -19 -7] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 30835000: uvm_test_top.env.scb [CHK] PASS x=[-73 36 -90 17] exp=[0 -1 -1 0] act=[0 -1 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 30905000: uvm_test_top.env.scb [CHK] PASS x=[-5 2 -21 -6] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 30915000: uvm_test_top.env.scb [CHK] PASS x=[73 63 63 -71] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 30985000: uvm_test_top.env.scb [CHK] PASS x=[-5 7 -17 -8] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 30995000: uvm_test_top.env.scb [CHK] PASS x=[7 -45 -128 63] exp=[0 -1 -1 0] act=[0 -1 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 31065000: uvm_test_top.env.scb [CHK] PASS x=[-7 1 -17 -8] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 31075000: uvm_test_top.env.scb [CHK] PASS x=[69 96 19 21] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 31145000: uvm_test_top.env.scb [CHK] PASS x=[-1 10 -16 -7] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 31155000: uvm_test_top.env.scb [CHK] PASS x=[46 92 26 -24] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 31225000: uvm_test_top.env.scb [CHK] PASS x=[-5 7 -16 -8] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 31235000: uvm_test_top.env.scb [CHK] PASS x=[-2 -109 16 -45] exp=[-1 0 0 0] act=[-1 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 31305000: uvm_test_top.env.scb [CHK] PASS x=[-15 -2 -19 -7] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 31315000: uvm_test_top.env.scb [CHK] PASS x=[110 51 -116 39] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 31385000: uvm_test_top.env.scb [CHK] PASS x=[-16 -5 -20 -8] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 31395000: uvm_test_top.env.scb [CHK] PASS x=[31 117 60 9] exp=[-1 0 -1 0] act=[-1 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 31465000: uvm_test_top.env.scb [CHK] PASS x=[-12 -1 -20 -8] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 31475000: uvm_test_top.env.scb [CHK] PASS x=[41 116 -9 98] exp=[0 -1 0 0] act=[0 -1 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 31545000: uvm_test_top.env.scb [CHK] PASS x=[-8 2 -19 -9] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 31555000: uvm_test_top.env.scb [CHK] PASS x=[24 -98 38 49] exp=[-1 -1 0 0] act=[-1 -1 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 31625000: uvm_test_top.env.scb [CHK] PASS x=[-7 1 -18 -7] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 31635000: uvm_test_top.env.scb [CHK] PASS x=[-49 -22 109 -47] exp=[-1 0 0 0] act=[-1 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 31705000: uvm_test_top.env.scb [CHK] PASS x=[-7 3 -18 -7] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 31715000: uvm_test_top.env.scb [CHK] PASS x=[-45 38 -88 -94] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 31785000: uvm_test_top.env.scb [CHK] PASS x=[-3 1 -18 -7] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 31795000: uvm_test_top.env.scb [CHK] PASS x=[-48 91 97 13] exp=[-1 0 0 0] act=[-1 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 31865000: uvm_test_top.env.scb [CHK] PASS x=[-5 6 -20 -8] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 31875000: uvm_test_top.env.scb [CHK] PASS x=[65 90 127 35] exp=[-1 0 0 0] act=[-1 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 31945000: uvm_test_top.env.scb [CHK] PASS x=[-9 3 -21 -8] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 31955000: uvm_test_top.env.scb [CHK] PASS x=[-36 -107 76 -109] exp=[-1 0 0 0] act=[-1 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 32025000: uvm_test_top.env.scb [CHK] PASS x=[-3 7 -19 -7] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 32035000: uvm_test_top.env.scb [CHK] PASS x=[-71 115 118 11] exp=[-1 0 0 0] act=[-1 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 32105000: uvm_test_top.env.scb [CHK] PASS x=[-6 5 -18 -7] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 32115000: uvm_test_top.env.scb [CHK] PASS x=[-29 -47 51 -57] exp=[-1 0 0 0] act=[-1 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 32185000: uvm_test_top.env.scb [CHK] PASS x=[3 -2 4 0] exp=[-1 0 -1 0] act=[-1 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 32195000: uvm_test_top.env.scb [CHK] PASS x=[52 125 51 57] exp=[-1 -1 0 0] act=[-1 -1 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 32265000: uvm_test_top.env.scb [CHK] PASS x=[5 1 6 1] exp=[-1 0 -1 0] act=[-1 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 32275000: uvm_test_top.env.scb [CHK] PASS x=[-28 35 65 64] exp=[-1 -1 0 0] act=[-1 -1 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 32345000: uvm_test_top.env.scb [CHK] PASS x=[-3 -2 5 2] exp=[-1 0 0 0] act=[-1 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 32355000: uvm_test_top.env.scb [CHK] PASS x=[-55 114 92 -94] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 32425000: uvm_test_top.env.scb [CHK] PASS x=[1 -1 6 2] exp=[-1 0 0 0] act=[-1 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 32435000: uvm_test_top.env.scb [CHK] PASS x=[-91 -6 34 -2] exp=[-1 -1 0 0] act=[-1 -1 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 32505000: uvm_test_top.env.scb [CHK] PASS x=[8 0 9 2] exp=[-1 0 0 0] act=[-1 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 32515000: uvm_test_top.env.scb [CHK] PASS x=[-77 99 125 -73] exp=[-1 0 -1 0] act=[-1 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 32585000: uvm_test_top.env.scb [CHK] PASS x=[7 1 9 2] exp=[-1 0 0 0] act=[-1 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 32595000: uvm_test_top.env.scb [CHK] PASS x=[-21 95 104 -62] exp=[-1 0 -1 0] act=[-1 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 32665000: uvm_test_top.env.scb [CHK] PASS x=[1 0 2 2] exp=[-1 0 -1 0] act=[-1 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 32675000: uvm_test_top.env.scb [CHK] PASS x=[-123 -82 0 12] exp=[-1 -1 0 0] act=[-1 -1 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 32745000: uvm_test_top.env.scb [CHK] PASS x=[10 -3 9 2] exp=[-1 0 0 0] act=[-1 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 32755000: uvm_test_top.env.scb [CHK] PASS x=[84 109 -92 20] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 32825000: uvm_test_top.env.scb [CHK] PASS x=[-5 -2 1 1] exp=[-1 0 -1 0] act=[-1 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 32835000: uvm_test_top.env.scb [CHK] PASS x=[112 112 102 115] exp=[-1 -1 0 0] act=[-1 -1 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 32905000: uvm_test_top.env.scb [CHK] PASS x=[-1 -2 1 0] exp=[-1 0 -1 0] act=[-1 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 32915000: uvm_test_top.env.scb [CHK] PASS x=[-77 51 118 -76] exp=[-1 0 0 0] act=[-1 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 32985000: uvm_test_top.env.scb [CHK] PASS x=[3 -3 3 1] exp=[-1 0 -1 0] act=[-1 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 32995000: uvm_test_top.env.scb [CHK] PASS x=[-56 -5 14 -77] exp=[0 0 -1 0] act=[0 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 33065000: uvm_test_top.env.scb [CHK] PASS x=[1 -1 9 2] exp=[-1 0 0 0] act=[-1 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 33075000: uvm_test_top.env.scb [CHK] PASS x=[125 87 -97 124] exp=[0 -1 -1 0] act=[0 -1 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 33145000: uvm_test_top.env.scb [CHK] PASS x=[-1 -5 0 0] exp=[-1 0 -1 0] act=[-1 0 -1 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 33155000: uvm_test_top.env.scb [CHK] PASS x=[117 -75 -39 25] exp=[-1 0 0 0] act=[-1 0 0 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 33825000: uvm_test_top.env.scb [CHK] PASS x=[-7 1 -18 -9] exp=[58 33 -12 0] act=[58 33 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 33915000: uvm_test_top.env.scb [CHK] PASS x=[-6 6 -18 -7] exp=[63 32 -13 0] act=[63 32 -13 0] lat=7 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 33955000: uvm_test_top.env.scb [CHK] PASS x=[-6 6 -18 -7] exp=[63 32 -13 0] act=[63 32 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 33995000: uvm_test_top.env.scb [CHK] PASS x=[-3 4 -19 -8] exp=[64 35 -13 0] act=[64 35 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 34045000: uvm_test_top.env.scb [CHK] PASS x=[-3 4 -19 -8] exp=[64 19 -13 0] act=[64 19 -13 0] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 34305000: uvm_test_top.env.scb [CHK] PASS x=[-22 -111 -45 13] exp=[-105 127 -105 127] act=[-105 127 -105 127] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 34385000: uvm_test_top.env.scb [CHK] PASS x=[6 89 9 -92] exp=[-50 127 127 -128] act=[-50 127 127 -128] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 34435000: uvm_test_top.env.scb [CHK] PASS x=[47 13 3 -57] exp=[-128 127 127 -128] act=[-128 127 127 -128] lat=3
+UVM_INFO mlp_scoreboard.sv(172) @ 34915000: uvm_test_top.env.scb [CHK] PASS x=[58 3 75 37] exp=[-1 8 -1 -1] act=[-1 8 -1 -1] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 34925000: uvm_test_top.env.scb [CHK] PASS x=[-64 40 8 -30] exp=[5 -1 -1 10] act=[5 -1 -1 10] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 34935000: uvm_test_top.env.scb [CHK] PASS x=[-59 114 -46 -115] exp=[7 -2 3 24] act=[7 -2 3 24] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 34945000: uvm_test_top.env.scb [CHK] PASS x=[-82 -9 55 14] exp=[4 4 -1 4] act=[4 4 -1 4] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 35415000: uvm_test_top.env.scb [CHK] PASS x=[42 -105 -22 -73] exp=[-128 127 -128 -128] act=[-128 127 -128 -128] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 35425000: uvm_test_top.env.scb [CHK] PASS x=[16 92 91 -5] exp=[127 127 127 127] act=[127 127 127 127] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 35435000: uvm_test_top.env.scb [CHK] PASS x=[-83 63 -1 32] exp=[-128 -128 127 127] act=[-128 -128 127 127] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 35445000: uvm_test_top.env.scb [CHK] PASS x=[9 43 111 -83] exp=[127 127 127 127] act=[127 127 127 127] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 35915000: uvm_test_top.env.scb [CHK] PASS x=[3 53 -76 4] exp=[127 -128 -2 127] act=[127 -128 -2 127] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 35925000: uvm_test_top.env.scb [CHK] PASS x=[94 41 38 77] exp=[127 127 -23 127] act=[127 127 -23 127] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 35935000: uvm_test_top.env.scb [CHK] PASS x=[111 -95 -26 -122] exp=[-128 127 127 -128] act=[-128 127 127 -128] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 35945000: uvm_test_top.env.scb [CHK] PASS x=[48 -25 76 110] exp=[127 127 66 127] act=[127 127 66 127] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 36415000: uvm_test_top.env.scb [CHK] PASS x=[21 40 -74 -25] exp=[127 83 127 -1] act=[127 83 127 -1] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 36425000: uvm_test_top.env.scb [CHK] PASS x=[-64 27 32 -19] exp=[-5 0 7 -4] act=[-5 0 7 -4] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 36435000: uvm_test_top.env.scb [CHK] PASS x=[23 -23 7 103] exp=[127 127 -12 -3] act=[127 127 -12 -3] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 36445000: uvm_test_top.env.scb [CHK] PASS x=[-3 36 93 -82] exp=[-11 -9 -4 -5] act=[-11 -9 -4 -5] lat=2
+UVM_INFO mlp_scoreboard.sv(172) @ 36925000: uvm_test_top.env.scb [CHK] PASS x=[-6 4 -19 -8] exp=[64 33 -13 0] act=[64 33 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 36935000: uvm_test_top.env.scb [CHK] PASS x=[-10 1 -18 -8] exp=[57 30 -12 0] act=[57 30 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 36945000: uvm_test_top.env.scb [CHK] PASS x=[-10 3 -19 -7] exp=[61 29 -12 0] act=[61 29 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 36955000: uvm_test_top.env.scb [CHK] PASS x=[-7 1 -18 -9] exp=[58 33 -12 0] act=[58 33 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 36965000: uvm_test_top.env.scb [CHK] PASS x=[-8 0 -19 -9] exp=[59 33 -12 0] act=[59 33 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 36975000: uvm_test_top.env.scb [CHK] PASS x=[-6 6 -18 -7] exp=[63 32 -13 0] act=[63 32 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 37025000: uvm_test_top.env.scb [CHK] PASS x=[-6 5 -18 -6] exp=[60 30 -12 0] act=[60 30 -12 0] lat=3 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 37035000: uvm_test_top.env.scb [CHK] PASS x=[-6 2 -16 -6] exp=[50 30 -11 0] act=[50 30 -11 0] lat=3 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 37045000: uvm_test_top.env.scb [CHK] PASS x=[-8 3 -15 -8] exp=[52 32 -11 0] act=[52 32 -11 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 37055000: uvm_test_top.env.scb [CHK] PASS x=[-3 4 -19 -8] exp=[64 35 -13 0] act=[64 35 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 37065000: uvm_test_top.env.scb [CHK] PASS x=[-7 1 -18 -9] exp=[58 33 -12 0] act=[58 33 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 37075000: uvm_test_top.env.scb [CHK] PASS x=[-6 3 -18 -8] exp=[60 33 -12 0] act=[60 33 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 37135000: uvm_test_top.env.scb [CHK] PASS x=[-6 6 -15 -6] exp=[54 31 -11 0] act=[54 31 -11 0] lat=4 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 37145000: uvm_test_top.env.scb [CHK] PASS x=[-6 6 -17 -8] exp=[62 34 -13 0] act=[62 34 -13 0] lat=4 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 37155000: uvm_test_top.env.scb [CHK] PASS x=[-10 1 -19 -8] exp=[60 30 -12 0] act=[60 30 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 37165000: uvm_test_top.env.scb [CHK] PASS x=[9 1 8 2] exp=[-4 25 1 0] act=[-4 25 1 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 37175000: uvm_test_top.env.scb [CHK] PASS x=[5 1 6 2] exp=[-3 23 -1 0] act=[-3 23 -1 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 37185000: uvm_test_top.env.scb [CHK] PASS x=[5 -2 7 2] exp=[-4 22 6 0] act=[-4 22 6 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 37265000: uvm_test_top.env.scb [CHK] PASS x=[-1 -2 6 1] exp=[-4 21 3 0] act=[-4 21 3 0] lat=6 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 37275000: uvm_test_top.env.scb [CHK] PASS x=[1 0 4 2] exp=[-3 21 -1 0] act=[-3 21 -1 0] lat=6 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 37285000: uvm_test_top.env.scb [CHK] PASS x=[7 1 5 2] exp=[-3 24 -1 0] act=[-3 24 -1 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 37295000: uvm_test_top.env.scb [CHK] PASS x=[0 -3 3 -2] exp=[-2 25 -2 0] act=[-2 25 -2 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 37305000: uvm_test_top.env.scb [CHK] PASS x=[3 -7 6 2] exp=[-5 20 13 0] act=[-5 20 13 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 37315000: uvm_test_top.env.scb [CHK] PASS x=[-3 -5 0 -2] exp=[-2 23 -2 0] act=[-2 23 -2 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 37425000: uvm_test_top.env.scb [CHK] PASS x=[1 3 6 3] exp=[-3 20 -1 0] act=[-3 20 -1 0] lat=9 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 37435000: uvm_test_top.env.scb [CHK] PASS x=[7 1 8 2] exp=[-4 24 2 0] act=[-4 24 2 0] lat=9 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 37445000: uvm_test_top.env.scb [CHK] PASS x=[-2 0 3 1] exp=[-2 21 -1 0] act=[-2 21 -1 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 37455000: uvm_test_top.env.scb [CHK] PASS x=[-3 -4 2 1] exp=[-3 19 -1 0] act=[-3 19 -1 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 37465000: uvm_test_top.env.scb [CHK] PASS x=[-3 -3 5 0] exp=[-3 21 0 0] act=[-3 21 0 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 37475000: uvm_test_top.env.scb [CHK] PASS x=[-1 -2 3 1] exp=[-3 21 -1 0] act=[-3 21 -1 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 37705000: uvm_test_top.env.scb [CHK] PASS x=[4 2 18 10] exp=[-8 11 54 0] act=[-8 11 54 0] lat=21 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 37715000: uvm_test_top.env.scb [CHK] PASS x=[10 0 17 7] exp=[-8 18 42 0] act=[-8 18 42 0] lat=21 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 37725000: uvm_test_top.env.scb [CHK] PASS x=[4 -1 15 5] exp=[-7 17 36 0] act=[-7 17 36 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 37735000: uvm_test_top.env.scb [CHK] PASS x=[11 5 19 10] exp=[-8 15 48 0] act=[-8 15 48 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 37745000: uvm_test_top.env.scb [CHK] PASS x=[5 1 11 6] exp=[-5 17 24 0] act=[-5 17 24 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 37755000: uvm_test_top.env.scb [CHK] PASS x=[-1 -4 10 6] exp=[-6 13 33 0] act=[-6 13 33 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 37795000: uvm_test_top.env.scb [CHK] PASS x=[4 3 15 10] exp=[-7 11 44 0] act=[-7 11 44 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 37805000: uvm_test_top.env.scb [CHK] PASS x=[9 1 13 7] exp=[-6 17 30 0] act=[-6 17 30 0] lat=2 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 37835000: uvm_test_top.env.scb [CHK] PASS x=[0 -3 11 6] exp=[-6 13 33 0] act=[-6 13 33 0] lat=4 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 37845000: uvm_test_top.env.scb [CHK] PASS x=[5 0 12 6] exp=[-6 17 28 0] act=[-6 17 28 0] lat=4 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 37885000: uvm_test_top.env.scb [CHK] PASS x=[1 0 11 5] exp=[-6 16 24 0] act=[-6 16 24 0] lat=5 label=2 pred=2
+UVM_INFO mlp_scoreboard.sv(172) @ 37905000: uvm_test_top.env.scb [CHK] PASS x=[-8 3 -20 -7] exp=[64 30 -13 0] act=[64 30 -13 0] lat=6 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 37915000: uvm_test_top.env.scb [CHK] PASS x=[-2 11 -19 -8] exp=[75 37 -15 0] act=[75 37 -15 0] lat=3 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 37935000: uvm_test_top.env.scb [CHK] PASS x=[-7 4 -20 -7] exp=[66 31 -13 0] act=[66 31 -13 0] lat=3 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 37945000: uvm_test_top.env.scb [CHK] PASS x=[-5 1 -18 -8] exp=[57 33 -12 0] act=[57 33 -12 0] lat=3 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 37955000: uvm_test_top.env.scb [CHK] PASS x=[-8 3 -20 -8] exp=[65 32 -13 0] act=[65 32 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 37965000: uvm_test_top.env.scb [CHK] PASS x=[-6 4 -20 -8] exp=[67 33 -13 0] act=[67 33 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 37975000: uvm_test_top.env.scb [CHK] PASS x=[-5 5 -19 -7] exp=[64 32 -13 0] act=[64 32 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 37985000: uvm_test_top.env.scb [CHK] PASS x=[-6 1 -20 -8] exp=[62 32 -13 0] act=[62 32 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 37995000: uvm_test_top.env.scb [CHK] PASS x=[-6 5 -19 -7] exp=[64 32 -13 0] act=[64 32 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 38015000: uvm_test_top.env.scb [CHK] PASS x=[-7 5 -19 -7] exp=[64 31 -13 0] act=[64 31 -13 0] lat=3 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 38035000: uvm_test_top.env.scb [CHK] PASS x=[-8 1 -18 -7] exp=[56 30 -12 0] act=[56 30 -12 0] lat=4 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 38065000: uvm_test_top.env.scb [CHK] PASS x=[-6 2 -19 -8] exp=[61 33 -13 0] act=[61 33 -13 0] lat=5 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 38085000: uvm_test_top.env.scb [CHK] PASS x=[-8 1 -19 -7] exp=[58 30 -12 0] act=[58 30 -12 0] lat=5 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 38105000: uvm_test_top.env.scb [CHK] PASS x=[-3 9 -18 -8] exp=[69 36 -14 0] act=[69 36 -14 0] lat=4 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 38115000: uvm_test_top.env.scb [CHK] PASS x=[-5 3 -16 -6] exp=[52 30 -11 0] act=[52 30 -11 0] lat=3 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 38145000: uvm_test_top.env.scb [CHK] PASS x=[-2 9 -18 -7] exp=[68 35 -14 0] act=[68 35 -14 0] lat=4 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 38185000: uvm_test_top.env.scb [CHK] PASS x=[-8 1 -18 -8] exp=[57 31 -12 0] act=[57 31 -12 0] lat=7 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 38195000: uvm_test_top.env.scb [CHK] PASS x=[-10 1 -18 -9] exp=[58 32 -12 0] act=[58 32 -12 0] lat=5 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 38215000: uvm_test_top.env.scb [CHK] PASS x=[-3 5 -18 -7] exp=[62 33 -13 0] act=[62 33 -13 0] lat=3 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 38225000: uvm_test_top.env.scb [CHK] PASS x=[-5 4 -19 -8] exp=[64 34 -13 0] act=[64 34 -13 0] lat=3 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 38245000: uvm_test_top.env.scb [CHK] PASS x=[-8 2 -19 -8] exp=[61 32 -12 0] act=[61 32 -12 0] lat=3 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 38265000: uvm_test_top.env.scb [CHK] PASS x=[-3 7 -17 -7] exp=[62 34 -13 0] act=[62 34 -13 0] lat=4 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 38285000: uvm_test_top.env.scb [CHK] PASS x=[-7 1 -19 -8] exp=[60 32 -12 0] act=[60 32 -12 0] lat=4 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 38345000: uvm_test_top.env.scb [CHK] PASS x=[-6 5 -16 -8] exp=[57 33 -12 0] act=[57 33 -12 0] lat=8 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 38355000: uvm_test_top.env.scb [CHK] PASS x=[-3 9 -19 -8] exp=[72 36 -14 0] act=[72 36 -14 0] lat=7 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 38365000: uvm_test_top.env.scb [CHK] PASS x=[-4 3 -17 -6] exp=[55 31 -11 0] act=[55 31 -11 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 38375000: uvm_test_top.env.scb [CHK] PASS x=[-4 7 -17 -7] exp=[62 33 -13 0] act=[62 33 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 38395000: uvm_test_top.env.scb [CHK] PASS x=[-11 2 -21 -8] exp=[67 30 -13 0] act=[67 30 -13 0] lat=3 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 38405000: uvm_test_top.env.scb [CHK] PASS x=[-6 6 -19 -8] exp=[67 34 -13 0] act=[67 34 -13 0] lat=3 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 38425000: uvm_test_top.env.scb [CHK] PASS x=[-7 2 -19 -8] exp=[61 32 -13 0] act=[61 32 -13 0] lat=3 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 38445000: uvm_test_top.env.scb [CHK] PASS x=[-3 6 -18 -6] exp=[62 32 -13 0] act=[62 32 -13 0] lat=4 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 38475000: uvm_test_top.env.scb [CHK] PASS x=[-7 0 -19 -9] exp=[59 33 -12 0] act=[59 33 -12 0] lat=5 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 38535000: uvm_test_top.env.scb [CHK] PASS x=[-6 6 -19 -9] exp=[68 35 -14 0] act=[68 35 -14 0] lat=9 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 38545000: uvm_test_top.env.scb [CHK] PASS x=[-9 2 -17 -8] exp=[56 31 -12 0] act=[56 31 -12 0] lat=7 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 38565000: uvm_test_top.env.scb [CHK] PASS x=[-6 1 -20 -6] exp=[60 29 -12 0] act=[60 29 -12 0] lat=3 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 38575000: uvm_test_top.env.scb [CHK] PASS x=[-10 4 -18 -7] exp=[60 30 -12 0] act=[60 30 -12 0] lat=3 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 38615000: uvm_test_top.env.scb [CHK] PASS x=[-5 6 -18 -7] exp=[63 33 -13 0] act=[63 33 -13 0] lat=5 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 38725000: uvm_test_top.env.scb [CHK] PASS x=[-10 0 -19 -9] exp=[59 32 -12 0] act=[59 32 -12 0] lat=15 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 38735000: uvm_test_top.env.scb [CHK] PASS x=[-2 9 -19 -6] exp=[69 33 -14 0] act=[69 33 -14 0] lat=12 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 38825000: uvm_test_top.env.scb [CHK] PASS x=[-6 2 -17 -8] exp=[56 33 -12 0] act=[56 33 -12 0] lat=10 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 38835000: uvm_test_top.env.scb [CHK] PASS x=[-3 6 -20 -9] exp=[71 37 -14 0] act=[71 37 -14 0] lat=10 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 38845000: uvm_test_top.env.scb [CHK] PASS x=[-9 1 -20 -8] exp=[62 31 -13 0] act=[62 31 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 38915000: uvm_test_top.env.scb [CHK] PASS x=[-7 4 -18 -7] exp=[60 31 -12 0] act=[60 31 -12 0] lat=8 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 38945000: uvm_test_top.env.scb [CHK] PASS x=[-7 6 -18 -7] exp=[63 32 -13 0] act=[63 32 -13 0] lat=10 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 38985000: uvm_test_top.env.scb [CHK] PASS x=[-11 -2 -19 -8] exp=[55 29 -11 0] act=[55 29 -11 0] lat=7 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 39015000: uvm_test_top.env.scb [CHK] PASS x=[-11 -1 -19 -7] exp=[55 28 -11 0] act=[55 28 -11 0] lat=7 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 39105000: uvm_test_top.env.scb [CHK] PASS x=[-6 1 -17 -8] exp=[54 32 -12 0] act=[54 32 -12 0] lat=12 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 39135000: uvm_test_top.env.scb [CHK] PASS x=[0 5 -18 -7] exp=[62 35 -13 0] act=[62 35 -13 0] lat=12 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 39175000: uvm_test_top.env.scb [CHK] PASS x=[-4 3 -15 -8] exp=[52 34 -12 0] act=[52 34 -12 0] lat=7 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 39335000: uvm_test_top.env.scb [CHK] PASS x=[-9 1 -19 -8] exp=[60 31 -12 0] act=[60 31 -12 0] lat=20 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 39345000: uvm_test_top.env.scb [CHK] PASS x=[-6 1 -18 -7] exp=[56 31 -12 0] act=[56 31 -12 0] lat=17 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 39505000: uvm_test_top.env.scb [CHK] PASS x=[-1 10 -16 -8] exp=[65 37 -14 0] act=[65 37 -14 0] lat=17 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 39535000: uvm_test_top.env.scb [CHK] PASS x=[-3 6 -19 -9] exp=[68 37 -14 0] act=[68 37 -14 0] lat=19 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 39555000: uvm_test_top.env.scb [CHK] PASS x=[-7 4 -19 -7] exp=[63 31 -13 0] act=[63 31 -13 0] lat=5 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 39565000: uvm_test_top.env.scb [CHK] PASS x=[-5 2 -21 -6] exp=[64 30 -13 0] act=[64 30 -13 0] lat=3 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 39575000: uvm_test_top.env.scb [CHK] PASS x=[-5 7 -17 -8] exp=[63 34 -13 0] act=[63 34 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 39595000: uvm_test_top.env.scb [CHK] PASS x=[-7 1 -17 -8] exp=[54 32 -12 0] act=[54 32 -12 0] lat=3 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 39615000: uvm_test_top.env.scb [CHK] PASS x=[-1 10 -16 -7] exp=[64 36 -13 0] act=[64 36 -13 0] lat=4 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 39635000: uvm_test_top.env.scb [CHK] PASS x=[-5 7 -16 -8] exp=[60 34 -13 0] act=[60 34 -13 0] lat=4 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 39665000: uvm_test_top.env.scb [CHK] PASS x=[-15 -2 -19 -7] exp=[54 26 -11 0] act=[54 26 -11 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 39675000: uvm_test_top.env.scb [CHK] PASS x=[-16 -5 -20 -8] exp=[53 26 -11 0] act=[53 26 -11 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 39705000: uvm_test_top.env.scb [CHK] PASS x=[-12 -1 -20 -8] exp=[59 29 -12 0] act=[59 29 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 39735000: uvm_test_top.env.scb [CHK] PASS x=[-8 2 -19 -9] exp=[62 33 -13 0] act=[62 33 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 39745000: uvm_test_top.env.scb [CHK] PASS x=[-7 1 -18 -7] exp=[56 30 -12 0] act=[56 30 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 39755000: uvm_test_top.env.scb [CHK] PASS x=[-7 3 -18 -7] exp=[59 31 -12 0] act=[59 31 -12 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 39775000: uvm_test_top.env.scb [CHK] PASS x=[-3 1 -18 -7] exp=[56 32 -12 0] act=[56 32 -12 0] lat=3 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 39785000: uvm_test_top.env.scb [CHK] PASS x=[-5 6 -20 -8] exp=[70 34 -14 0] act=[70 34 -14 0] lat=3 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 39825000: uvm_test_top.env.scb [CHK] PASS x=[-9 3 -21 -8] exp=[68 31 -13 0] act=[68 31 -13 0] lat=3 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 39835000: uvm_test_top.env.scb [CHK] PASS x=[-3 7 -19 -7] exp=[67 34 -13 0] act=[67 34 -13 0] lat=3 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 39855000: uvm_test_top.env.scb [CHK] PASS x=[-6 5 -18 -7] exp=[62 32 -13 0] act=[62 32 -13 0] lat=2 label=0 pred=0
+UVM_INFO mlp_scoreboard.sv(172) @ 39865000: uvm_test_top.env.scb [CHK] PASS x=[3 -2 4 0] exp=[-3 24 -1 0] act=[-3 24 -1 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 39875000: uvm_test_top.env.scb [CHK] PASS x=[5 1 6 1] exp=[-3 24 -1 0] act=[-3 24 -1 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 39885000: uvm_test_top.env.scb [CHK] PASS x=[-3 -2 5 2] exp=[-3 18 4 0] act=[-3 18 4 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 39915000: uvm_test_top.env.scb [CHK] PASS x=[1 -1 6 2] exp=[-4 20 3 0] act=[-4 20 3 0] lat=2 label=1 pred=1
+UVM_INFO mlp_scoreboard.sv(172) @ 39925000: uvm_test_top.env.scb [CHK] PASS x=[8 0 9 2] exp=[-4 24 6 0] act=[-4 24 6 0] lat=2 label=1 pred=1
+UVM_INFO mlp_driver.sv(138) @ 39945000: uvm_test_top.env.agt.drv [DRV] drove 915 inferences, 1079 config writes, 9 resets (+ the initial one)
+UVM_INFO mlp_coverage.sv(467) @ 39945000: uvm_test_top.env.cov [COV] Detailed coverage CSV written to results/coverage_detail.csv
+UVM_INFO mlp_coverage.sv(475) @ 39945000: uvm_test_top.env.cov [COV] functional coverage: cg_infer 100.00 %   cg_cfg 100.00 %   cg_reset 100.00 %
+UVM_INFO mlp_scoreboard.sv(202) @ 39945000: uvm_test_top.env.scb [SCB] 
+-------------------- scoreboard summary --------------------
+  inputs accepted     : 915
+  outputs checked     : 908   match 908   mismatch 0
+  config writes       : 1079   (18 ignored: busy or unused address)
+  resets seen         : 10   samples dropped by them: 7
+  expected clamps     : 203 x +127, 108 x -128
+  latency (cycles)    : min 2  max 21   (2 = no back-pressure)
+  Iris classification : 419 / 425 correct (98.6 %)
+  assertion failures  : 0
+------------------------------------------------------------
+UVM_INFO mlp_tests.sv(88) @ 39945000: uvm_test_top [RESULT] *** TEST PASSED ***
+UVM_INFO /home/dell/uvm_workspace/verilator-uvm-example/1800.2-2020.3.1/src/base/uvm_report_server.svh(1009) @ 39945000: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :  928
+UVM_WARNING :    2
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[CHK]   908
+[COV]     2
+[DRV]     1
+[NO_DPI_TSTNAME]     1
+[NO_DPI_USED]     1
+[NO_VISIT_CHECK]     1
+[RESULT]     1
+[RNTST]     1
+[RST]    10
+[SCB]     1
+[TEST]     1
+[UVM/COMP/NAMECHECK]     1
+[UVM/RELNOTES]     1
+
+- /home/dell/uvm_workspace/verilator-uvm-example/1800.2-2020.3.1/src/base/uvm_root.svh:633: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.053 devel
+- Verilator: $finish at 40us; walltime 0.490 s; speed 81.491 us/s
+- Verilator: cpu 0.250 s on 1 threads; allocated 17 MB
