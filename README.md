@@ -60,3 +60,42 @@ The following windows refer to the saved traces in [results/waveforms/](results/
 | `build_verilator/`, `build_verilator_trace/`, `build_verilator_closure/` | Generated Verilator builds for standard simulation, waveform tracing, and coverage closure. The closure executable is `build_verilator_closure/Vtb_top`. |
 | `build_mutation_sat/` and `.venv/` | Generated saturation-mutation build and local Python environment, respectively. |
 | [Makefile](Makefile) and `cov_hier.cfg` | Build targets and coverage hierarchy settings for the included VCS flow. The saved closure evidence above comes from Verilator. |
+
+## Prerequisites & Setup
+
+This repository contains the source code, verification environment, test infrastructure, and selected results for the MLP-UVM project.
+
+**Verilator and the external UVM library must be installed separately.** Generated build files and simulator binaries are intentionally excluded from the repository.
+
+### 1. Install Verilator
+
+Install Verilator on your Linux/WSL environment and verify the installation:
+
+```bash
+verilator --version
+```
+
+Ensure your Verilator version supports the SystemVerilog and UVM features required by this project.
+
+### 2. Clone the Accellera UVM Library
+
+The project uses the Accellera Universal Verification Methodology (UVM) library. Clone it separately:
+
+```bash
+git clone https://github.com/accellera-official/uvm-core.git
+```
+
+Configure your environment and build scripts to reference the cloned UVM library as required by your Verilator version.
+
+### 3. Clone This Repository
+
+```bash
+git clone https://github.com/SharvaMarawar/MLP-UVM.git
+cd MLP-UVM
+```
+
+### 4. Build and Run
+
+Follow the repository's Makefile and README instructions to configure, compile, and execute the UVM verification environment.
+
+**Note:** Verilator build directories, compiled objects, precompiled headers (`.gch`), and temporary simulation artifacts are not included. They must be generated locally during compilation.
